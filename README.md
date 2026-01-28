@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on as AI Engineer Intern In ASAR IT  Technilogies in Bangalore, KArnataka.<br>👯 I’m looking to collaborate on open-source projects.<br>🤝 I’m looking for help regarding the Queries in DSA.<br>🌱 I’m currently learning Agentic & Generative AI Technologiy.<br>💬 Ask me about Myself<br>⚡ Fun fact - you have to keep moving even in hard times.<br><br><br>
+🔭 I’m currently working on as AI Engineer Intern In ASAR IT  Technilogies in Bangalore, Karnataka.<br>👯 I’m looking to collaborate on open-source projects.<br>🤝 I’m looking for help regarding the Queries in DSA.<br>🌱 I’m currently learning Agentic & Generative AI Technologiy.<br>💬 Ask me about Myself<br>⚡ Fun fact - you have to keep moving even in hard times.<br><br><br>
 
 
 ## 🌐 Socials:
