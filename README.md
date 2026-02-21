@@ -9,14 +9,19 @@ AI/LLM Engineer | RAG Systems | Agentic AI | Production ML
 
 ---
 
-# 💫 About Me
+## 💫 About Me
 
-🔭 Currently working as **AI Engineer Intern at ASAR IT Technologies, Bangalore**  
-👯 Looking to collaborate on open-source AI & LLM projects  
-🤝 Open to discussions on DSA and problem-solving approaches  
-🌱 Currently learning **Agentic AI & Generative AI systems**  
-💬 Ask me about RAG, LLM pipelines, FastAPI deployments  
-⚡ Fun fact: You have to keep moving even in hard times  
+🔭 Currently working as an **AI Engineer Intern at ASAR IT Technologies, Bangalore**, where I build and deploy production-grade AI solutions including RAG systems and deterministic LLM pipelines.
+
+👯 Open to collaborating on **open-source AI and LLM projects**, especially in areas involving retrieval systems, agentic workflows, and scalable API architectures.
+
+🤝 Actively strengthening my foundation in **Data Structures & Algorithms (DSA)** to enhance problem-solving, system design, and performance optimization skills.
+
+🌱 Currently advancing my expertise in **Agentic AI & Generative AI technologies**, focusing on real-world deployment, evaluation-driven development, and low-latency inference systems.
+
+💬 Ask me about **RAG architectures, LLM pipelines, FastAPI deployments, semantic search, and production AI engineering**.
+
+⚡ Fun fact: I believe consistent progress — especially during challenging times — builds long-term resilience and success.
 
 ---
 
