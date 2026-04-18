@@ -198,7 +198,7 @@
 
 ![](https://github-readme-stats.vercel.app/api?username=hynko431&theme=blue-green&hide_border=true&include_all_commits=true&count_private=true)
 
-![](https://nirzak-streak-stats.vercel.app/?user=hynko431&theme=blue-green&hide_border=false)
+![](https://nirzak-streak-stats.vercel.app/?user=hynko431&theme=blue-green&hide_border=true)
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=hynko431&theme=blue-green&layout=compact)
 
