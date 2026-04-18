@@ -87,63 +87,92 @@
 
 ## 💻 Tech Stack
 
-**Languages**
-![Python](https://img.shields.io/badge/Python-3670A0?style=plastic&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=plastic&logo=openjdk&logoColor=white)
-![C](https://img.shields.io/badge/C-%2300599C.svg?style=plastic&logo=c&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=plastic&logo=mysql&logoColor=white)
+<h3 align="left">🗣️ Languages</h3>
+<p align="left">
 
-**AI / ML / LLM**
-![LangChain](https://img.shields.io/badge/LangChain-black?style=plastic)
-![FAISS](https://img.shields.io/badge/FAISS-005571?style=plastic)
-![RAG](https://img.shields.io/badge/RAG-000000?style=plastic)
-![LLMs](https://img.shields.io/badge/LLMs-4B0082?style=plastic)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFBF00?style=plastic)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=plastic&logo=TensorFlow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=plastic&logo=PyTorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=plastic&logo=scikit-learn&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=plastic&logo=Keras&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-%23white.svg?style=plastic&logo=opencv&logoColor=white)
+<kbd><a href="https://www.python.org" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python"/><img src="https://skillicons.dev/icons?i=python&theme=light" alt="Python"/></picture></a></kbd>
+<kbd><a href="https://www.java.com" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java"/><img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java"/></picture></a></kbd>
+<kbd><a href="https://www.cprogramming.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=c"/><img src="https://skillicons.dev/icons?i=c&theme=light" alt="C"/></picture></a></kbd>
+<kbd><a href="https://www.mysql.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=mysql"/><img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="SQL"/></picture></a></kbd>
 
-**Backend & APIs**
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=plastic&logo=fastapi)
-![Flask](https://img.shields.io/badge/Flask-000000?style=plastic&logo=flask&logoColor=white)
-![REST API](https://img.shields.io/badge/REST-02569B?style=plastic)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=plastic&logo=postman&logoColor=white)
+</p>
 
-**Frontend & Web**
-![React](https://img.shields.io/badge/React-20232A?style=plastic&logo=react&logoColor=61DAFB)
-![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=plastic&logo=node.js&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=plastic&logo=streamlit&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=plastic&logo=css3&logoColor=white)
+<h3 align="left">🤖 AI / ML / LLM</h3>
+<p align="left">
 
-**Databases & Search**
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=plastic&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=plastic&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?style=plastic&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?style=plastic&logo=redis&logoColor=white)
-![Elasticsearch](https://img.shields.io/badge/Elasticsearch-%230377CC.svg?style=plastic&logo=elasticsearch&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-%2307405e.svg?style=plastic&logo=sqlite&logoColor=white)
+<kbd><a href="https://www.tensorflow.org" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=tensorflow"/><img src="https://skillicons.dev/icons?i=tensorflow&theme=light" alt="TensorFlow"/></picture></a></kbd>
+<kbd><a href="https://pytorch.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=pytorch"/><img src="https://skillicons.dev/icons?i=pytorch&theme=light" alt="PyTorch"/></picture></a></kbd>
+<kbd><a href="https://opencv.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=opencv"/><img src="https://skillicons.dev/icons?i=opencv&theme=light" alt="OpenCV"/></picture></a></kbd>
+<kbd><a href="https://huggingface.co/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"/><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" height="48" width="48"/></picture></a></kbd>
+<kbd><a href="https://python.langchain.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://avatars.githubusercontent.com/u/126733545?s=48&v=4"/><img src="https://avatars.githubusercontent.com/u/126733545?s=48&v=4" alt="LangChain" height="48" width="48"/></picture></a></kbd>
+<kbd><a href="https://scikit-learn.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"/><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn" height="48" width="48"/></picture></a></kbd>
+<kbd><a href="https://keras.io/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg"/><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras" height="48" width="48"/></picture></a></kbd>
 
-**Data Science**
-![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=plastic&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=plastic&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=plastic&logo=Matplotlib&logoColor=black)
-![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=plastic&logo=plotly&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=plastic&logo=scipy&logoColor=white)
+</p>
 
-**Cloud & Deployment**
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=plastic&logo=google-cloud&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=plastic&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?style=plastic&logo=vercel&logoColor=white)
-![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=plastic&logo=render&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-%23000000.svg?style=plastic&logo=netlify&logoColor=#00C7B7)
+<h3 align="left">📊 Data Science</h3>
+<p align="left">
 
-**Tools**
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=plastic&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=plastic&logo=github&logoColor=white)
-![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=plastic&logo=anaconda&logoColor=white)
+<kbd><a href="https://numpy.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://numpy.org/images/logo.svg"/><img src="https://numpy.org/images/logo.svg" alt="NumPy" height="48" width="48"/></picture></a></kbd>
+<kbd><a href="https://pandas.pydata.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://pandas.pydata.org/static/img/pandas_mark.svg"/><img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" height="48" width="48"/></picture></a></kbd>
+<kbd><a href="https://matplotlib.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://matplotlib.org/_static/images/logo_dark.svg"/><img src="https://matplotlib.org/_static/images/logo2.svg" alt="Matplotlib" height="48" width="48"/></picture></a></kbd>
+<kbd><a href="https://plotly.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://images.plot.ly/logo/new-branding/plotly-logomark.png"/><img src="https://images.plot.ly/logo/new-branding/plotly-logomark.png" alt="Plotly" height="48" width="48"/></picture></a></kbd>
+<kbd><a href="https://scipy.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://scipy.org/images/logo.svg"/><img src="https://scipy.org/images/logo.svg" alt="SciPy" height="48" width="48"/></picture></a></kbd>
+
+</p>
+
+<h3 align="left">🌐 Backend & APIs</h3>
+<p align="left">
+
+<kbd><a href="https://fastapi.tiangolo.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=fastapi"/><img src="https://skillicons.dev/icons?i=fastapi&theme=light" alt="FastAPI"/></picture></a></kbd>
+<kbd><a href="https://flask.palletsprojects.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=flask"/><img src="https://skillicons.dev/icons?i=flask&theme=light" alt="Flask"/></picture></a></kbd>
+<kbd><a href="https://www.postman.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=postman"/><img src="https://skillicons.dev/icons?i=postman&theme=light" alt="Postman"/></picture></a></kbd>
+
+</p>
+
+<h3 align="left">🎨 Frontend & Web</h3>
+<p align="left">
+
+<kbd><a href="https://react.dev/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react"/><img src="https://skillicons.dev/icons?i=react&theme=light" alt="React"/></picture></a></kbd>
+<kbd><a href="https://nodejs.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs"/><img src="https://skillicons.dev/icons?i=nodejs&theme=light" alt="Node.js"/></picture></a></kbd>
+<kbd><a href="https://streamlit.io/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://streamlit.io/images/brand/streamlit-mark-color.svg"/><img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" alt="Streamlit" height="48" width="48"/></picture></a></kbd>
+<kbd><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=html"/><img src="https://skillicons.dev/icons?i=html&theme=light" alt="HTML5"/></picture></a></kbd>
+<kbd><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=css"/><img src="https://skillicons.dev/icons?i=css&theme=light" alt="CSS3"/></picture></a></kbd>
+
+</p>
+
+<h3 align="left">🗄️ Databases & Search</h3>
+<p align="left">
+
+<kbd><a href="https://www.mongodb.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=mongodb"/><img src="https://skillicons.dev/icons?i=mongodb&theme=light" alt="MongoDB"/></picture></a></kbd>
+<kbd><a href="https://www.postgresql.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=postgresql"/><img src="https://skillicons.dev/icons?i=postgresql&theme=light" alt="PostgreSQL"/></picture></a></kbd>
+<kbd><a href="https://www.mysql.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=mysql"/><img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="MySQL"/></picture></a></kbd>
+<kbd><a href="https://redis.io/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=redis"/><img src="https://skillicons.dev/icons?i=redis&theme=light" alt="Redis"/></picture></a></kbd>
+<kbd><a href="https://www.elastic.co/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://avatars.githubusercontent.com/u/6764390?s=48&v=4"/><img src="https://avatars.githubusercontent.com/u/6764390?s=48&v=4" alt="Elasticsearch" height="48" width="48"/></picture></a></kbd>
+<kbd><a href="https://www.sqlite.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=sqlite"/><img src="https://skillicons.dev/icons?i=sqlite&theme=light" alt="SQLite"/></picture></a></kbd>
+
+</p>
+
+<h3 align="left">☁️ Cloud & Deployment</h3>
+<p align="left">
+
+<kbd><a href="https://cloud.google.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=gcp"/><img src="https://skillicons.dev/icons?i=gcp&theme=light" alt="Google Cloud"/></picture></a></kbd>
+<kbd><a href="https://www.docker.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker"/><img src="https://skillicons.dev/icons?i=docker&theme=light" alt="Docker"/></picture></a></kbd>
+<kbd><a href="https://vercel.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=vercel"/><img src="https://skillicons.dev/icons?i=vercel&theme=light" alt="Vercel"/></picture></a></kbd>
+<kbd><a href="https://render.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://avatars.githubusercontent.com/u/36424661?s=48&v=4"/><img src="https://avatars.githubusercontent.com/u/36424661?s=48&v=4" alt="Render" height="48" width="48"/></picture></a></kbd>
+<kbd><a href="https://www.netlify.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=netlify"/><img src="https://skillicons.dev/icons?i=netlify&theme=light" alt="Netlify"/></picture></a></kbd>
+
+</p>
+
+<h3 align="left">🛠️ Tools</h3>
+<p align="left">
+
+<kbd><a href="https://git-scm.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git"/><img src="https://skillicons.dev/icons?i=git&theme=light" alt="Git"/></picture></a></kbd>
+<kbd><a href="https://github.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=github"/><img src="https://skillicons.dev/icons?i=github&theme=light" alt="GitHub"/></picture></a></kbd>
+<kbd><a href="https://www.anaconda.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=anaconda"/><img src="https://skillicons.dev/icons?i=anaconda&theme=light" alt="Anaconda"/></picture></a></kbd>
+<kbd><a href="https://code.visualstudio.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=vscode"/><img src="https://skillicons.dev/icons?i=vscode&theme=light" alt="VS Code"/></picture></a></kbd>
+
+</p>
 
 ---
 
