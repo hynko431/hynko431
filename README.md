@@ -1,6 +1,6 @@
 <!-- [![MasterHead] -->
 <h1 align="center">👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash</h1>
-<h3 align="center"> CSE Grad | **AI/LLM Engineer** | RAG Systems | Agentic AI | Production ML</h3>
+<h3 align="center"> CSE Grad | AI/LLM Engineer | RAG Systems | Agentic AI | Production ML</h3>
 
 
 <img align="right" alt="Coding" width="400" src="https://github.com/hynko431/hynko431/blob/main/avento.gif" />
