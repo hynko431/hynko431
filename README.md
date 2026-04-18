@@ -1,8 +1,16 @@
-<img align="right" alt="Coding" width="380" src="https://github.com/hynko431/hynko431/blob/main/avento.gif" />
+<!-- [![MasterHead] -->
+<h1 align="center">👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash</h1>
+<h3 align="center"> CSE Grad | **AI/LLM Engineer** | RAG Systems | Agentic AI | Production ML</h3>
 
-# Hi 👋 I'm Siva Venkata Bhanu Prakash
+<p align="left"> <img
+        src="https://github.com/ghpvc/?username=hynko431&label=Profile%20views&color=0e75b6&style=flat"
+        alt="hynko431" /> </p>
 
-**AI/LLM Engineer** · RAG Systems · Agentic AI · Production ML
+<img align="right" alt="Coding" width="400" src="https://github.com/hynko431/hynko431/blob/main/avento.gif" />
+
+
+
+
 
 - 🔭 Currently working as an **AI Engineer Intern at ASAR IT Technologies, Bangalore** — building production-grade RAG systems & deterministic LLM pipelines.
 
