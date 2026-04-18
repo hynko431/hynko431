@@ -1,11 +1,11 @@
 <!-- HERO SECTION -->
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=32&center=true&vCenter=true&pause=900&width=900&height=90&lines=Siva+Venkata+Bhanu+Prakash+Irakam"/>
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=32&center=true&vCenter=true&pause=400&width=400&height=90&lines=Siva+Venkata+Bhanu+Prakash+Irakam"/>
 </div>
 
 <!-- TAGLINE -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=40&text=%20AI/LLM%20Engineer%20|%RAG%Systems%20|%20AI%20Agents%20&fontSize=18"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=40&text=%20AI/LLM%20Engineer%20|%20RAG%20Systems%20|%20AI%20Agents%20&fontSize=18"/>
 </div>
 
 <!-- FUN ANIMATED STRIP -->
