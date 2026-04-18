@@ -216,7 +216,3 @@
 <div align="center">
   <i>Build real systems. Measure performance. Improve continuously.</i>
 </div>
-
-## 📊 GitHub Stats
-... your existing stats cards ...
-
