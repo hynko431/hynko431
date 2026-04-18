@@ -213,3 +213,8 @@
 <div align="center">
   <i>Build real systems. Measure performance. Improve continuously.</i>
 </div>
+## 📊 GitHub Stats
+... your existing stats cards ...
+
+## 🧩 LeetCode Stats
+![LeetCode Stats](https://leetcard.jacoblin.cool/siva_bhanu?theme=dark&font=Fira%20Code&ext=activity)
