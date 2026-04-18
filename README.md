@@ -1,6 +1,6 @@
 <!-- HERO BANNER -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Siva%20Venkata%20Bhanu%20Prakash&fontSize=36&fontAlign=50&fontAlignY=40&color=gradient&customColorList=0,2,2,5,30" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Siva%20Venkata%20Bhanu%20Prakash%20Irakam&fontSize=36&fontAlign=50&fontAlignY=40&color=gradient&customColorList=0,2,2,5,30" width="100%"/>
 </div>
 
 <!-- TAGLINE -->
@@ -28,7 +28,7 @@
 <!-- MAIN INTRO -->
 <img align="right" alt="Coding" width="380" src="https://github.com/hynko431/hynko431/blob/main/avento.gif" />
 
-### 👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash
+### 👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash Irakam
 **CSE Grad · AI/LLM Engineer · RAG Systems · Agentic AI · Production ML**
 
 <br/>
@@ -79,23 +79,23 @@
 
 <div align="center">
 
-| 🏆 Pocket CEO | 🩺 Agentic Medical Report Analysis |
+| 🏆 MSME Agent-A-Thon — "Pocket CEO" | 🩺 Agentic Medical Report Analysis |
 |:---:|:---:|
 | [![Agent-A-Thon](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=Agent-A-Thon&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Agent-A-Thon/) | [![Medical Analysis](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=Agentic-MedicalReport-Analysis&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Agentic-MedicalReport-Analysis) |
-| Multi-agent financial advisor · **60% less** manual work · 100+ MSMEs | RAG platform · FAISS retrieval · Pydantic validation · Streamlit |
-| [![Live](https://img.shields.io/badge/Live-00C853?style=flat-square&logo=vercel&logoColor=white)](https://agent-a-thon.vercel.app/) `LangChain` `Supabase` `React` | [![Live](https://img.shields.io/badge/Live-00C853?style=flat-square&logo=streamlit&logoColor=white)](https://ai-agentic-medicalreport-analysis.streamlit.app/) `RAG` `FAISS` `Pydantic` |
+| Multi-agent LLM financial advisor for **100+ MSMEs** · **60% less** manual analysis · Shopify, Mailchat & Supabase APIs · Built at **GDG Hyderabad Agent-A-Thon** | Conversational medical-report RAG platform · FAISS-based semantic retrieval · Structured output via **Pydantic** · Agentic orchestration pipelines |
+| [![Live](https://img.shields.io/badge/Live%20Demo-00C853?style=flat-square&logo=vercel&logoColor=white)](https://agent-a-thon.vercel.app/) `Python` `LangChain` `LLMs` `Supabase` `React` | [![Live](https://img.shields.io/badge/Live%20Demo-00C853?style=flat-square&logo=streamlit&logoColor=white)](https://ai-agentic-medicalreport-analysis.streamlit.app/) `RAG` `FAISS` `LangChain` `Pydantic` `Streamlit` |
 
 | 🤖 Conversational AI Avatar | 📰 News Analyzer |
 |:---:|:---:|
 | [![AI Avatar](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=Conversational-AI-Avatar&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Conversational-AI-Avatar) | [![News Analyzer](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=News_Analyzer&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/News_Analyzer) |
-| Multimodal avatar · STT + TTS · Agentic memory · Real-time | LLM-powered news analysis & summarization pipeline |
-| `FastAPI` `React` `TTS` `Agentic Memory` | `Python` `LLM` `NLP` |
+| Multimodal AI avatar · **Speech-to-Text & TTS** · Agentic memory · Real-time interaction · **FastAPI + React** full-stack architecture | LLM-powered news fetching, analysis & summarization pipeline |
+| `FastAPI` `React` `STT` `TTS` `Agentic Memory` | `Python` `LLM` `NLP` |
 
 | 🩸 HematoVision | 💬 QA ChatBot (Open-Source Models) |
 |:---:|:---:|
 | [![HematoVision](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning) | [![QA ChatBot](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=QA-ChatBot-With-Multiple-OpenSource-Models&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/QA-ChatBot-With-Multiple-OpenSource-Models) |
-| Blood cell classification via transfer learning · CNN · High accuracy | Local LLM chatbot via Ollama · Supports 1B–8B models |
-| `Transfer Learning` `CNN` `Jupyter` `OpenCV` | `Ollama` `Python` `Open-Source LLMs` |
+| Accurate blood cell classification using **Transfer Learning** & pre-trained CNNs · Efficient model for clinical-grade detection | Local LLM chatbot via **Ollama** · Runs **1B–8B** parameter models on-device · Requires 8–16 GB RAM |
+| `Transfer Learning` `CNN` `Jupyter Notebook` `OpenCV` | `Ollama` `Python` `Open-Source LLMs` |
 
 </div>
 
