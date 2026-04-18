@@ -1,6 +1,6 @@
 <!-- HERO BANNER -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Siva%20Venkata%20Bhanu%20Prakash&fontSize=36&fontAlign=50&fontAlignY=40&color=gradient&customColorList=0,2,2,5,30" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Siva%20Venkata%20Bhanu%20Prakash%20Itakam&fontSize=36&fontAlign=50&fontAlignY=40&color=gradient&customColorList=0,2,2,5,30" width="100%"/>
 </div>
 
 <!-- TAGLINE -->
@@ -28,7 +28,7 @@
 <!-- MAIN INTRO -->
 <img align="right" alt="Coding" width="380" src="https://github.com/hynko431/hynko431/blob/main/avento.gif" />
 
-### 👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash
+### 👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash Irakam
 **CSE Grad · AI/LLM Engineer · RAG Systems · Agentic AI · Production ML**
 
 <br/>
@@ -77,11 +77,53 @@
 
 ## 🧠 Key Projects
 
-| Project | Description | Links |
-|:---|:---|:---|
-| 🏆 **Pocket CEO** | Multi-agent financial advisor for 100+ MSMEs — 60% reduction in manual analysis time. Integrated Shopify, Mailchat & Supabase APIs. Built at GDG Hyderabad Agent-A-Thon. | [Live](https://agent-a-thon.vercel.app/) · [Repo](https://github.com/hynko431/Agent-A-Thon/) |
-| 🩺 **Agentic Medical Report Analysis** | Conversational medical-report RAG platform with FAISS semantic retrieval, Pydantic output validation & agentic orchestration. | [Live](https://ai-agentic-medicalreport-analysis.streamlit.app/) · [Repo](https://github.com/hynko431/Agentic-MedicalReport-Analysis) |
-| 🤖 **Conversational AI Avatar** | Multimodal AI avatar with speech-to-text, TTS, agentic memory & real-time interaction via FastAPI + React. | [Repo](https://github.com/hynko431/Conversational-AI-Avatar) |
+<div align="center">
+
+<!-- PROJECT 1 -->
+<a href="https://agent-a-thon.vercel.app/">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=Agent-A-Thon&theme=blue-green&hide_border=false&title_color=00bfa5&icon_color=00bfa5" />
+</a>
+
+</div>
+
+> 🏆 **Pocket CEO** — Multi-agent financial advisor built at **GDG Hyderabad Agent-A-Thon**
+> Reduced manual financial analysis time by **60%** for 100+ MSMEs. Integrated Shopify, Mailchat & Supabase APIs with a multi-agent orchestration layer.
+> &nbsp;&nbsp;[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-00C853?style=for-the-badge)](https://agent-a-thon.vercel.app/)
+> [![Repo](https://img.shields.io/badge/📂%20Repo-181717?style=for-the-badge&logo=github)](https://github.com/hynko431/Agent-A-Thon/)
+> `Multi-Agent` `Supabase` `Shopify API` `Agentic AI`
+
+---
+
+<div align="center">
+
+<!-- PROJECT 2 -->
+<a href="https://ai-agentic-medicalreport-analysis.streamlit.app/">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=Agentic-MedicalReport-Analysis&theme=blue-green&hide_border=false&title_color=00bfa5&icon_color=00bfa5" />
+</a>
+
+</div>
+
+> 🩺 **Agentic Medical Report Analysis** — Conversational RAG platform for medical documents
+> FAISS-based semantic retrieval with **Pydantic output validation** & agentic orchestration pipelines. Deployed on Streamlit Cloud.
+> &nbsp;&nbsp;[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-00C853?style=for-the-badge)](https://ai-agentic-medicalreport-analysis.streamlit.app/)
+> [![Repo](https://img.shields.io/badge/📂%20Repo-181717?style=for-the-badge&logo=github)](https://github.com/hynko431/Agentic-MedicalReport-Analysis)
+> `RAG` `FAISS` `LangChain` `Pydantic` `Streamlit`
+
+---
+
+<div align="center">
+
+<!-- PROJECT 3 -->
+<a href="https://github.com/hynko431/Conversational-AI-Avatar">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=Conversational-AI-Avatar&theme=blue-green&hide_border=false&title_color=00bfa5&icon_color=00bfa5" />
+</a>
+
+</div>
+
+> 🤖 **Conversational AI Avatar** — Multimodal AI avatar with real-time interaction
+> Speech-to-text, TTS & agentic memory with a **FastAPI + React** full-stack architecture for seamless real-time conversation.
+> &nbsp;&nbsp;[![Repo](https://img.shields.io/badge/📂%20Repo-181717?style=for-the-badge&logo=github)](https://github.com/hynko431/Conversational-AI-Avatar)
+> `FastAPI` `React` `STT` `TTS` `Agentic Memory`
 
 ---
 
