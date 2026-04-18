@@ -1,6 +1,6 @@
 <!-- HERO SECTION -->
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=32&center=true&vCenter=true&pause=400&width=400&height=90&lines=Siva+Venkata+Bhanu+Prakash+Irakam"/>
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=32&center=true&vCenter=true&pause=20&width=400&height=90&lines=Siva+Venkata+Bhanu+Prakash+Irakam"/>
 </div>
 
 <!-- TAGLINE -->
