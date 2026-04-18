@@ -1,4 +1,4 @@
-<img align="right" alt="Coding" width="380" src="docs/avento.gif" />
+<img align="right" alt="Coding" width="380" src="[docs/avento.gif](https://github.com/hynko431/hynko431/blob/main/avento.gif)" />
 
 # Hi 👋 I'm Siva Venkata Bhanu Prakash
 
