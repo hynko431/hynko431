@@ -196,7 +196,7 @@
 
 <div align="center">
 
-![](https://github-readme-stats.vercel.app/api?username=hynko431&theme=blue-green&hide_border=false&include_all_commits=false&count_private=false)
+![](https://github-readme-stats.vercel.app/api?username=hynko431&theme=blue-green&hide_border=true&include_all_commits=true&count_private=true)
 
 ![](https://nirzak-streak-stats.vercel.app/?user=hynko431&theme=blue-green&hide_border=false)
 
