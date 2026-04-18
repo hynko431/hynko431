@@ -1,12 +1,45 @@
+<!-- HERO SECTION -->
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=32&center=true&vCenter=true&pause=900&width=900&height=90&lines=Siva+Venkata+Bhanu+Prakash+Irakam"/>
+</div>
+
+<!-- TAGLINE -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=40&text=%20AI/LLM%20Engineer%20|%RAG%Systems%20|%20AI%20Agents%20&fontSize=18"/>
+</div>
+
+<!-- FUN ANIMATED STRIP -->
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=17&center=true&vCenter=true&pause=1000&width=900&lines=Training+Neural+Nets+and+Building+Systems;Learning+by+Shipping+Real+Ideas;Automating+the+Future%2C+One+Model+at+a+Time"/>
+</div>
+
+<!-- SPACE INVADER -->
+<div align="center">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f47e/512.gif" width="40"/>
+</div>
+
+<!-- COMMIT STRIP -->
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=17&center=true&vCenter=true&pause=900&width=700&lines=commit.to.consistency"/>
+</div>
+
+<!-- SPACE INVADER -->
+<div align="center">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f47e/512.gif" width="40"/>
+</div>
+
+
+
+
+
+
+
 <!-- [![MasterHead] -->
 <h1 align="center">👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash</h1>
 <h3 align="center"> CSE Grad | AI/LLM Engineer | RAG Systems | Agentic AI | Production ML</h3>
 
 
 <img align="right" alt="Coding" width="400" src="https://github.com/hynko431/hynko431/blob/main/avento.gif" />
-
-
-
 
 
 - 🔭 Currently working as an **AI Engineer Intern at ASAR IT Technologies, Bangalore** — building production-grade RAG systems & deterministic LLM pipelines.
