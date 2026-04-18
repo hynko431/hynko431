@@ -1,62 +1,55 @@
-<!-- HERO SECTION -->
+<!-- HERO BANNER -->
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=32&center=true&vCenter=true&pause=1800&width=400&height=90&lines=Siva+Venkata+Bhanu+Prakash+Irakam"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Siva%20Venkata%20Bhanu%20Prakash&fontSize=36&fontAlign=50&fontAlignY=40&color=gradient&customColorList=0,2,2,5,30" width="100%"/>
 </div>
 
 <!-- TAGLINE -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=40&text=%20AI/LLM%20Engineer%20|%20RAG%20Systems%20|%20AI%20Agents%20&fontSize=18"/>
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=13&center=true&vCenter=true&pause=1000&width=900&height=60&lines=AI%2FLLM+Engineer+%7C+RAG+Systems+%7C+Agentic+AI+%7C+Production+ML" />
 </div>
 
-<!-- FUN ANIMATED STRIP -->
+<!-- ANIMATED STRIP -->
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=17&center=true&vCenter=true&pause=1000&width=900&lines=Training+Neural+Nets+and+Building+Systems;Learning+by+Shipping+Real+Ideas;Automating+the+Future%2C+One+Model+at+a+Time"/>
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=16&center=true&vCenter=true&pause=1200&width=700&height=45&color=58A6FF&lines=Training+Neural+Nets+and+Building+Systems...;Learning+by+Shipping+Real+Ideas...;Automating+the+Future%2C+One+Model+at+a+Time..." />
 </div>
 
-<!-- SPACE INVADER -->
 <div align="center">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f47e/512.gif" width="40"/>
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f47e/512.gif" width="32"/>
+  &nbsp;&nbsp;
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=14&center=true&vCenter=true&pause=900&width=360&height=40&lines=commit.to.consistency" />
+  &nbsp;&nbsp;
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f47e/512.gif" width="32"/>
 </div>
 
-<!-- COMMIT STRIP -->
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=17&center=true&vCenter=true&pause=900&width=700&lines=commit.to.consistency"/>
-</div>
+<br/>
 
-<!-- SPACE INVADER -->
-<div align="center">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f47e/512.gif" width="40"/>
-</div>
+---
 
+<!-- MAIN INTRO -->
+<img align="right" alt="Coding" width="380" src="https://github.com/hynko431/hynko431/blob/main/avento.gif" />
 
+### 👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash
+**CSE Grad · AI/LLM Engineer · RAG Systems · Agentic AI · Production ML**
 
+<br/>
 
+- 🔭 Working as **AI Engineer Intern @ ASAR IT Technologies, Bangalore** — production-grade RAG systems & deterministic LLM pipelines
 
-
-
-<!-- [![MasterHead] -->
-<h1 align="center">👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash</h1>
-<h3 align="center"> CSE Grad | AI/LLM Engineer | RAG Systems | Agentic AI | Production ML</h3>
-
-
-<img align="right" alt="Coding" width="400" src="https://github.com/hynko431/hynko431/blob/main/avento.gif" />
-
-
-- 🔭 Currently working as an **AI Engineer Intern at ASAR IT Technologies, Bangalore** — building production-grade RAG systems & deterministic LLM pipelines.
-
-- 🌱 Advancing expertise in **Agentic AI & Generative AI** — real-world deployment, evaluation-driven development & low-latency inference.
+- 🌱 Advancing in **Agentic AI & Generative AI** — real-world deployment, eval-driven dev & low-latency inference
 
 - 💻 Currently building [**Pocket CEO**](https://agent-a-thon.vercel.app/) · [**Agentic Medical Report Analysis**](https://ai-agentic-medicalreport-analysis.streamlit.app/) · [**Conversational AI Avatar**](https://github.com/hynko431/Conversational-AI-Avatar)
 
-- 🤝 Open to collaborating on **open-source AI/LLM projects** — retrieval systems, agentic workflows & scalable API architectures.
+- 🤝 Open to collaborating on **open-source AI/LLM projects** — retrieval systems, agentic workflows & scalable APIs
 
-- 💬 Ask me about **RAG architectures, LLM pipelines, FastAPI, semantic search & production AI engineering**.
+- 💬 Ask me about **RAG, LLM pipelines, FastAPI, semantic search & production AI engineering**
 
 - 📫 Reach me at: **irakamsivabhanuprakash@gmail.com**
 
-- 📱 Connect with me: **[LinkedIn/siva-venkata-bhanu-prakash](https://www.linkedin.com/in/siva-venkata-bhanu-prakash/)**
+- 📱 Connect: **[LinkedIn/siva-venkata-bhanu-prakash](https://www.linkedin.com/in/siva-venkata-bhanu-prakash/)**
 
-- ⚡ Fun fact: Consistent progress during challenging times builds long-term resilience and success.
+- ⚡ Fun fact: Consistent progress during tough times is the real compound interest.
+
+<br/><br/>
 
 ---
 
@@ -74,6 +67,7 @@
 ## 🚀 Experience
 
 **AI / OCR Search Engineer Intern — ASAR IT Technologies, Bengaluru** *(Jan 2026 – Present)*
+
 - Built deterministic LLM extraction pipelines achieving **99% JSON-valid outputs** at ~300ms latency
 - Reduced OCR noise by **80%+** and improved extraction F1 score by **18%**
 - Implemented RAG pipelines using **LangChain + FAISS** with FastAPI-based inference & retrieval APIs
@@ -84,9 +78,9 @@
 ## 🧠 Key Projects
 
 | Project | Description | Links |
-|---|---|---|
+|:---|:---|:---|
 | 🏆 **Pocket CEO** | Multi-agent financial advisor for 100+ MSMEs — 60% reduction in manual analysis time. Integrated Shopify, Mailchat & Supabase APIs. Built at GDG Hyderabad Agent-A-Thon. | [Live](https://agent-a-thon.vercel.app/) · [Repo](https://github.com/hynko431/Agent-A-Thon/) |
-| 🩺 **Agentic Medical Report Analysis** | Conversational medical-report RAG platform with FAISS-based semantic retrieval, Pydantic output validation & agentic orchestration. | [Live](https://ai-agentic-medicalreport-analysis.streamlit.app/) · [Repo](https://github.com/hynko431/Agentic-MedicalReport-Analysis) |
+| 🩺 **Agentic Medical Report Analysis** | Conversational medical-report RAG platform with FAISS semantic retrieval, Pydantic output validation & agentic orchestration. | [Live](https://ai-agentic-medicalreport-analysis.streamlit.app/) · [Repo](https://github.com/hynko431/Agentic-MedicalReport-Analysis) |
 | 🤖 **Conversational AI Avatar** | Multimodal AI avatar with speech-to-text, TTS, agentic memory & real-time interaction via FastAPI + React. | [Repo](https://github.com/hynko431/Conversational-AI-Avatar) |
 
 ---
@@ -155,10 +149,22 @@
 
 ## 📊 GitHub Stats
 
+<div align="center">
+
 ![](https://github-readme-stats.vercel.app/api?username=hynko431&theme=blue-green&hide_border=false&include_all_commits=false&count_private=false)
+
 ![](https://nirzak-streak-stats.vercel.app/?user=hynko431&theme=blue-green&hide_border=false)
+
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=hynko431&theme=blue-green&layout=compact)
+
+</div>
 
 ---
 
-> *Build real systems. Measure performance. Improve continuously.*
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=gradient&customColorList=0,2,2,5,30" width="100%"/>
+</div>
+
+<div align="center">
+  <i>Build real systems. Measure performance. Improve continuously.</i>
+</div>
