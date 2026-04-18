@@ -2,9 +2,6 @@
 <h1 align="center">👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash</h1>
 <h3 align="center"> CSE Grad | **AI/LLM Engineer** | RAG Systems | Agentic AI | Production ML</h3>
 
-<p align="left"> <img
-        src="https://github.com/ghpvc/?username=hynko431&label=Profile%20views&color=0e75b6&style=flat"
-        alt="hynko431" /> </p>
 
 <img align="right" alt="Coding" width="400" src="https://github.com/hynko431/hynko431/blob/main/avento.gif" />
 
