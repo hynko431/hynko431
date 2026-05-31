@@ -192,27 +192,3 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-![](https://github-readme-stats.vercel.app/api?username=hynko431&theme=blue-green&hide_border=true&include_all_commits=true&count_private=true)
-
-![](https://nirzak-streak-stats.vercel.app/?user=hynko431&theme=blue-green&hide_border=true)
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=hynko431&theme=blue-green&layout=compact)
-
-</div>
-
----
-## 🧩 LeetCode Stats
-![LeetCode Stats](https://leetcard.jacoblin.cool/siva_bhanu?theme=dark&font=Fira%20Code&ext=activity)
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=gradient&customColorList=0,2,2,5,30" width="100%"/>
-</div>
-
-<div align="center">
-  <i>Build real systems. Measure performance. Improve continuously.</i>
-</div>
