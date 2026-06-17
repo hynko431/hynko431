@@ -118,6 +118,50 @@ jobs:
               year_total = resp['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
               total_contributions += year_total
           
+          # ── Pull requests opened (all, not just merged) ─────────────────
+          print("Fetching all pull requests opened...", file=sys.stderr)
+          resp = json.loads(urllib.request.urlopen(
+              urllib.request.Request(
+                  f'https://api.github.com/search/issues?q=author:{USERNAME}+type:pr&per_page=1',
+                  headers={'Authorization': f'Bearer {TOKEN}'}
+              )
+          ).read().decode())
+          all_prs_opened = resp['total_count']
+          
+          # ── Pull requests reviewed ──────────────────────────────────────
+          print("Fetching pull requests reviewed...", file=sys.stderr)
+          review_query = f'''
+          {{
+              user(login: "{USERNAME}") {{
+                  contributionsCollection {{
+                      totalPullRequestReviews
+                  }}
+              }}
+          }}
+          '''
+          resp = github_api_request(review_query)
+          prs_reviewed = resp['data']['user']['contributionsCollection']['totalPullRequestReviews']
+          
+          # ── Issues opened ──────────────────────────────────────────────
+          print("Fetching issues opened...", file=sys.stderr)
+          resp = json.loads(urllib.request.urlopen(
+              urllib.request.Request(
+                  f'https://api.github.com/search/issues?q=author:{USERNAME}+type:issue&per_page=1',
+                  headers={'Authorization': f'Bearer {TOKEN}'}
+              )
+          ).read().decode())
+          issues_opened = resp['total_count']
+          
+          # ── Issues closed ──────────────────────────────────────────────
+          print("Fetching issues closed...", file=sys.stderr)
+          resp = json.loads(urllib.request.urlopen(
+              urllib.request.Request(
+                  f'https://api.github.com/search/issues?q=author:{USERNAME}+type:issue+is:closed&per_page=1',
+                  headers={'Authorization': f'Bearer {TOKEN}'}
+              )
+          ).read().decode())
+          issues_closed = resp['total_count']
+          
           # ── Stars received across all repos ─────────────────────────────
           print("Fetching stars...", file=sys.stderr)
           resp = json.loads(urllib.request.urlopen(
@@ -132,7 +176,11 @@ jobs:
           stats = {
               "total_contributions": total_contributions,
               "contributions_this_year": contributions_this_year,
-              "merged_prs": merged_prs,
+              "pull_requests_opened": all_prs_opened,
+              "pull_requests_merged": merged_prs,
+              "pull_requests_reviewed": prs_reviewed,
+              "issues_opened": issues_opened,
+              "issues_closed": issues_closed,
               "repositories": repo_count,
               "stars": stars,
               "updated_at": datetime.utcnow().isoformat() + "Z"

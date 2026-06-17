@@ -112,12 +112,16 @@ plugin_notable: yes            # notable contributions to other repos
 
 ```json
 {
-  "total_contributions": 1234,           // All-time contributions across all years
-  "contributions_this_year": 456,        // Contributions in current calendar year
-  "merged_prs": 78,                      // Merged pull requests
-  "repositories": 23,                    // Public repositories
-  "stars": 156,                          // Total stars earned across all repos
-  "updated_at": "2026-06-17T00:15:32Z"  // Last update timestamp (UTC)
+  "total_contributions": 969,              // All-time contributions across all years
+  "contributions_this_year": 456,          // Contributions in current calendar year
+  "pull_requests_opened": 24,              // All pull requests you opened
+  "pull_requests_merged": 18,              // Pull requests that have been merged
+  "pull_requests_reviewed": 42,            // Pull requests you reviewed
+  "issues_opened": 15,                     // Issues you opened
+  "issues_closed": 12,                     // Issues you closed
+  "repositories": 32,                      // Public repositories
+  "stars": 156,                            // Total stars earned across all repos
+  "updated_at": "2026-06-17T00:15:32Z"    // Last update timestamp (UTC)
 }
 ```
 
@@ -132,9 +136,29 @@ If you want to customize or move the badges, here are the URLs:
 https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.total_contributions&label=Total%20Contributions&color=2ea44f&style=for-the-badge&logo=github&logoColor=white
 ```
 
-**Merged PRs:**
+**Pull Requests Opened:**
 ```
-https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.merged_prs&label=Merged%20PRs&color=0075ca&style=for-the-badge&logo=git&logoColor=white
+https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.pull_requests_opened&label=PRs%20Opened&color=0075ca&style=for-the-badge&logo=git&logoColor=white
+```
+
+**Pull Requests Merged:**
+```
+https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.pull_requests_merged&label=PRs%20Merged&color=6f42c1&style=for-the-badge&logo=git&logoColor=white
+```
+
+**Pull Requests Reviewed:**
+```
+https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.pull_requests_reviewed&label=PRs%20Reviewed&color=28a745&style=for-the-badge&logo=git&logoColor=white
+```
+
+**Issues Opened:**
+```
+https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.issues_opened&label=Issues%20Opened&color=ffc107&style=for-the-badge&logo=github&logoColor=white
+```
+
+**Issues Closed:**
+```
+https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.issues_closed&label=Issues%20Closed&color=17a2b8&style=for-the-badge&logo=github&logoColor=white
 ```
 
 **Repositories:**

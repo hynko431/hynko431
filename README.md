@@ -69,9 +69,25 @@
 </a>
  
 <a href="https://github.com/hynko431?tab=repositories">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.merged_prs&label=Merged%20PRs&color=0075ca&style=for-the-badge&logo=git&logoColor=white" alt="Merged PRs" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.pull_requests_opened&label=PRs%20Opened&color=0075ca&style=for-the-badge&logo=git&logoColor=white" alt="PRs Opened" />
+</a>
+
+<a href="https://github.com/hynko431?tab=repositories">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.pull_requests_merged&label=PRs%20Merged&color=6f42c1&style=for-the-badge&logo=git&logoColor=white" alt="PRs Merged" />
+</a>
+
+<a href="https://github.com/hynko431?tab=repositories">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.pull_requests_reviewed&label=PRs%20Reviewed&color=28a745&style=for-the-badge&logo=git&logoColor=white" alt="PRs Reviewed" />
 </a>
  
+<a href="https://github.com/hynko431?tab=repositories">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.issues_opened&label=Issues%20Opened&color=ffc107&style=for-the-badge&logo=github&logoColor=white" alt="Issues Opened" />
+</a>
+
+<a href="https://github.com/hynko431?tab=repositories">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.issues_closed&label=Issues%20Closed&color=17a2b8&style=for-the-badge&logo=github&logoColor=white" alt="Issues Closed" />
+</a>
+
 <a href="https://github.com/hynko431?tab=repositories">
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.repositories&label=Repositories&color=e36209&style=for-the-badge&logo=folder&logoColor=white" alt="Repositories" />
 </a>
