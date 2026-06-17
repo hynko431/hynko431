@@ -26,7 +26,7 @@ jobs:
 
           # ── Achievements with ratings ────────────────────────────────────
           plugin_achievements: yes
-          plugin_achievements_only: >-
+          plugin_achievements_only: >
             polyglot, stargazer, developer, 
             opensource, maintainer, contributor
           plugin_achievements_threshold: C
@@ -59,7 +59,7 @@ jobs:
           plugin_languages_details: bytes-size, percentage, lines
           plugin_languages_limit: 8
           plugin_languages_colors: github
-          plugin_languages_ignored: >-
+          plugin_languages_ignored: >
             html, css, scss, less, makefile, cmake,
             dockerfile, shell, batchfile, json, yaml, xml
 
@@ -75,5 +75,3 @@ jobs:
           config_animations: yes
           config_padding: 8, 10
           config_order: header, achievements, summary, introduction, languages, repositories, isocalendar, lines, activity
-          
-      # The action commits metrics.svg automatically; no separate step needed.
