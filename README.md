@@ -192,14 +192,6 @@
 
 ---
 
-
-###
-<h3 align="left">📈 Contribution Stats </h3>
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hynko431&theme=react-dark&hide_border=true&area=true" width="95%"/>
-</p>
-
-
 ## 📊 GitHub Analytics
 
 <div align="center">
@@ -224,6 +216,13 @@
 
 [![](https://visitcount.itsvg.in/api?id=hynko431&label=Profile%20Views&icon=0&color=6&pretty=true)](https://visitcount.itsvg.in)
 
-*Thanks for visiting! Feel free to explore my repositories and reach out for collaborations.* 🤝
-
 </div>
+
+
+###
+<h3 align="left">📈 Contribution Stats </h3>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hynko431&theme=react-dark&hide_border=true&area=true" width="95%"/>
+</p>
+
+*Thanks for visiting! Feel free to explore my repositories and reach out for collaborations.* 🤝
