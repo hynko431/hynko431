@@ -53,6 +53,45 @@
 
 ---
 
+## 📊 GitHub Analytics
+
+<!--
+  HOW THIS WORKS — no Vercel, no third-party hosting:
+  • stats.json    → written to YOUR repo daily by .github/workflows/update-stats.yml
+  • metrics.svg   → generated to YOUR repo daily by .github/workflows/metrics.yml
+  • Shields.io    → reads the JSON file from raw.githubusercontent.com (just renders badges)
+  • raw.githubusercontent.com is GitHub's own CDN — everything lives in hynko431/hynko431
+-->
+<div align="center">
+<!-- ── Dynamic badges pulling live values from YOUR stats.json ─────────── -->
+<a href="https://github.com/hynko431/hynko431/blob/main/stats.json">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.total_contributions&label=Total%20Contributions&color=2ea44f&style=for-the-badge&logo=github&logoColor=white" alt="Total Contributions" />
+</a>
+ 
+<a href="https://github.com/hynko431?tab=repositories">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.merged_prs&label=Merged%20PRs&color=0075ca&style=for-the-badge&logo=git&logoColor=white" alt="Merged PRs" />
+</a>
+ 
+<a href="https://github.com/hynko431?tab=repositories">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.repositories&label=Repositories&color=e36209&style=for-the-badge&logo=folder&logoColor=white" alt="Repositories" />
+</a>
+ 
+<a href="https://github.com/hynko431?tab=repositories">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.stars&label=Stars%20Earned&color=f9c513&style=for-the-badge&logo=star&logoColor=white" alt="Stars" />
+</a>
+<br/><br/>
+
+<!-- ── Self-hosted metrics SVG (committed into YOUR repo by metrics.yml) ── -->
+<img
+src="https://raw.githubusercontent.com/hynko431/hynko431/main/metrics.svg"
+alt="GitHub Metrics — activity, languages, contributions calendar"
+width="100%"
+/>
+
+</div>
+
+---
+
 ## 🌐 Socials
 
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/streetboy7198)

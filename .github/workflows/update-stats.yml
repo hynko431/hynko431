@@ -22,73 +22,130 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: hynko431
         run: |
+          # Write Python script to fetch all stats
+          cat > fetch_stats.py << 'EOF'
+          import sys
+          import json
+          import os
+          import urllib.request
+          from datetime import datetime
+          
+          TOKEN = os.environ['GH_TOKEN']
+          USERNAME = os.environ['USERNAME']
+          
+          def github_api_request(query):
+              """Make a GraphQL request to GitHub API."""
+              body = json.dumps({"query": query}).encode()
+              req = urllib.request.Request(
+                  'https://api.github.com/graphql',
+                  data=body,
+                  headers={
+                      'Authorization': f'Bearer {TOKEN}',
+                      'Content-Type': 'application/json'
+                  }
+              )
+              with urllib.request.urlopen(req) as r:
+                  return json.load(r)
+          
           # ── Total public repos ──────────────────────────────────────────
-          REPO_COUNT=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
-            "https://api.github.com/users/$USERNAME" \
-            | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['public_repos'])")
-
-          # ── Merged PRs (search API, up to 1000 results) ─────────────────
-          MERGED_PRS=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
-            "https://api.github.com/search/issues?q=author:$USERNAME+type:pr+is:merged&per_page=1" \
-            | python3 -c "import sys,json; print(json.load(sys.stdin)['total_count'])")
-
-          # ── Total commits via contributions calendar (GraphQL) ───────────
-          YEAR=$(date +%Y)
-          CONTRIBUTIONS=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
-            -H "Content-Type: application/json" \
-            -X POST https://api.github.com/graphql \
-            -d "{\"query\": \"{ user(login: \\\"$USERNAME\\\") { contributionsCollection { contributionCalendar { totalContributions } } } }\"}" \
-            | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])")
-
-          # Also fetch all-time total from contribution years list
-          ALL_TIME=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
-            -H "Content-Type: application/json" \
-            -X POST https://api.github.com/graphql \
-            -d "{\"query\": \"{ user(login: \\\"$USERNAME\\\") { contributionsCollection { contributionYears } } }\"}" \
-            | python3 -c "
-import sys, json, subprocess, os
-
-d = json.load(sys.stdin)
-years = d['data']['user']['contributionsCollection']['contributionYears']
-token = os.environ['GH_TOKEN']
-username = os.environ['USERNAME']
-total = 0
-import urllib.request
-
-for y in years:
-    from_dt = f'{y}-01-01T00:00:00Z'
-    to_dt   = f'{y}-12-31T23:59:59Z'
-    query = '{\"query\": \"{ user(login: \\\"%s\\\") { contributionsCollection(from: \\\"%s\\\" to: \\\"%s\\\") { contributionCalendar { totalContributions } } } }\"}'
-    body = ('{\"query\": \"{ user(login: \\\"%s\\\") { contributionsCollection(from: \\\"%s\\\" to: \\\"%s\\\") { contributionCalendar { totalContributions } } } }\"}'
-            % (username, from_dt, to_dt)).encode()
-    req = urllib.request.Request('https://api.github.com/graphql',
-      data=body, headers={'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json'})
-    with urllib.request.urlopen(req) as r:
-        resp = json.load(r)
-    total += resp['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
-
-print(total)
-")
-
+          print("Fetching repo count...", file=sys.stderr)
+          resp = json.loads(urllib.request.urlopen(
+              urllib.request.Request(
+                  f'https://api.github.com/users/{USERNAME}',
+                  headers={'Authorization': f'Bearer {TOKEN}'}
+              )
+          ).read().decode())
+          repo_count = resp['public_repos']
+          
+          # ── Merged PRs (search API) ─────────────────────────────────────
+          print("Fetching merged PRs count...", file=sys.stderr)
+          resp = json.loads(urllib.request.urlopen(
+              urllib.request.Request(
+                  f'https://api.github.com/search/issues?q=author:{USERNAME}+type:pr+is:merged&per_page=1',
+                  headers={'Authorization': f'Bearer {TOKEN}'}
+              )
+          ).read().decode())
+          merged_prs = resp['total_count']
+          
+          # ── Contributions this year ─────────────────────────────────────
+          print("Fetching contributions this year...", file=sys.stderr)
+          year_query = f'''
+          {{
+              user(login: "{USERNAME}") {{
+                  contributionsCollection {{
+                      contributionCalendar {{
+                          totalContributions
+                      }}
+                  }}
+              }}
+          }}
+          '''
+          resp = github_api_request(year_query)
+          contributions_this_year = resp['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
+          
+          # ── All-time contributions ──────────────────────────────────────
+          print("Fetching contribution years...", file=sys.stderr)
+          years_query = f'''
+          {{
+              user(login: "{USERNAME}") {{
+                  contributionsCollection {{
+                      contributionYears
+                  }}
+              }}
+          }}
+          '''
+          resp = github_api_request(years_query)
+          years = resp['data']['user']['contributionsCollection']['contributionYears']
+          
+          total_contributions = 0
+          for year in years:
+              print(f"Fetching contributions for {year}...", file=sys.stderr)
+              year_contribution_query = f'''
+              {{
+                  user(login: "{USERNAME}") {{
+                      contributionsCollection(
+                          from: "{year}-01-01T00:00:00Z"
+                          to: "{year}-12-31T23:59:59Z"
+                      ) {{
+                          contributionCalendar {{
+                              totalContributions
+                          }}
+                      }}
+                  }}
+              }}
+              '''
+              resp = github_api_request(year_contribution_query)
+              year_total = resp['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
+              total_contributions += year_total
+          
           # ── Stars received across all repos ─────────────────────────────
-          STARS=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
-            "https://api.github.com/users/$USERNAME/repos?per_page=100&type=owner" \
-            | python3 -c "import sys,json; repos=json.load(sys.stdin); print(sum(r['stargazers_count'] for r in repos))")
-
+          print("Fetching stars...", file=sys.stderr)
+          resp = json.loads(urllib.request.urlopen(
+              urllib.request.Request(
+                  f'https://api.github.com/users/{USERNAME}/repos?per_page=100&type=owner',
+                  headers={'Authorization': f'Bearer {TOKEN}'}
+              )
+          ).read().decode())
+          stars = sum(r['stargazers_count'] for r in resp)
+          
           # ── Write stats.json ────────────────────────────────────────────
-          cat > stats.json <<JSON
-          {
-            "total_contributions": $ALL_TIME,
-            "contributions_this_year": $CONTRIBUTIONS,
-            "merged_prs": $MERGED_PRS,
-            "repositories": $REPO_COUNT,
-            "stars": $STARS,
-            "updated_at": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+          stats = {
+              "total_contributions": total_contributions,
+              "contributions_this_year": contributions_this_year,
+              "merged_prs": merged_prs,
+              "repositories": repo_count,
+              "stars": stars,
+              "updated_at": datetime.utcnow().isoformat() + "Z"
           }
-          JSON
-
-          echo "Stats written:"
-          cat stats.json
+          
+          with open('stats.json', 'w') as f:
+              json.dump(stats, f, indent=2)
+          
+          print("Stats written:", file=sys.stderr)
+          print(json.dumps(stats, indent=2))
+          EOF
+          
+          python3 fetch_stats.py
 
       - name: Commit updated stats.json
         run: |
