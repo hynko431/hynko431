@@ -249,9 +249,11 @@
 
 ---
 
-## 📊 Auto-Updated Metrics
+## 📊 Live GitHub Metrics (Updated Daily)
 
 <div align="center">
+
+> **Real-time insights into my coding activity, languages, and contributions**
 
 ![Metrics](https://github.com/hynko431/hynko431/blob/main/metrics.svg)
 

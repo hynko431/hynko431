@@ -23,7 +23,12 @@ jobs:
           # GitHub token for API access
           token: ${{ secrets.GITHUB_TOKEN }}
           user: hynko431
+          
+          # Template & Theme (Professional dark theme)
           template: classic
+          theme: dark
+          
+          # Base sections
           base: header, activity, community, repositories, metadata
           
           # Output settings
@@ -31,37 +36,67 @@ jobs:
           output_action_token: ${{ secrets.GITHUB_TOKEN }}
           
           # Customization
-          commit_message: 'update metrics.svg - daily metrics update'
+          commit_message: '✨ update metrics - auto-generated'
           committer_name: 'github-actions[bot]'
           committer_email: 'github-actions[bot]@users.noreply.github.com'
           
           # Visual options
           config_timezone: Asia/Kolkata
           config_display: large
+          config_animations: yes
           
-          # Languages
+          # ========== PLUGINS ==========
+          
+          # Languages - Most used
           plugins_languages: yes
           plugins_languages_colors: github
-          plugins_languages_limit: 8
+          plugins_languages_limit: 10
+          plugins_languages_threshold: 1%
           
           # Achievements
           plugins_achievements: yes
           plugins_achievements_threshold: B
+          plugins_achievements_secrets: yes
+          plugins_achievements_display: detailed
           
-          # Calendar
+          # Calendar - Contribution heatmap
           plugins_calendar: yes
+          plugins_calendar_limit: 1
           
-          # Activity
+          # Activity - Recent activity
           plugins_activity: yes
           plugins_activity_limit: 5
           plugins_activity_days: 14
+          plugins_activity_filter: all
           
-          # Topics
+          # Topics - Your interests
           plugins_topics: yes
-          plugins_topics_limit: 10
+          plugins_topics_limit: 15
+          plugins_topics_mode: icons
           
-          # Star history
+          # Stars - Your starred repos
           plugins_stars: yes
+          plugins_stars_limit: 3
           
           # Gists
           plugins_gists: yes
+          
+          # Lines of Code
+          plugins_lines: yes
+          
+          # Repositories
+          plugins_repositories: yes
+          plugins_repositories_pinned: 5
+          
+          # Pagespeed (if you have deployed site)
+          # plugins_pagespeed: yes
+          
+          # Habits
+          plugins_habits: yes
+          plugins_habits_facts: yes
+          plugins_habits_charts: yes
+          plugins_habits_trim: yes
+          
+          # Traffic (requires GitHub Pages access)
+          # plugins_traffic: yes
+
