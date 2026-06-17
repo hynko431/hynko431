@@ -1,0 +1,56 @@
+name: Generate Metrics SVG
+
+on:
+  schedule:
+    - cron: "30 0 * * *"  # 30 min after stats workflow, so it can pick up fresh data
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate metrics SVG
+        uses: lowlighter/metrics@latest
+        with:
+          # ── Auth & target ───────────────────────────────────────────────
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: hynko431
+          filename: metrics.svg          # committed to root of your repo
+
+          # ── Base config ─────────────────────────────────────────────────
+          base: header, activity, community, repositories
+          base_indepth: yes
+
+          # ── Calendar / contribution heatmap ─────────────────────────────
+          plugin_calendar: yes
+          plugin_calendar_limit: 2       # show 2 years of contribution history
+
+          # ── Language breakdown ──────────────────────────────────────────
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+          plugin_languages_ignored: >-
+            html, css, scss, less, makefile, cmake,
+            dockerfile, shell, batchfile
+
+          # ── Activity feed (recent events) ───────────────────────────────
+          plugin_activity: yes
+          plugin_activity_limit: 6
+          plugin_activity_days: 30
+          plugin_activity_filter: >-
+            push, issue, pullrequest, release, review
+
+          # ── Streaks ─────────────────────────────────────────────────────
+          plugin_wakatime: no            # turn on if you add a WakaTime token later
+
+          # ── Visual theme ────────────────────────────────────────────────
+          config_theme: dark
+          config_timezone: Asia/Kolkata
+          config_display: large
+          config_animations: yes
+          config_padding: 4, 8 + 0%
+
+      # The action commits metrics.svg automatically; no separate step needed.
