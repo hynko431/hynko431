@@ -64,7 +64,7 @@
 
 ---
 
-## 🚀 Experience
+## �� Experience
 
 **AI / OCR Search Engineer Intern — ASAR IT Technologies, Bengaluru** *(Jan 2026 – Present)*
 
@@ -246,5 +246,17 @@
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=hynko431&theme=react-dark&hide_border=true&area=true" width="95%"/>
 </p>
+
+---
+
+## 📊 Auto-Updated Metrics
+
+<div align="center">
+
+![Metrics](https://github.com/hynko431/hynko431/blob/main/metrics.svg)
+
+</div>
+
+---
 
 *Thanks for visiting! Feel free to explore my repositories and reach out for collaborations.* 🤝
