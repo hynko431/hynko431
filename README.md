@@ -53,58 +53,47 @@
 
 ---
 
-## 📊 GitHub Analytics
+## 📊 GitHub Analytics & Performance
 
-<!--
-  HOW THIS WORKS — no Vercel, no third-party hosting:
-  • stats.json    → written to YOUR repo daily by .github/workflows/update-stats.yml
-  • metrics.svg   → generated to YOUR repo daily by .github/workflows/metrics.yml
-  • Shields.io    → reads the JSON file from raw.githubusercontent.com (just renders badges)
-  • raw.githubusercontent.com is GitHub's own CDN — everything lives in hynko431/hynko431
--->
 <div align="center">
-<!-- ── Dynamic badges pulling live values from YOUR stats.json ─────────── -->
+
+### ⭐ Quick Stats
 <a href="https://github.com/hynko431/hynko431/blob/main/stats.json">
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.total_contributions&label=Total%20Contributions&color=2ea44f&style=for-the-badge&logo=github&logoColor=white" alt="Total Contributions" />
 </a>
- 
 <a href="https://github.com/hynko431?tab=repositories">
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.pull_requests_opened&label=PRs%20Opened&color=0075ca&style=for-the-badge&logo=git&logoColor=white" alt="PRs Opened" />
 </a>
-
-<a href="https://github.com/hynko431?tab=repositories">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.pull_requests_merged&label=PRs%20Merged&color=6f42c1&style=for-the-badge&logo=git&logoColor=white" alt="PRs Merged" />
-</a>
-
 <a href="https://github.com/hynko431?tab=repositories">
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.pull_requests_reviewed&label=PRs%20Reviewed&color=28a745&style=for-the-badge&logo=git&logoColor=white" alt="PRs Reviewed" />
 </a>
- 
 <a href="https://github.com/hynko431?tab=repositories">
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.issues_opened&label=Issues%20Opened&color=ffc107&style=for-the-badge&logo=github&logoColor=white" alt="Issues Opened" />
 </a>
-
-<a href="https://github.com/hynko431?tab=repositories">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.issues_closed&label=Issues%20Closed&color=17a2b8&style=for-the-badge&logo=github&logoColor=white" alt="Issues Closed" />
-</a>
-
 <a href="https://github.com/hynko431?tab=repositories">
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.repositories&label=Repositories&color=e36209&style=for-the-badge&logo=folder&logoColor=white" alt="Repositories" />
 </a>
- 
 <a href="https://github.com/hynko431?tab=repositories">
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhynko431%2Fhynko431%2Fmain%2Fstats.json&query=%24.stars&label=Stars%20Earned&color=f9c513&style=for-the-badge&logo=star&logoColor=white" alt="Stars" />
 </a>
-<br/><br/>
 
-<!-- ── Self-hosted metrics SVG (committed into YOUR repo by metrics.yml) ── -->
-<img
-src="https://raw.githubusercontent.com/hynko431/hynko431/main/metrics.svg"
-alt="GitHub Metrics — activity, languages, contributions calendar"
-width="100%"
-/>
+---
+
+### 📈 Comprehensive GitHub Metrics
+<!--
+  Self-hosted, no tracking, no Vercel — everything lives in YOUR repo
+  Updated daily by GitHub Actions running on schedule
+-->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hynko431/hynko431/main/metrics.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hynko431/hynko431/main/metrics.svg">
+  <img alt="GitHub Metrics Dashboard" src="https://raw.githubusercontent.com/hynko431/hynko431/main/metrics.svg" width="100%">
+</picture>
 
 </div>
+
+---
 
 ---
 
