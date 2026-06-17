@@ -134,13 +134,15 @@ jobs:
           {{
               user(login: "{USERNAME}") {{
                   contributionsCollection {{
-                      totalPullRequestReviews
+                      pullRequestReviewContributions {{
+                          totalCount
+                      }}
                   }}
               }}
           }}
           '''
           resp = github_api_request(review_query)
-          prs_reviewed = resp['data']['user']['contributionsCollection']['totalPullRequestReviews']
+          prs_reviewed = resp['data']['user']['contributionsCollection']['pullRequestReviewContributions']['totalCount']
           
           # ── Issues opened ──────────────────────────────────────────────
           print("Fetching issues opened...", file=sys.stderr)
