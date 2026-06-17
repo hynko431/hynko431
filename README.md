@@ -213,9 +213,9 @@
 
 <br/><br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=Rishi-212005&theme=dark&hide_border=true&count_private=true&show_icons=true" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true" width="48%" />
 &nbsp;
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Rishi-212005&theme=react-dark&hide_border=true&area=true" width="48%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=hynko431&theme=react-dark&hide_border=true&area=true" width="48%" />
 
 </div>
 
@@ -223,7 +223,7 @@
 
 <div align="center">
 
-[![](https://visitcount.itsvg.in/api?id=Rishi-212005&label=Profile%20Views&icon=0&color=6&pretty=true)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=hynko431&label=Profile%20Views&icon=0&color=6&pretty=true)](https://visitcount.itsvg.in)
 
 *Thanks for visiting! Feel free to explore my repositories and reach out for collaborations.* 🤝
 
