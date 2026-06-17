@@ -22,91 +22,85 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: hynko431
         run: |
-          # Write Python script to fetch all stats
+          # Write Python script to fetch all stats with error handling
           cat > fetch_stats.py << 'EOF'
           import sys
           import json
           import os
           import urllib.request
+          import urllib.error
           from datetime import datetime
           
-          TOKEN = os.environ['GH_TOKEN']
-          USERNAME = os.environ['USERNAME']
+          TOKEN = os.environ.get('GH_TOKEN', '')
+          USERNAME = os.environ.get('USERNAME', '')
           
-          def github_api_request(query):
-              """Make a GraphQL request to GitHub API."""
-              body = json.dumps({"query": query}).encode()
-              req = urllib.request.Request(
-                  'https://api.github.com/graphql',
-                  data=body,
-                  headers={
-                      'Authorization': f'Bearer {TOKEN}',
-                      'Content-Type': 'application/json'
-                  }
-              )
-              with urllib.request.urlopen(req) as r:
-                  return json.load(r)
+          if not TOKEN or not USERNAME:
+              print("ERROR: GH_TOKEN or USERNAME environment variables not set", file=sys.stderr)
+              sys.exit(1)
           
-          # ── Total public repos ──────────────────────────────────────────
-          print("Fetching repo count...", file=sys.stderr)
-          resp = json.loads(urllib.request.urlopen(
-              urllib.request.Request(
-                  f'https://api.github.com/users/{USERNAME}',
-                  headers={'Authorization': f'Bearer {TOKEN}'}
-              )
-          ).read().decode())
-          repo_count = resp['public_repos']
+          def github_api_request(query, retries=3):
+              """Make a GraphQL request to GitHub API with retry logic."""
+              for attempt in range(retries):
+                  try:
+                      body = json.dumps({"query": query}).encode()
+                      req = urllib.request.Request(
+                          'https://api.github.com/graphql',
+                          data=body,
+                          headers={
+                              'Authorization': f'Bearer {TOKEN}',
+                              'Content-Type': 'application/json'
+                          }
+                      )
+                      with urllib.request.urlopen(req, timeout=30) as r:
+                          response = json.load(r)
+                          if 'errors' in response:
+                              raise Exception(f"GraphQL error: {response['errors']}")
+                          return response
+                  except Exception as e:
+                      if attempt < retries - 1:
+                          print(f"Retry {attempt + 1}/{retries} - {str(e)}", file=sys.stderr)
+                          continue
+                      raise
           
-          # ── Merged PRs (search API) ─────────────────────────────────────
-          print("Fetching merged PRs count...", file=sys.stderr)
-          resp = json.loads(urllib.request.urlopen(
-              urllib.request.Request(
-                  f'https://api.github.com/search/issues?q=author:{USERNAME}+type:pr+is:merged&per_page=1',
-                  headers={'Authorization': f'Bearer {TOKEN}'}
-              )
-          ).read().decode())
-          merged_prs = resp['total_count']
+          def rest_api_request(url, retries=3):
+              """Make a REST API request to GitHub API with retry logic."""
+              for attempt in range(retries):
+                  try:
+                      req = urllib.request.Request(
+                          url,
+                          headers={'Authorization': f'Bearer {TOKEN}'}
+                      )
+                      with urllib.request.urlopen(req, timeout=30) as r:
+                          response = json.load(r)
+                          return response
+                  except urllib.error.HTTPError as e:
+                      if e.code == 403 and attempt < retries - 1:  # Rate limit
+                          print(f"Rate limit hit, retry {attempt + 1}/{retries}", file=sys.stderr)
+                          continue
+                      raise
+                  except Exception as e:
+                      if attempt < retries - 1:
+                          print(f"Retry {attempt + 1}/{retries} - {str(e)}", file=sys.stderr)
+                          continue
+                      raise
           
-          # ── Contributions this year ─────────────────────────────────────
-          print("Fetching contributions this year...", file=sys.stderr)
-          year_query = f'''
-          {{
-              user(login: "{USERNAME}") {{
-                  contributionsCollection {{
-                      contributionCalendar {{
-                          totalContributions
-                      }}
-                  }}
-              }}
-          }}
-          '''
-          resp = github_api_request(year_query)
-          contributions_this_year = resp['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
-          
-          # ── All-time contributions ──────────────────────────────────────
-          print("Fetching contribution years...", file=sys.stderr)
-          years_query = f'''
-          {{
-              user(login: "{USERNAME}") {{
-                  contributionsCollection {{
-                      contributionYears
-                  }}
-              }}
-          }}
-          '''
-          resp = github_api_request(years_query)
-          years = resp['data']['user']['contributionsCollection']['contributionYears']
-          
-          total_contributions = 0
-          for year in years:
-              print(f"Fetching contributions for {year}...", file=sys.stderr)
-              year_contribution_query = f'''
+          try:
+              # ── Total public repos ──────────────────────────────────────────
+              print("Fetching repo count...", file=sys.stderr)
+              resp = rest_api_request(f'https://api.github.com/users/{USERNAME}')
+              repo_count = resp.get('public_repos', 0)
+              
+              # ── Merged PRs (search API) ─────────────────────────────────────
+              print("Fetching merged PRs count...", file=sys.stderr)
+              resp = rest_api_request(f'https://api.github.com/search/issues?q=author:{USERNAME}+type:pr+is:merged&per_page=1')
+              merged_prs = resp.get('total_count', 0)
+              
+              # ── Contributions this year ─────────────────────────────────────
+              print("Fetching contributions this year...", file=sys.stderr)
+              year_query = f'''
               {{
                   user(login: "{USERNAME}") {{
-                      contributionsCollection(
-                          from: "{year}-01-01T00:00:00Z"
-                          to: "{year}-12-31T23:59:59Z"
-                      ) {{
+                      contributionsCollection {{
                           contributionCalendar {{
                               totalContributions
                           }}
@@ -114,85 +108,108 @@ jobs:
                   }}
               }}
               '''
-              resp = github_api_request(year_contribution_query)
-              year_total = resp['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
-              total_contributions += year_total
-          
-          # ── Pull requests opened (all, not just merged) ─────────────────
-          print("Fetching all pull requests opened...", file=sys.stderr)
-          resp = json.loads(urllib.request.urlopen(
-              urllib.request.Request(
-                  f'https://api.github.com/search/issues?q=author:{USERNAME}+type:pr&per_page=1',
-                  headers={'Authorization': f'Bearer {TOKEN}'}
-              )
-          ).read().decode())
-          all_prs_opened = resp['total_count']
-          
-          # ── Pull requests reviewed ──────────────────────────────────────
-          print("Fetching pull requests reviewed...", file=sys.stderr)
-          review_query = f'''
-          {{
-              user(login: "{USERNAME}") {{
-                  contributionsCollection {{
-                      pullRequestReviewContributions {{
-                          totalCount
+              resp = github_api_request(year_query)
+              contributions_this_year = resp['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
+              
+              # ── All-time contributions ──────────────────────────────────────
+              print("Fetching contribution years...", file=sys.stderr)
+              years_query = f'''
+              {{
+                  user(login: "{USERNAME}") {{
+                      contributionsCollection {{
+                          contributionYears
                       }}
                   }}
               }}
-          }}
-          '''
-          resp = github_api_request(review_query)
-          prs_reviewed = resp['data']['user']['contributionsCollection']['pullRequestReviewContributions']['totalCount']
-          
-          # ── Issues opened ──────────────────────────────────────────────
-          print("Fetching issues opened...", file=sys.stderr)
-          resp = json.loads(urllib.request.urlopen(
-              urllib.request.Request(
-                  f'https://api.github.com/search/issues?q=author:{USERNAME}+type:issue&per_page=1',
-                  headers={'Authorization': f'Bearer {TOKEN}'}
-              )
-          ).read().decode())
-          issues_opened = resp['total_count']
-          
-          # ── Issues closed ──────────────────────────────────────────────
-          print("Fetching issues closed...", file=sys.stderr)
-          resp = json.loads(urllib.request.urlopen(
-              urllib.request.Request(
-                  f'https://api.github.com/search/issues?q=author:{USERNAME}+type:issue+is:closed&per_page=1',
-                  headers={'Authorization': f'Bearer {TOKEN}'}
-              )
-          ).read().decode())
-          issues_closed = resp['total_count']
-          
-          # ── Stars received across all repos ─────────────────────────────
-          print("Fetching stars...", file=sys.stderr)
-          resp = json.loads(urllib.request.urlopen(
-              urllib.request.Request(
-                  f'https://api.github.com/users/{USERNAME}/repos?per_page=100&type=owner',
-                  headers={'Authorization': f'Bearer {TOKEN}'}
-              )
-          ).read().decode())
-          stars = sum(r['stargazers_count'] for r in resp)
-          
-          # ── Write stats.json ────────────────────────────────────────────
-          stats = {
-              "total_contributions": total_contributions,
-              "contributions_this_year": contributions_this_year,
-              "pull_requests_opened": all_prs_opened,
-              "pull_requests_merged": merged_prs,
-              "pull_requests_reviewed": prs_reviewed,
-              "issues_opened": issues_opened,
-              "issues_closed": issues_closed,
-              "repositories": repo_count,
-              "stars": stars,
-              "updated_at": datetime.utcnow().isoformat() + "Z"
-          }
-          
-          with open('stats.json', 'w') as f:
-              json.dump(stats, f, indent=2)
-          
-          print("Stats written:", file=sys.stderr)
-          print(json.dumps(stats, indent=2))
+              '''
+              resp = github_api_request(years_query)
+              years = resp['data']['user']['contributionsCollection']['contributionYears']
+              
+              total_contributions = 0
+              for year in years:
+                  print(f"Fetching contributions for {year}...", file=sys.stderr)
+                  year_contribution_query = f'''
+                  {{
+                      user(login: "{USERNAME}") {{
+                          contributionsCollection(
+                              from: "{year}-01-01T00:00:00Z"
+                              to: "{year}-12-31T23:59:59Z"
+                          ) {{
+                              contributionCalendar {{
+                                  totalContributions
+                              }}
+                          }}
+                      }}
+                  }}
+                  '''
+                  resp = github_api_request(year_contribution_query)
+                  year_total = resp['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
+                  total_contributions += year_total
+              
+              # ── Pull requests opened (all, not just merged) ─────────────────
+              print("Fetching all pull requests opened...", file=sys.stderr)
+              resp = rest_api_request(f'https://api.github.com/search/issues?q=author:{USERNAME}+type:pr&per_page=1')
+              all_prs_opened = resp.get('total_count', 0)
+              
+              # ── Pull requests reviewed ──────────────────────────────────────
+              print("Fetching pull requests reviewed...", file=sys.stderr)
+              review_query = f'''
+              {{
+                  user(login: "{USERNAME}") {{
+                      contributionsCollection {{
+                          pullRequestReviewContributions {{
+                              totalCount
+                          }}
+                      }}
+                  }}
+              }}
+              '''
+              resp = github_api_request(review_query)
+              prs_reviewed = resp['data']['user']['contributionsCollection']['pullRequestReviewContributions']['totalCount']
+              
+              # ── Issues opened ──────────────────────────────────────────────
+              print("Fetching issues opened...", file=sys.stderr)
+              resp = rest_api_request(f'https://api.github.com/search/issues?q=author:{USERNAME}+type:issue&per_page=1')
+              issues_opened = resp.get('total_count', 0)
+              
+              # ── Issues closed ──────────────────────────────────────────────
+              print("Fetching issues closed...", file=sys.stderr)
+              resp = rest_api_request(f'https://api.github.com/search/issues?q=author:{USERNAME}+type:issue+is:closed&per_page=1')
+              issues_closed = resp.get('total_count', 0)
+              
+              # ── Stars received across all repos ─────────────────────────────
+              print("Fetching stars...", file=sys.stderr)
+              resp = rest_api_request(f'https://api.github.com/users/{USERNAME}/repos?per_page=100&type=owner')
+              if isinstance(resp, list):
+                  stars = sum(r.get('stargazers_count', 0) for r in resp)
+              else:
+                  stars = 0
+              
+              # ── Write stats.json ────────────────────────────────────────────
+              stats = {
+                  "total_contributions": total_contributions,
+                  "contributions_this_year": contributions_this_year,
+                  "pull_requests_opened": all_prs_opened,
+                  "pull_requests_merged": merged_prs,
+                  "pull_requests_reviewed": prs_reviewed,
+                  "issues_opened": issues_opened,
+                  "issues_closed": issues_closed,
+                  "repositories": repo_count,
+                  "stars": stars,
+                  "updated_at": datetime.utcnow().isoformat() + "Z"
+              }
+              
+              with open('stats.json', 'w') as f:
+                  json.dump(stats, f, indent=2)
+              
+              print("Stats written successfully:", file=sys.stderr)
+              print(json.dumps(stats, indent=2))
+              
+          except Exception as e:
+              print(f"FATAL ERROR: {str(e)}", file=sys.stderr)
+              import traceback
+              traceback.print_exc(file=sys.stderr)
+              sys.exit(1)
           EOF
           
           python3 fetch_stats.py

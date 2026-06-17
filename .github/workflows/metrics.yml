@@ -28,13 +28,12 @@ jobs:
           # ── Calendar / contribution heatmap ──────────────────────────────
           plugin_calendar: yes
           plugin_calendar_limit: 3       # show 3 years for impressive history
-          plugin_calendar_days: 0        # full calendar view
 
           # ── Achievements (very visual & impressive) ──────────────────────
           plugin_achievements: yes
           plugin_achievements_only: >-
             polyglot, stargazer, sponsor, developer, 
-            opensource, maintainer, contributor
+            opensource, maintainer
           plugin_achievements_threshold: C
 
           # ── Language breakdown (detailed) ────────────────────────────────
@@ -54,25 +53,22 @@ jobs:
             push, pull_request, issue, review, release, commit
 
           # ── Lines of code changed ────────────────────────────────────────
-          plugin_lines: yes
+          plugin_lines: no
 
           # ── Notable contributions (open source) ──────────────────────────
           plugin_notable: yes
           plugin_notable_from: organization
-          plugin_notable_repositories: yes
 
           # ── Topics / Skills visualization ────────────────────────────────
           plugin_topics: yes
-          plugin_topics_limit: 15
-          plugin_topics_sort: stars
+          plugin_topics_limit: 12
 
           # ── Repositories (most interesting) ──────────────────────────────
           plugin_repositories: yes
           plugin_repositories_featured: yes
-          plugin_repositories_starred: yes
 
           # ── Traffic (if available) ──────────────────────────────────────
-          plugin_traffic: yes
+          plugin_traffic: no
 
           # ── Visual theme (modern & attractive) ──────────────────────────
           config_theme: github
@@ -80,7 +76,5 @@ jobs:
           config_display: large
           config_animations: yes
           config_padding: 6, 8
-          config_order: header, activity, achievements, notable, calendar, languages, topics, repositories, lines, traffic, community
-          config_background: #ffffff
           
       # The action commits metrics.svg automatically; no separate step needed.
