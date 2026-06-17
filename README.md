@@ -215,7 +215,6 @@
 
 <img src="https://github-readme-stats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true" width="48%" />
 &nbsp;
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=hynko431&theme=react-dark&hide_border=true&area=true" width="48%" />
 
 </div>
 
