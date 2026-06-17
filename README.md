@@ -103,91 +103,75 @@
 
 ## 💻 Tech Stack
 
-<h3 align="left">🗣️ Languages</h3>
-<p align="left">
-
-<kbd><a href="https://www.python.org" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python"/><img src="https://skillicons.dev/icons?i=python&theme=light" alt="Python"/></picture></a></kbd>
-<kbd><a href="https://www.java.com" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java"/><img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java"/></picture></a></kbd>
-<kbd><a href="https://www.cprogramming.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=c"/><img src="https://skillicons.dev/icons?i=c&theme=light" alt="C"/></picture></a></kbd>
-<kbd><a href="https://www.mysql.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=mysql"/><img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="SQL"/></picture></a></kbd>
-
+<h3>🗣️ Languages</h3>
+<p align="center">
+<kbd><a href="https://www.python.org" target="_blank"><img src="https://skillicons.dev/icons?i=python" alt="Python" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.java.com" target="_blank"><img src="https://skillicons.dev/icons?i=java" alt="Java" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.cprogramming.com/" target="_blank"><img src="https://skillicons.dev/icons?i=c" alt="C" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.typescriptlang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript" height="48" width="48"/></a></kbd>
 </p>
 
-<h3 align="left">🤖 AI / ML / LLM</h3>
-<p align="left">
-
-<kbd><a href="https://www.tensorflow.org" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=tensorflow"/><img src="https://skillicons.dev/icons?i=tensorflow&theme=light" alt="TensorFlow"/></picture></a></kbd>
-<kbd><a href="https://pytorch.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=pytorch"/><img src="https://skillicons.dev/icons?i=pytorch&theme=light" alt="PyTorch"/></picture></a></kbd>
-<kbd><a href="https://opencv.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=opencv"/><img src="https://skillicons.dev/icons?i=opencv&theme=light" alt="OpenCV"/></picture></a></kbd>
-<kbd><a href="https://huggingface.co/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"/><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" height="48" width="48"/></picture></a></kbd>
-<kbd><a href="https://python.langchain.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://avatars.githubusercontent.com/u/126733545?s=48&v=4"/><img src="https://avatars.githubusercontent.com/u/126733545?s=48&v=4" alt="LangChain" height="48" width="48"/></picture></a></kbd>
-<kbd><a href="https://scikit-learn.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"/><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn" height="48" width="48"/></picture></a></kbd>
-<kbd><a href="https://keras.io/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg"/><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras" height="48" width="48"/></picture></a></kbd>
-
+<h3>🤖 AI / ML / LLM</h3>
+<p align="center">
+<kbd><a href="https://www.tensorflow.org" target="_blank"><img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" height="48" width="48"/></a></kbd>
+<kbd><a href="https://pytorch.org/" target="_blank"><img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch" height="48" width="48"/></a></kbd>
+<kbd><a href="https://opencv.org/" target="_blank"><img src="https://skillicons.dev/icons?i=opencv" alt="OpenCV" height="48" width="48"/></a></kbd>
+<kbd><a href="https://huggingface.co/" target="_blank"><img src="https://huggingface.co/front/assets/huggingface_logo.png" alt="HuggingFace" height="48" width="48"/></a></kbd>
+<kbd><a href="https://python.langchain.com/" target="_blank"><img src="https://avatars.githubusercontent.com/u/126733545?s=48&v=4" alt="LangChain" height="48" width="48"/></a></kbd>
+<kbd><a href="https://scikit-learn.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn" height="48" width="48"/></a></kbd>
+<kbd><a href="https://keras.io/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras" height="48" width="48"/></a></kbd>
 </p>
 
-<h3 align="left">📊 Data Science</h3>
-<p align="left">
-
-<kbd><a href="https://numpy.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://numpy.org/images/logo.svg"/><img src="https://numpy.org/images/logo.svg" alt="NumPy" height="48" width="48"/></picture></a></kbd>
-<kbd><a href="https://pandas.pydata.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://pandas.pydata.org/static/img/pandas_mark.svg"/><img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" height="48" width="48"/></picture></a></kbd>
-<kbd><a href="https://matplotlib.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://matplotlib.org/_static/images/logo_dark.svg"/><img src="https://matplotlib.org/_static/images/logo2.svg" alt="Matplotlib" height="48" width="48"/></picture></a></kbd>
-<kbd><a href="https://plotly.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://images.plot.ly/logo/new-branding/plotly-logomark.png"/><img src="https://images.plot.ly/logo/new-branding/plotly-logomark.png" alt="Plotly" height="48" width="48"/></picture></a></kbd>
-<kbd><a href="https://scipy.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://scipy.org/images/logo.svg"/><img src="https://scipy.org/images/logo.svg" alt="SciPy" height="48" width="48"/></picture></a></kbd>
-
+<h3>📊 Data Science</h3>
+<p align="center">
+<kbd><a href="https://numpy.org/" target="_blank"><img src="https://numpy.org/images/logo.svg" alt="NumPy" height="48" width="48"/></a></kbd>
+<kbd><a href="https://pandas.pydata.org/" target="_blank"><img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" height="48" width="48"/></a></kbd>
+<kbd><a href="https://matplotlib.org/" target="_blank"><img src="https://matplotlib.org/_static/images/logo2.svg" alt="Matplotlib" height="48" width="48"/></a></kbd>
+<kbd><a href="https://plotly.com/" target="_blank"><img src="https://images.plot.ly/logo/new-branding/plotly-logomark.png" alt="Plotly" height="48" width="48"/></a></kbd>
+<kbd><a href="https://scipy.org/" target="_blank"><img src="https://scipy.org/images/logo.svg" alt="SciPy" height="48" width="48"/></a></kbd>
 </p>
 
-<h3 align="left">🌐 Backend & APIs</h3>
-<p align="left">
-
-<kbd><a href="https://fastapi.tiangolo.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=fastapi"/><img src="https://skillicons.dev/icons?i=fastapi&theme=light" alt="FastAPI"/></picture></a></kbd>
-<kbd><a href="https://flask.palletsprojects.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=flask"/><img src="https://skillicons.dev/icons?i=flask&theme=light" alt="Flask"/></picture></a></kbd>
-<kbd><a href="https://www.postman.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=postman"/><img src="https://skillicons.dev/icons?i=postman&theme=light" alt="Postman"/></picture></a></kbd>
-
+<h3>🌐 Backend & APIs</h3>
+<p align="center">
+<kbd><a href="https://fastapi.tiangolo.com/" target="_blank"><img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI" height="48" width="48"/></a></kbd>
+<kbd><a href="https://flask.palletsprojects.com/" target="_blank"><img src="https://skillicons.dev/icons?i=flask" alt="Flask" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.postman.com/" target="_blank"><img src="https://skillicons.dev/icons?i=postman" alt="Postman" height="48" width="48"/></a></kbd>
 </p>
 
-<h3 align="left">🎨 Frontend & Web</h3>
-<p align="left">
-
-<kbd><a href="https://react.dev/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react"/><img src="https://skillicons.dev/icons?i=react&theme=light" alt="React"/></picture></a></kbd>
-<kbd><a href="https://nodejs.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs"/><img src="https://skillicons.dev/icons?i=nodejs&theme=light" alt="Node.js"/></picture></a></kbd>
-<kbd><a href="https://streamlit.io/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://streamlit.io/images/brand/streamlit-mark-color.svg"/><img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" alt="Streamlit" height="48" width="48"/></picture></a></kbd>
-<kbd><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=html"/><img src="https://skillicons.dev/icons?i=html&theme=light" alt="HTML5"/></picture></a></kbd>
-<kbd><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=css"/><img src="https://skillicons.dev/icons?i=css&theme=light" alt="CSS3"/></picture></a></kbd>
-
+<h3>🎨 Frontend & Web</h3>
+<p align="center">
+<kbd><a href="https://react.dev/" target="_blank"><img src="https://skillicons.dev/icons?i=react" alt="React" height="48" width="48"/></a></kbd>
+<kbd><a href="https://nodejs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" height="48" width="48"/></a></kbd>
+<kbd><a href="https://streamlit.io/" target="_blank"><img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" alt="Streamlit" height="48" width="48"/></a></kbd>
+<kbd><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://skillicons.dev/icons?i=html" alt="HTML5" height="48" width="48"/></a></kbd>
+<kbd><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://skillicons.dev/icons?i=css" alt="CSS3" height="48" width="48"/></a></kbd>
 </p>
 
-<h3 align="left">🗄️ Databases & Search</h3>
-<p align="left">
-
-<kbd><a href="https://www.mongodb.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=mongodb"/><img src="https://skillicons.dev/icons?i=mongodb&theme=light" alt="MongoDB"/></picture></a></kbd>
-<kbd><a href="https://www.postgresql.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=postgresql"/><img src="https://skillicons.dev/icons?i=postgresql&theme=light" alt="PostgreSQL"/></picture></a></kbd>
-<kbd><a href="https://www.mysql.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=mysql"/><img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="MySQL"/></picture></a></kbd>
-<kbd><a href="https://redis.io/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=redis"/><img src="https://skillicons.dev/icons?i=redis&theme=light" alt="Redis"/></picture></a></kbd>
-<kbd><a href="https://www.elastic.co/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://avatars.githubusercontent.com/u/6764390?s=48&v=4"/><img src="https://avatars.githubusercontent.com/u/6764390?s=48&v=4" alt="Elasticsearch" height="48" width="48"/></picture></a></kbd>
-<kbd><a href="https://www.sqlite.org/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=sqlite"/><img src="https://skillicons.dev/icons?i=sqlite&theme=light" alt="SQLite"/></picture></a></kbd>
-
+<h3>🗄️ Databases & Search</h3>
+<p align="center">
+<kbd><a href="https://www.mongodb.com/" target="_blank"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.postgresql.org/" target="_blank"><img src="https://skillicons.dev/icons?i=postgresql" alt="PostgreSQL" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.mysql.com/" target="_blank"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" height="48" width="48"/></a></kbd>
+<kbd><a href="https://redis.io/" target="_blank"><img src="https://skillicons.dev/icons?i=redis" alt="Redis" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.elastic.co/" target="_blank"><img src="https://avatars.githubusercontent.com/u/6764390?s=48&v=4" alt="Elasticsearch" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.sqlite.org/" target="_blank"><img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" height="48" width="48"/></a></kbd>
 </p>
 
-<h3 align="left">☁️ Cloud & Deployment</h3>
-<p align="left">
-
-<kbd><a href="https://cloud.google.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=gcp"/><img src="https://skillicons.dev/icons?i=gcp&theme=light" alt="Google Cloud"/></picture></a></kbd>
-<kbd><a href="https://www.docker.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker"/><img src="https://skillicons.dev/icons?i=docker&theme=light" alt="Docker"/></picture></a></kbd>
-<kbd><a href="https://vercel.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=vercel"/><img src="https://skillicons.dev/icons?i=vercel&theme=light" alt="Vercel"/></picture></a></kbd>
-<kbd><a href="https://render.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://avatars.githubusercontent.com/u/36424661?s=48&v=4"/><img src="https://avatars.githubusercontent.com/u/36424661?s=48&v=4" alt="Render" height="48" width="48"/></picture></a></kbd>
-<kbd><a href="https://www.netlify.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=netlify"/><img src="https://skillicons.dev/icons?i=netlify&theme=light" alt="Netlify"/></picture></a></kbd>
-
+<h3>☁️ Cloud & Deployment</h3>
+<p align="center">
+<kbd><a href="https://cloud.google.com/" target="_blank"><img src="https://skillicons.dev/icons?i=gcp" alt="Google Cloud" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.docker.com/" target="_blank"><img src="https://skillicons.dev/icons?i=docker" alt="Docker" height="48" width="48"/></a></kbd>
+<kbd><a href="https://vercel.com/" target="_blank"><img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" height="48" width="48"/></a></kbd>
+<kbd><a href="https://render.com/" target="_blank"><img src="https://avatars.githubusercontent.com/u/36424661?s=48&v=4" alt="Render" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.netlify.com/" target="_blank"><img src="https://skillicons.dev/icons?i=netlify" alt="Netlify" height="48" width="48"/></a></kbd>
 </p>
 
-<h3 align="left">🛠️ Tools</h3>
-<p align="left">
-
-<kbd><a href="https://git-scm.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git"/><img src="https://skillicons.dev/icons?i=git&theme=light" alt="Git"/></picture></a></kbd>
-<kbd><a href="https://github.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=github"/><img src="https://skillicons.dev/icons?i=github&theme=light" alt="GitHub"/></picture></a></kbd>
-<kbd><a href="https://www.anaconda.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=anaconda"/><img src="https://skillicons.dev/icons?i=anaconda&theme=light" alt="Anaconda"/></picture></a></kbd>
-<kbd><a href="https://code.visualstudio.com/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=vscode"/><img src="https://skillicons.dev/icons?i=vscode&theme=light" alt="VS Code"/></picture></a></kbd>
-
+<h3>🛠️ Tools & DevOps</h3>
+<p align="center">
+<kbd><a href="https://git-scm.com/" target="_blank"><img src="https://skillicons.dev/icons?i=git" alt="Git" height="48" width="48"/></a></kbd>
+<kbd><a href="https://github.com/" target="_blank"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" height="48" width="48"/></a></kbd>
+<kbd><a href="https://www.anaconda.com/" target="_blank"><img src="https://skillicons.dev/icons?i=anaconda" alt="Anaconda" height="48" width="48"/></a></kbd>
+<kbd><a href="https://code.visualstudio.com/" target="_blank"><img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" height="48" width="48"/></a></kbd>
 </p>
 
 ---
@@ -196,17 +180,35 @@
 
 <div align="center">
 
-<!-- Custom Verified Badges -->
-<img src="https://img.shields.io/badge/Total_Contributions-311-2k--green?style=for-the-badge&logo=github" />
+<!-- Dynamic GitHub Stats Badges -->
+<a href="https://github.com/hynko431">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=public_repos&label=Public%20Repos&color=blue&style=for-the-badge&logo=github" />
+</a>
 &nbsp;
-<img src="https://img.shields.io/badge/Merged_PRs-5+-blue?style=for-the-badge&logo=git-pull-request" />
+<a href="https://github.com/hynko431?tab=followers">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=followers&label=Followers&color=0366d6&style=for-the-badge&logo=github" />
+</a>
 &nbsp;
-<img src="https://img.shields.io/badge/Repositories-18-orange?style=for-the-badge&logo=git" />
+<a href="https://github.com/hynko431?tab=repositories">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/search/repositories?q=user:hynko431&query=$.items.length&label=Total%20Repos&color=ff6b6b&style=for-the-badge&logo=git" />
+</a>
 
 <br/><br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true" width="48%" />
+<!-- GitHub Stats Card - Shows Commits, PRs, Issues, and more -->
+<img src="https://github-readme-stats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true&include_all_commits=true&rank_icon=github" width="48%" />
 &nbsp;
+<!-- Top Languages - Analyzes all repositories including private ones -->
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8&count_private=true" width="48%" />
+
+<br/><br/>
+
+<!-- Dynamic Contribution Stats -->
+<div align="center">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=public_gists&label=Public%20Gists&color=9c27b0&style=for-the-badge&logo=github" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=created_at&suffix=%20created&label=Member%20Since&color=success&style=for-the-badge&logo=github" />
+</div>
 
 </div>
 
@@ -214,7 +216,12 @@
 
 <div align="center">
 
+<!-- Profile Views Counter -->
 [![](https://visitcount.itsvg.in/api?id=hynko431&label=Profile%20Views&icon=0&color=6&pretty=true)](https://visitcount.itsvg.in)
+
+<!-- Streak Stats - Shows contribution streaks -->
+<br/><br/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=hynko431&theme=dark&hide_border=true" />
 
 </div>
 
