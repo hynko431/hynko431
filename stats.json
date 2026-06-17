@@ -1,62 +1,12 @@
 {
-  "profile": {
-    "username": "hynko431",
-    "name": "Siva Venkata Bhanu Prakash Irakam",
-    "title": "AI/LLM Engineer | RAG Systems | Agentic AI | Production ML",
-    "location": "Bengaluru, India",
-    "bio": "CSE Grad building production-grade AI systems with LLMs, RAG & agentic workflows"
-  },
-  "contributions": {
-    "total": 986,
-    "this_year": 941,
-    "this_month": 87,
-    "streak_days": 45,
-    "longest_streak": 128,
-    "average_per_day": 2.7
-  },
-  "pull_requests": {
-    "opened": 0,
-    "merged": 0,
-    "reviewed": 0,
-    "draft": 0
-  },
-  "issues": {
-    "opened": 0,
-    "closed": 0,
-    "discussions": 5
-  },
-  "repositories": {
-    "total": 34,
-    "public": 32,
-    "private": 2,
-    "with_stars": 8,
-    "forked": 12
-  },
-  "social_metrics": {
-    "stars_received": 1,
-    "followers": 3,
-    "following": 6
-  },
-  "languages": {
-    "Python": 45,
-    "JavaScript": 20,
-    "TypeScript": 12,
-    "SQL": 8,
-    "HTML_CSS": 8,
-    "Jupyter": 4,
-    "Other": 3
-  },
-  "skills": {
-    "ai_ml": ["LLMs", "RAG Systems", "Agentic AI", "FastAPI", "LangChain"],
-    "data": ["FAISS", "Semantic Search", "NLP", "Transfer Learning", "CNN"],
-    "frontend": ["React", "Streamlit", "Next.js"],
-    "backend": ["FastAPI", "Python", "Supabase"],
-    "tools": ["LangChain", "Ollama", "Pydantic", "OpenCV", "Jupyter"]
-  },
-  "experience": {
-    "current": "AI / OCR Search Engineer Intern @ ASAR IT Technologies",
-    "duration": "Jan 2026 - Present",
-    "key_projects": 5
-  },
-  "updated_at": "2026-06-18T10:30:00.000000Z"
+  "total_contributions": 986,
+  "contributions_this_year": 941,
+  "pull_requests_opened": 0,
+  "pull_requests_merged": 0,
+  "pull_requests_reviewed": 0,
+  "issues_opened": 0,
+  "issues_closed": 0,
+  "repositories": 32,
+  "stars": 1,
+  "updated_at": "2026-06-17T19:56:16.533184Z"
 }
