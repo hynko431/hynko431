@@ -26,7 +26,7 @@
 ---
 
 <!-- MAIN INTRO -->
-<img align="right" alt="Coding" width="380" src="https://github.com/hynko431/hynko431/blob/main/avento.gif" />
+<img align="right" alt="Coding" width="380" src="https://raw.githubusercontent.com/hynko431/hynko431/main/avento.gif" />
 
 ### 👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash Irakam
 **CSE Grad · AI/LLM Engineer · RAG Systems · Agentic AI · Production ML**
