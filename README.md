@@ -249,6 +249,8 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=hynko431&theme=react-dark&hide_border=true&area=true" width="95%"/>
 </p>
 
+
+| <a href="https://github.com/hynko431/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=hynko431&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Siva Bhanu's github stats" /></a> | <a href="https://github.com/hynko431/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hynko431&layout=compact&theme=buefy&hide_border=true" /></a> |
 ---
 
 ## 📊 Live GitHub Metrics (Updated Daily)
