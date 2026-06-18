@@ -1,7 +1,3 @@
-[<img src="https://raw.githubusercontent.com/hynko431/hynko431/master/intro.gif" alt="👋 Hi there! I'm (Siva Venkata(Bhanu Prakash|nd Irakam)|https://hynko431.li)" title="👋 Hi there! I'm (Siva Venkata(Bhanu Prakash|nd Irakam)|https://hynko431.li)"/>](https://hynko431.li/)
-
-
-
 <!-- HERO BANNER -->
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Siva%20Venkata%20Bhanu%20Prakash%20Irakam&fontSize=36&fontAlign=50&fontAlignY=40&color=gradient&customColorList=0,2,2,5,30" width="100%"/>
