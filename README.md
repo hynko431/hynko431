@@ -192,22 +192,24 @@
 </table>
 
 ---
-
 ## 📊 GitHub Analytics
+
 <div align="center">
 
-<img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hynko431/hynko431/main/badges/contributions.json&style=for-the-badge&logo=github" />
+<!-- Dynamic GitHub Stats Badges -->
+<a href="https://github.com/hynko431">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=public_repos&label=Public%20Repos&color=blue&style=for-the-badge&logo=github" />
+</a>
 &nbsp;
-<img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hynko431/hynko431/main/badges/merged-prs.json&style=for-the-badge&logo=git-pull-request" />
+<a href="https://github.com/hynko431?tab=followers">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=followers&label=Followers&color=0366d6&style=for-the-badge&logo=github" />
+</a>
 &nbsp;
-<img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hynko431/hynko431/main/badges/repositories.json&style=for-the-badge&logo=git" />
+<a href="https://github.com/hynko431?tab=repositories">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/search/repositories?q=user:hynko431&query=$.items.length&label=Total%20Repos&color=ff6b6b&style=for-the-badge&logo=git" />
+</a>
 
 <br/><br/>
-
-<img src="https://raw.githubusercontent.com/hynko431/hynko431/main/github-metrics.svg" width="100%" />
-
-</div>
-
 ---
 <div align="center">
 
