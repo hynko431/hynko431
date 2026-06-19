@@ -66,7 +66,7 @@
 
 ---
 
-## �� Experience
+## 💼 Experience
 
 **AI / OCR Search Engineer Intern — ASAR IT Technologies, Bengaluru** *(Jan 2026 – Present)*
 
@@ -212,11 +212,13 @@
 
 <br/><br/>
 
-<!-- GitHub Stats Card - Shows Commits, PRs, Issues, and more -->
-<img src="https://github-readme-stats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true&rank_icon=github" width="48%" />
+<!-- GitHub Stats Card — powered by custom stats service -->
+<img src="https://hynko431githubstats-git-main-sivabhanu7198-6482s-projects.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true&rank_icon=github" width="48%"
+     onerror="this.src='https://hynko431githubstats-y5skmgu2t-sivabhanu7198-6482s-projects.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true&rank_icon=github'" />
 &nbsp;
-<!-- Top Languages - Analyzes all repositories including private ones -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8&count_private=true&all_repos=true" width="48%" />
+<!-- Top Languages Card — powered by custom stats service -->
+<img src="https://hynko431githubstats-git-main-sivabhanu7198-6482s-projects.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8&count_private=true&all_repos=true" width="48%"
+     onerror="this.src='https://hynko431githubstats-y5skmgu2t-sivabhanu7198-6482s-projects.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8&count_private=true&all_repos=true'" />
 
 <br/><br/>
 
@@ -236,19 +238,19 @@
 <!-- Profile Views Counter -->
 [![](https://visitcount.itsvg.in/api?id=hynko431&label=Profile%20Views&icon=0&color=6&pretty=true)](https://visitcount.itsvg.in)
 
-<!-- Streak Stats - Shows contribution streaks -->
 <br/><br/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=hynko431&theme=dark&hide_border=true" />
+
+<!-- Streak Stats — powered by custom stats service -->
+<img src="https://hynko431githubstats-git-main-sivabhanu7198-6482s-projects.vercel.app/api/streak-stats?user=hynko431&theme=dark&hide_border=true"
+     onerror="this.src='https://hynko431githubstats-y5skmgu2t-sivabhanu7198-6482s-projects.vercel.app/api/streak-stats?user=hynko431&theme=dark&hide_border=true'" />
 
 </div>
 
+### 📈 Contribution Stats
 
-###
-<h3 align="left">📈 Contribution Stats </h3>
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=hynko431&theme=react-dark&hide_border=true&area=true" width="95%"/>
 </p>
-
 
 ---
 
