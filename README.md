@@ -212,22 +212,18 @@
 
 <br/><br/>
 
-<!-- GitHub Stats Card — powered by custom stats service -->
-<img src="https://hynko431githubstats-git-main-sivabhanu7198-6482s-projects.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true&rank_icon=github" width="48%"
-     onerror="this.src='https://hynko431githubstats-y5skmgu2t-sivabhanu7198-6482s-projects.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true&rank_icon=github'" />
+<!-- GitHub Stats Card -->
+<img src="https://github-readme-stats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true&rank_icon=github" width="48%" />
 &nbsp;
-<!-- Top Languages Card — powered by custom stats service -->
-<img src="https://hynko431githubstats-git-main-sivabhanu7198-6482s-projects.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8&count_private=true&all_repos=true" width="48%"
-     onerror="this.src='https://hynko431githubstats-y5skmgu2t-sivabhanu7198-6482s-projects.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8&count_private=true&all_repos=true'" />
+<!-- Top Languages Card -->
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8&count_private=true&all_repos=true" width="48%" />
 
 <br/><br/>
 
 <!-- Dynamic Contribution Stats -->
-<div align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=public_gists&label=Public%20Gists&color=9c27b0&style=for-the-badge&logo=github" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=created_at&suffix=%20created&label=Member%20Since&color=success&style=for-the-badge&logo=github" />
-</div>
+<img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=public_gists&label=Public%20Gists&color=9c27b0&style=for-the-badge&logo=github" />
+&nbsp;
+<img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=created_at&label=Member%20Since&color=success&style=for-the-badge&logo=github" />
 
 </div>
 
@@ -240,9 +236,8 @@
 
 <br/><br/>
 
-<!-- Streak Stats — powered by custom stats service -->
-<img src="https://hynko431githubstats-git-main-sivabhanu7198-6482s-projects.vercel.app/api/streak-stats?user=hynko431&theme=dark&hide_border=true"
-     onerror="this.src='https://hynko431githubstats-y5skmgu2t-sivabhanu7198-6482s-projects.vercel.app/api/streak-stats?user=hynko431&theme=dark&hide_border=true'" />
+<!-- Streak Stats -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=hynko431&theme=dark&hide_border=true" />
 
 </div>
 
@@ -266,4 +261,4 @@
 
 ---
 
-*Thanks for visiting! Feel free to explore my repositories and reach out for collaborations.* 🤝
+*Thanks for visiting! Feel free to explore my repositories and reach out for collaborations.* 🤝<img width="671" height="488" alt="image" src="https://github.com/user-attachments/assets/906895b0-674c-4d0e-b9b9-1e96070aa3a8" />
