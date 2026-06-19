@@ -26,9 +26,7 @@
 ---
 
 <!-- MAIN INTRO -->
-<div align="right">
-  <img alt="Coding" width="380" src="https://cdn.jsdelivr.net/gh/hynko431/hynko431@main/avento.gif" />
-</div>
+<img align="right" alt="Coding" width="380" src="https://cdn.jsdelivr.net/gh/hynko431/hynko431@main/avento.gif" />
 
 ### 👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash Irakam
 **CSE Grad · AI/LLM Engineer · RAG Systems · Agentic AI · Production ML**
@@ -83,19 +81,19 @@
 
 | 🏆 MSME Agent-A-Thon — "Pocket CEO" | 🩺 Agentic Medical Report Analysis |
 |:---:|:---:|
-| [![Agent-A-Thon](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=Agent-A-Thon&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Agent-A-Thon/) | [![Medical Analysis](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=Agentic-MedicalReport-Analysis&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Agentic-MedicalReport-Analysis) |
+| [![Agent-A-Thon](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=Agent-A-Thon&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Agent-A-Thon/) | [![Medical Analysis](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=Agentic-MedicalReport-Analysis&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Agentic-MedicalReport-Analysis) |
 | Multi-agent LLM financial advisor for **100+ MSMEs** · **60% less** manual analysis · Shopify, Mailchat & Supabase APIs · Built at **GDG Hyderabad Agent-A-Thon** | Conversational medical-report RAG platform · FAISS-based semantic retrieval · Structured output via **Pydantic** · Agentic orchestration pipelines |
 | [![Live](https://img.shields.io/badge/Live%20Demo-00C853?style=flat-square&logo=vercel&logoColor=white)](https://agent-a-thon.vercel.app/) `Python` `LangChain` `LLMs` `Supabase` `React` | [![Live](https://img.shields.io/badge/Live%20Demo-00C853?style=flat-square&logo=streamlit&logoColor=white)](https://ai-agentic-medicalreport-analysis.streamlit.app/) `RAG` `FAISS` `LangChain` `Pydantic` `Streamlit` |
 
 | 🤖 Conversational AI Avatar | 📰 News Analyzer |
 |:---:|:---:|
-| [![AI Avatar](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=Conversational-AI-Avatar&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Conversational-AI-Avatar) | [![News Analyzer](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=News_Analyzer&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/News_Analyzer) |
+| [![AI Avatar](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=Conversational-AI-Avatar&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Conversational-AI-Avatar) | [![News Analyzer](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=News_Analyzer&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/News_Analyzer) |
 | Multimodal AI avatar · **Speech-to-Text & TTS** · Agentic memory · Real-time interaction · **FastAPI + React** full-stack architecture | LLM-powered news fetching, analysis & summarization pipeline |
 | `FastAPI` `React` `STT` `TTS` `Agentic Memory` | `Python` `LLM` `NLP` |
 
 | 🩸 HematoVision | 💬 QA ChatBot (Open-Source Models) |
 |:---:|:---:|
-| [![HematoVision](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning) | [![QA ChatBot](https://github-readme-stats.vercel.app/api/pin/?username=hynko431&repo=QA-ChatBot-With-Multiple-OpenSource-Models&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/QA-ChatBot-With-Multiple-OpenSource-Models) |
+| [![HematoVision](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning) | [![QA ChatBot](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=QA-ChatBot-With-Multiple-OpenSource-Models&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/QA-ChatBot-With-Multiple-OpenSource-Models) |
 | Accurate blood cell classification using **Transfer Learning** & pre-trained CNNs · Efficient model for clinical-grade detection | Local LLM chatbot via **Ollama** · Runs **1B–8B** parameter models on-device · Requires 8–16 GB RAM |
 | `Transfer Learning` `CNN` `Jupyter Notebook` `OpenCV` | `Ollama` `Python` `Open-Source LLMs` |
 
@@ -218,10 +216,10 @@
 </div>
 
 <!-- GitHub Stats Card -->
-<img src="https://github-readme-stats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true&rank_icon=github" width="48%" />
+<img src="https://hynko431githubstats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true&rank_icon=github" width="48%" />
 &nbsp;
 <!-- Top Languages Card -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8&count_private=true&all_repos=true" width="48%" />
+<img src="https://hynko431githubstats.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8&count_private=true&all_repos=true" width="48%" />
 
 <br/><br/>
 
