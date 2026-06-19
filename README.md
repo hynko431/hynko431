@@ -261,4 +261,4 @@
 
 ---
 
-*Thanks for visiting! Feel free to explore my repositories and reach out for collaborations.* 🤝<img width="671" height="488" alt="image" src="https://github.com/user-attachments/assets/906895b0-674c-4d0e-b9b9-1e96070aa3a8" />
+*Thanks for visiting! Feel free to explore my repositories and reach out for collaborations.* 🤝
