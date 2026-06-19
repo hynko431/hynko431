@@ -1,0 +1,54 @@
+name: Update Stats Badges
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  update-badges:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch live GitHub stats
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          mkdir -p badges
+
+          # Total public repositories
+          REPOS=$(gh api users/hynko431 --jq '.public_repos')
+
+          # Total merged PRs (all-time, across all repos)
+          MERGED_PRS=$(gh api -X GET search/issues -f q="author:hynko431 type:pr is:merged" --jq '.total_count')
+
+          # Contributions in the last 365 days (GitHub's own contribution calendar)
+          CONTRIBUTIONS=$(gh api graphql -f query='
+            query {
+              user(login: "hynko431") {
+                contributionsCollection {
+                  contributionCalendar {
+                    totalContributions
+                  }
+                }
+              }
+            }' --jq '.data.user.contributionsCollection.contributionCalendar.totalContributions')
+
+          echo "{\"schemaVersion\":1,\"label\":\"Repositories\",\"message\":\"${REPOS}\",\"color\":\"orange\"}" > badges/repositories.json
+          echo "{\"schemaVersion\":1,\"label\":\"Merged PRs\",\"message\":\"${MERGED_PRS}\",\"color\":\"blue\"}" > badges/merged-prs.json
+          echo "{\"schemaVersion\":1,\"label\":\"Contributions (1y)\",\"message\":\"${CONTRIBUTIONS}\",\"color\":\"2ea44f\"}" > badges/contributions.json
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add badges/*.json
+          git diff --staged --quiet || git commit -m "chore: update stats badges [skip ci]"
+          git push
