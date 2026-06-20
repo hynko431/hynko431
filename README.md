@@ -151,8 +151,8 @@
 **📊 Data Science**
 
 <kbd><a href="https://numpy.org/" target="_blank"><img src="https://numpy.org/images/logo.svg" alt="NumPy" height="48" width="48"/></a></kbd>
-<kbd><a href="https://pandas.pydata.org/" target="_blank"><img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" height="48" width="48"/></a></kbd>
-<kbd><a href="https://matplotlib.org/" target="_blank"><img src="https://raw.githubusercontent.com/matplotlib/matplotlib/main/doc/source/_static/logo2.svg" alt="Matplotlib" height="48" width="48"/></a></kbd>
+<kbd><a href="https://pandas.pydata.org/" target="_blank"><img src="https://pandas.pydata.org/static/img/pandas.svg" alt="Pandas" height="48" width="48"/></a></kbd>
+<kbd><a href="https://matplotlib.org/" target="_blank"><img src="https://matplotlib.org/_static/logo2.svg" alt="Matplotlib" height="48" width="48"/></a></kbd>
 <kbd><a href="https://plotly.com/" target="_blank"><img src="https://images.plot.ly/logo/new-branding/plotly-logomark.png" alt="Plotly" height="48" width="48"/></a></kbd>
 <kbd><a href="https://scipy.org/" target="_blank"><img src="https://scipy.org/images/logo.svg" alt="SciPy" height="48" width="48"/></a></kbd>
 
@@ -216,10 +216,10 @@
 </div>
 
 <!-- GitHub Stats Card -->
-<img src="https://hynko431githubstats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true&rank_icon=github" width="48%" />
+<img src="https://hynko431githubstats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true" width="48%" />
 &nbsp;
 <!-- Top Languages Card -->
-<img src="https://hynko431githubstats.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8&count_private=true&all_repos=true" width="48%" />
+<img src="https://hynko431githubstats.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8" width="48%" />
 
 <br/><br/>
 
