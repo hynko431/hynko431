@@ -16,7 +16,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           # ── Auth & target ───────────────────────────────────────────────
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
           user: hynko431
           filename: metrics.svg
           
