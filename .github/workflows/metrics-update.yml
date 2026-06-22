@@ -21,7 +21,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           # GitHub token for API access
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
           user: hynko431
           
           # Template & Theme (Professional dark theme)
@@ -33,7 +33,7 @@ jobs:
           
           # Output settings
           output_action: commit
-          output_action_token: ${{ secrets.GITHUB_TOKEN }}
+          output_action_token: ${{ secrets.GH_PAT }}
           
           # Customization
           commit_message: '✨ update metrics - auto-generated'
