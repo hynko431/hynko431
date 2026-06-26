@@ -79,27 +79,25 @@
 
 <div align="center">
 
-| 🏆 MSME Agent-A-Thon — "Pocket CEO" | 🩺 Agentic Medical Report Analysis |
+| 🏆 **MSME Agent-A-Thon** — "Pocket CEO" | 🩺 **Agentic Medical Report Analysis** |
 |:---:|:---:|
 | [![Agent-A-Thon](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=Agent-A-Thon&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Agent-A-Thon/) | [![Medical Analysis](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=Agentic-MedicalReport-Analysis&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Agentic-MedicalReport-Analysis) |
-| Multi-agent LLM financial advisor for **100+ MSMEs** · **60% less** manual analysis · Shopify, Mailchat & Supabase APIs · Built at **GDG Hyderabad Agent-A-Thon** | Conversational medical-report RAG platform · FAISS-based semantic retrieval · Structured output via **Pydantic** · Agentic orchestration pipelines |
-| [![Live](https://img.shields.io/badge/Live%20Demo-00C853?style=flat-square&logo=vercel&logoColor=white)](https://agent-a-thon.vercel.app/) `Python` `LangChain` `LLMs` `Supabase` `React` | [![Live](https://img.shields.io/badge/Live%20Demo-00C853?style=flat-square&logo=streamlit&logoColor=white)](https://ai-agentic-medicalreport-analysis.streamlit.app/) `RAG` `FAISS` `LangChain` `Pydantic` `Streamlit` |
+| Multi-agent LLM financial advisor for 100+ MSMEs | Conversational medical-report RAG platform |
+| `Python` `LangChain` `Supabase` `React` · [🔗 Live](https://agent-a-thon.vercel.app/) | `RAG` `FAISS` `Pydantic` `Streamlit` · [🔗 Live](https://ai-agentic-medicalreport-analysis.streamlit.app/) |
 
-| 🤖 Conversational AI Avatar | 📰 News Analyzer |
+| 🤖 **Conversational AI Avatar** | 📰 **News Analyzer** |
 |:---:|:---:|
 | [![AI Avatar](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=Conversational-AI-Avatar&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Conversational-AI-Avatar) | [![News Analyzer](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=News_Analyzer&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/News_Analyzer) |
-| Multimodal AI avatar · **Speech-to-Text & TTS** · Agentic memory · Real-time interaction · **FastAPI + React** full-stack architecture | LLM-powered news fetching, analysis & summarization pipeline |
-| `FastAPI` `React` `STT` `TTS` `Agentic Memory` | `Python` `LLM` `NLP` |
+| Multimodal AI avatar with real-time STT/TTS & agentic memory | LLM-powered news fetching & summarization pipeline |
+| `FastAPI` `React` `STT` `TTS` | `Python` `LLM` `NLP` |
 
-| 🩸 HematoVision | 💬 QA ChatBot (Open-Source Models) |
+| 🩸 **HematoVision** | 💬 **QA ChatBot** (Open-Source Models) |
 |:---:|:---:|
 | [![HematoVision](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning) | [![QA ChatBot](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=QA-ChatBot-With-Multiple-OpenSource-Models&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/QA-ChatBot-With-Multiple-OpenSource-Models) |
-| Accurate blood cell classification using **Transfer Learning** & pre-trained CNNs · Efficient model for clinical-grade detection | Local LLM chatbot via **Ollama** · Runs **1B–8B** parameter models on-device · Requires 8–16 GB RAM |
-| `Transfer Learning` `CNN` `Jupyter Notebook` `OpenCV` | `Ollama` `Python` `Open-Source LLMs` |
+| Blood cell classification via transfer learning on pretrained CNNs | Local LLM chatbot via Ollama — runs 1B–8B models on-device |
+| `Transfer Learning` `CNN` `OpenCV` | `Ollama` `Python` `Open-Source LLMs` |
 
 </div>
-
----
 
 ## 💻 Tech Stack
 
