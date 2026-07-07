@@ -33,7 +33,9 @@
 
 <br/>
 
-- 🔭 Working as **AI Engineer Intern @ ASAR IT Technologies, Bangalore** — production-grade RAG systems & deterministic LLM pipelines
+- 🔭 Currently Working as the **AI ML Engineer @ Saral Vidhya Pvt. Ltd, Hyderabad** - Developing the entire Backend, DB systems + the AI services for the Product.
+
+- 🔭 Had Experience as **AI Engineer Intern @ ASAR IT Technologies Pvt. Ltd, Bangalore** — production-grade RAG systems & deterministic LLM pipelines
 
 - 🌱 Advancing in **Agentic AI & Generative AI** — real-world deployment, eval-driven dev & low-latency inference
 
