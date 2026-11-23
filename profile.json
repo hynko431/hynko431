@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "handle": "hynko431",
+  "name": "Siva Venkata Bhanu Prakash Irakam",
+  "role_headline": "Jr. SDE - Backend & Applied AI Engineer",
+  "location": "Hyderabad, India",
+  "current_company": "Saral Vidhya",
+  "summary": "Backend and Applied AI engineer building distributed Python/FastAPI services, schema-validated LLM and retrieval pipelines, and supply-chain/endpoint security tools across Python, TypeScript, and Rust.",
+  "hero_subtitle_lines": [
+    "Backend APIs, async queues & schema-validated LLM/RAG pipelines",
+    "across Python, FastAPI, PostgreSQL, TypeScript, and Rust."
+  ],
+  "hero_pills": [
+    "Backend & Queues",
+    "LLM & RAG Systems",
+    "Python · TS · Rust"
+  ],
+  "explorer_url": "https://hynko431.github.io/hynko431/",
+  "dynamic_assets_base": "./assets",
+  "contact": [
+    {
+      "id": "portfolio",
+      "label": "Portfolio",
+      "url": "https://siva-venkata-bhanu-prakash-portofol.vercel.app/",
+      "alt": "Portfolio Website"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/siva-venkata-bhanu-prakash/",
+      "alt": "LinkedIn Profile"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "url": "mailto:irakamsivabhanuprakash@gmail.com",
+      "alt": "Email Siva Venkata Bhanu Prakash Irakam"
+    },
+    {
+      "id": "x",
+      "label": "@Sivabhanu7198",
+      "url": "https://x.com/Sivabhanu7198",
+      "alt": "X Profile"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Saral Vidhya",
+      "location": "Hyderabad · On-site",
+      "roles": [
+        {
+          "title": "Jr. SDE - Backend",
+          "employment_type": "Full-time",
+          "period": "Nov 2026 – Present",
+          "highlights": [
+            "Architecting backend APIs, relational data models, and asynchronous task queues using Python, FastAPI, PostgreSQL, Celery, and Redis.",
+            "Building low-latency search, authentication, and AI service integrations for production academic evaluation workflows."
+          ]
+        },
+        {
+          "title": "AI ML Intern",
+          "employment_type": "Internship",
+          "period": "May 2026 – Nov 2026",
+          "highlights": [
+            "Built an LLM-as-a-Judge rubric grading system with a Human-in-the-Loop (HITL) review workflow backed by FastAPI and PostgreSQL/Supabase.",
+            "Implemented large-document Optical Character Recognition (OCR) ingestion, Retrieval-Augmented Generation (RAG) with Cache-Augmented Generation (CAG), JWT/RBAC/Google OAuth2 security, and Docker deployment."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "ASAR IT Technologies",
+      "location": "Bengaluru · On-site",
+      "roles": [
+        {
+          "title": "Artificial Intelligence Engineer",
+          "employment_type": "Internship",
+          "period": "Jan 2026 – Apr 2026",
+          "highlights": [
+            "Built schema-validated deterministic LLM extraction pipelines achieving 99% JSON validity at 300ms average latency.",
+            "Reduced OCR noise by 90% and improved extraction F1 score by +18%, backed by LangChain, FAISS, FastAPI, automated tests, and evaluation dashboards."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "SmartBridge Educational Services × APSCHE",
+      "location": "Remote",
+      "roles": [
+        {
+          "title": "AI & ML Intern",
+          "employment_type": "Internship",
+          "period": "Jun 2025 – Jul 2025",
+          "highlights": [
+            "Completed applied Python and scikit-learn preprocessing, feature engineering, predictive modeling, and evaluation workflows (Andhra Pradesh State Council of Higher Education; Cert ID EXT-APSCHE_AIML-50038)."
+          ]
+        }
+      ]
+    }
+  ],
+  "education": {
+    "institution": "Jawaharlal Nehru Technological University Anantapur (JNTUA) College of Engineering, Pulivendula",
+    "degree": "B.Tech in Computer Science & Engineering",
+    "period": "2022 – 2026"
+  },
+  "projects": [
+    {
+      "slug": "coldpin",
+      "repo": "Coldpin-npx-Safe-Finder",
+      "name": "Coldpin (npx Safe Finder)",
+      "category": "Supply-Chain Security CLI & MCP",
+      "summary": "Zero-execution npm/npx supply-chain triage CLI and Model Context Protocol (MCP) server with SHA-512 verification, OSV malware checks, and Git rollback recovery.",
+      "stack": [
+        "TypeScript",
+        "Node.js 24",
+        "MCP",
+        "SARIF",
+        "CycloneDX"
+      ],
+      "tier_ids": [
+        "backend-apis",
+        "cloud-systems"
+      ],
+      "links": {
+        "code": "https://github.com/hynko431/Coldpin-npx-Safe-Finder",
+        "docs": "https://coldpin-docs.pages.dev/",
+        "live": null
+      }
+    },
+    {
+      "slug": "sentinel",
+      "repo": "OmniConnect-Sentinel",
+      "name": "OmniConnect Sentinel",
+      "category": "Rust Endpoint & USB Security",
+      "summary": "Userspace Rust endpoint and USB device security platform using AES-256-GCM encrypted caching, Content Disarm and Reconstruction (CDR) workers, TPM 2.0, and ML-KEM-768 post-quantum key exchange.",
+      "stack": [
+        "Rust",
+        "AES-256-GCM",
+        "TPM 2.0",
+        "ML-KEM-768"
+      ],
+      "tier_ids": [
+        "cloud-systems"
+      ],
+      "links": {
+        "code": "https://github.com/hynko431/OmniConnect-Sentinel",
+        "docs": null,
+        "live": null
+      }
+    },
+    {
+      "slug": "cutaway",
+      "repo": "Cutaway-The-Anatomy-of-System-Design",
+      "name": "Cutaway: Anatomy of System Design",
+      "category": "3D Distributed-Systems Simulator",
+      "summary": "Interactive 3D distributed-systems dissection bench with live failure injection, Token Bucket rate limiting, and step-by-step request tracing.",
+      "stack": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Token Bucket"
+      ],
+      "tier_ids": [
+        "data-web",
+        "backend-apis"
+      ],
+      "links": {
+        "code": "https://github.com/hynko431/Cutaway-The-Anatomy-of-System-Design",
+        "docs": null,
+        "live": null
+      }
+    },
+    {
+      "slug": "helix",
+      "repo": "Helix--AI-Discovery-Platform",
+      "name": "Helix — AI Discovery Platform",
+      "category": "Multi-Agent Scientific AI",
+      "summary": "Multi-agent AI workbench for generative molecular design, causal knowledge graphs, binding-energy scoring, and automated lab workflows.",
+      "stack": [
+        "TypeScript",
+        "React 19",
+        "Tailwind CSS",
+        "Vite",
+        "Google GenAI SDK"
+      ],
+      "tier_ids": [
+        "ai-llm",
+        "data-web"
+      ],
+      "links": {
+        "code": "https://github.com/hynko431/Helix--AI-Discovery-Platform",
+        "docs": null,
+        "live": null
+      }
+    },
+    {
+      "slug": "autopilot",
+      "repo": "Agent-A-Thon",
+      "name": "MSME Autopilot (Pocket CEO)",
+      "category": "Multi-Agent Business Intelligence",
+      "summary": "Reasoning-and-acting multi-agent Business Intelligence orchestrator for Micro, Small, and Medium Enterprises (MSMEs) with finance, inventory, marketing, and OAuth connectors.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "Groq LLM",
+        "Pydantic",
+        "React 18"
+      ],
+      "tier_ids": [
+        "ai-llm",
+        "backend-apis",
+        "data-web"
+      ],
+      "links": {
+        "code": "https://github.com/hynko431/Agent-A-Thon",
+        "docs": null,
+        "live": "https://agent-a-thon.vercel.app/"
+      }
+    },
+    {
+      "slug": "medical",
+      "repo": "Agentic-MedicalReport-Analysis",
+      "name": "Agentic Medical Report Analysis",
+      "category": "Healthcare Multi-Agent RAG",
+      "summary": "Specialist multi-agent LLM and FAISS Retrieval-Augmented Generation (RAG) platform for structured clinical report synthesis and grounded Q&A.",
+      "stack": [
+        "Python",
+        "LangChain",
+        "LangGraph",
+        "FAISS",
+        "Pydantic",
+        "Streamlit"
+      ],
+      "tier_ids": [
+        "ai-llm",
+        "data-web"
+      ],
+      "links": {
+        "code": "https://github.com/hynko431/Agentic-MedicalReport-Analysis",
+        "docs": null,
+        "live": null
+      }
+    }
+  ],
+  "other_projects": [
+    {
+      "name": "Conversational AI Avatar",
+      "url": "https://github.com/hynko431/Conversational-AI-Avatar",
+      "note": "Anam.ai · Zep Cloud · FastAPI · Streamlit"
+    },
+    {
+      "name": "Agentic Data Scientist",
+      "url": "https://github.com/hynko431/Agentic-Data-Scientist",
+      "note": "Automated drift detection & retraining"
+    },
+    {
+      "name": "HematoVision",
+      "url": "https://github.com/hynko431/HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning",
+      "note": "MobileNetV2 transfer learning"
+    }
+  ],
+  "tech_stack_tiers": [
+    {
+      "id": "ai-llm",
+      "index": "01",
+      "label": "AI / ML & Agentic Systems",
+      "items": [
+        "PyTorch",
+        "Hugging Face",
+        "LangChain",
+        "LangGraph",
+        "FAISS",
+        "scikit-learn",
+        "OpenCV",
+        "Ollama",
+        "Pydantic",
+        "Google GenAI SDK"
+      ]
+    },
+    {
+      "id": "backend-apis",
+      "index": "02",
+      "label": "Backend APIs, Queues & Protocols",
+      "items": [
+        "Python",
+        "FastAPI",
+        "Celery",
+        "Node.js",
+        "TypeScript",
+        "Flask",
+        "Model Context Protocol (MCP)",
+        "JWT / OAuth2"
+      ]
+    },
+    {
+      "id": "data-web",
+      "index": "03",
+      "label": "Databases, Search & Frontend",
+      "items": [
+        "PostgreSQL",
+        "Supabase",
+        "Redis",
+        "Elasticsearch",
+        "MongoDB",
+        "SQLite",
+        "React",
+        "Tailwind CSS",
+        "Streamlit",
+        "NumPy",
+        "Pandas"
+      ]
+    },
+    {
+      "id": "cloud-systems",
+      "index": "04",
+      "label": "Systems, Security & DevOps",
+      "items": [
+        "Rust",
+        "Docker",
+        "GitHub Actions",
+        "Git",
+        "Google Cloud",
+        "Vercel",
+        "Cloudflare Pages",
+        "Java",
+        "C"
+      ]
+    }
+  ]
+}

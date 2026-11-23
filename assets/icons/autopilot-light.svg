@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-labelledby="autopilot-l-t autopilot-l-d">
+  <title id="autopilot-l-t">MSME Autopilot Business Intelligence Icon</title>
+  <desc id="autopilot-l-d">Ascending three-bar telemetry chart beneath a directional autopilot vector arc</desc>
+  <rect x="1" y="1" width="46" height="46" rx="10" fill="#F4F7FB" stroke="#D0D7DE" stroke-width="1.5"/>
+  <rect x="10.5" y="29" width="6.5" height="9" rx="1.5" fill="#E0F2FE" stroke="#0369A1" stroke-width="1.8"/>
+  <rect x="20.75" y="23.5" width="6.5" height="14.5" rx="1.5" fill="#BAE6FD" stroke="#0369A1" stroke-width="1.8"/>
+  <rect x="31" y="17.5" width="6.5" height="20.5" rx="1.5" fill="#7DD3FC" stroke="#075985" stroke-width="1.8"/>
+  <path d="M10.5 22C16.5 14 25.5 10.5 36.5 11.5" fill="none" stroke="#0369A1" stroke-width="2" stroke-linecap="round"/>
+  <path d="M32 8.5L37 11.6L32.5 15.2" fill="none" stroke="#075985" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

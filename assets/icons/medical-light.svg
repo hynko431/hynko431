@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-labelledby="medical-l-t medical-l-d">
+  <title id="medical-l-t">Agentic Medical Report Analysis Icon</title>
+  <desc id="medical-l-d">Rounded clinical cross intersected by an ECG pulse waveform trace</desc>
+  <rect x="1" y="1" width="46" height="46" rx="10" fill="#F4F7FB" stroke="#D0D7DE" stroke-width="1.5"/>
+  <path d="M19.5 10.5H28.5V19.5H37.5V28.5H28.5V37.5H19.5V28.5H10.5V19.5H19.5V10.5Z" fill="#FCE7F3" stroke="#BE185D" stroke-width="1.8" stroke-linejoin="round"/>
+  <polyline points="8.5,24 16.5,24 19.5,17.5 23.2,30.5 26.8,20.5 29.5,24 39.5,24" fill="none" stroke="#9D174D" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

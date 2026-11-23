@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none';" />
+  <title>hynko431 — Interactive 3D GitHub Profile Explorer</title>
+  <meta name="description" content="Interactive 3D GitHub Contribution Skyline, clickable Tech Stack Architecture cross-filter, and Featured Projects explorer for Siva Venkata Bhanu Prakash Irakam (@hynko431)." />
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/coldpin-dark.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <span class="brand-handle">@hynko431</span>
+        <span class="brand-title" id="header-name">Siva Venkata Bhanu Prakash Irakam</span>
+        <span class="brand-role" id="header-role">Jr. SDE - Backend &amp; Applied AI Engineer</span>
+      </div>
+      <nav class="nav-links" aria-label="Explorer sections and external links">
+        <a href="#skyline">3D Skyline</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/hynko431" rel="noopener noreferrer">GitHub Profile</a>
+        <a href="https://siva-venkata-bhanu-prakash-portofol.vercel.app/" rel="noopener noreferrer">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="skyline" class="panel" aria-labelledby="skyline-heading">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow" id="skyline-eyebrow">3D CONTRIBUTION SKYLINE · NIGHTLY TELEMETRY</p>
+          <h1 id="skyline-heading">Interactive 12-Month Commit Terrain</h1>
+          <p class="muted" id="skyline-sub">Drag to orbit (10°–72° yaw), hover bars to inspect dates, or use arrow keys for keyboard inspection.</p>
+        </div>
+        <dl class="kpi-strip" id="skyline-kpis" aria-label="Rolling 12-month contribution totals">
+          <div class="kpi-card"><dt>Contributions</dt><dd id="kpi-total">—</dd></div>
+          <div class="kpi-card"><dt>Active Days</dt><dd id="kpi-active">—</dd></div>
+          <div class="kpi-card"><dt>Best Streak</dt><dd id="kpi-best">—</dd></div>
+          <div class="kpi-card"><dt>Current Streak</dt><dd id="kpi-current" class="kpi-accent">—</dd></div>
+        </dl>
+      </div>
+
+      <div class="skyline-stage">
+        <canvas id="skyline-canvas" tabindex="0" role="application" aria-label="Interactive 3D GitHub Contribution Skyline. Use arrow keys to move day selection, Shift plus arrow keys to orbit camera, plus or minus to zoom, and zero to reset."></canvas>
+        <picture class="skyline-fallback">
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/contrib-3d-dark.svg" />
+          <source media="(prefers-color-scheme: light)" srcset="./assets/contrib-3d-light.svg" />
+          <img src="./assets/contrib-3d-light.svg" alt="3D Isometric GitHub Contribution Skyline for hynko431" />
+        </picture>
+      </div>
+
+      <div class="skyline-footer">
+        <div id="skyline-tooltip" class="tooltip-bar" role="status" aria-live="polite">
+          Static skyline shown until telemetry loads.
+        </div>
+        <div class="skyline-controls" role="toolbar" aria-label="3D skyline camera controls">
+          <button type="button" data-action="yaw-dec" aria-label="Rotate yaw left">Yaw −</button>
+          <button type="button" data-action="yaw-inc" aria-label="Rotate yaw right">Yaw +</button>
+          <button type="button" data-action="pitch-dec" aria-label="Tilt camera down">Pitch −</button>
+          <button type="button" data-action="pitch-inc" aria-label="Tilt camera up">Pitch +</button>
+          <button type="button" data-action="zoom-out" aria-label="Zoom out">Zoom −</button>
+          <button type="button" data-action="zoom-in" aria-label="Zoom in">Zoom +</button>
+          <button type="button" data-action="reset" aria-label="Reset camera view">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="panel" aria-labelledby="stack-heading">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">TECH STACK ARCHITECTURE · CLICK TO FILTER PROJECTS</p>
+          <h2 id="stack-heading">Four-Tier Engineering Stack</h2>
+        </div>
+      </div>
+      <div id="stack-filters" class="tier-filters" role="group" aria-label="Filter projects by tech stack tier"></div>
+      <div class="stack-visual">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-3d-dark.svg" />
+          <source media="(prefers-color-scheme: light)" srcset="./assets/stack-3d-light.svg" />
+          <img src="./assets/stack-3d-light.svg" alt="Four-tier Tech Stack Architecture for hynko431" />
+        </picture>
+      </div>
+    </section>
+
+    <section id="projects" class="panel" aria-labelledby="projects-heading">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">FEATURED PROJECTS · NIGHTLY REPO TELEMETRY</p>
+          <h2 id="projects-heading">Projects Explorer</h2>
+          <p class="muted" id="projects-filter-status">Showing all featured projects.</p>
+        </div>
+      </div>
+      <div id="projects-grid" class="projects-grid"></div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="muted">Zero-dependency static explorer built from <code>profile.json</code> and nightly GitHub GraphQL <code>telemetry.json</code>.</p>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

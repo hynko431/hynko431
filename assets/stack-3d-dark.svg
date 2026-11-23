@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 364" width="1120" height="364" role="img" aria-labelledby="stack-title stack-desc">
+  <title id="stack-title">Tech Stack Architecture — hynko431</title>
+  <desc id="stack-desc">01 AI / ML &amp; Agentic Systems: PyTorch, Hugging Face, LangChain, LangGraph, FAISS, scikit-learn, OpenCV, Ollama, Pydantic, Google GenAI SDK; 02 Backend APIs, Queues &amp; Protocols: Python, FastAPI, Celery, Node.js, TypeScript, Flask, Model Context Protocol (MCP), JWT / OAuth2; 03 Databases, Search &amp; Frontend: PostgreSQL, Supabase, Redis, Elasticsearch, MongoDB, SQLite, React, Tailwind CSS, Streamlit, NumPy, Pandas; 04 Systems, Security &amp; DevOps: Rust, Docker, GitHub Actions, Git, Google Cloud, Vercel, Cloudflare Pages, Java, C</desc>
+  <defs>
+    <linearGradient id="st-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <style>
+      .eyebrow { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 600; letter-spacing: 1.3px; fill: #58A6FF; }
+      .meta { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #8B949E; }
+      .tier-idx { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; font-weight: 700; }
+      .tier-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; }
+      .items { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12.5px; fill: #F0F6FC; }
+    </style>
+  </defs>
+  <rect x="0.5" y="0.5" width="1119" height="363" rx="14" fill="url(#st-bg)" stroke="#30363D" stroke-width="1"/>
+  <text x="26" y="33" class="eyebrow">TECH STACK ARCHITECTURE · 01 TO 04</text>
+  <text x="1094" y="33" text-anchor="end" class="meta">@hynko431</text>
+  <g>
+    <rect x="24" y="52" width="1072" height="66" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <rect x="24" y="52" width="5" height="66" rx="2.5" fill="#58A6FF"/>
+    <rect x="44" y="70" width="32" height="28" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+    <text x="60" y="88" text-anchor="middle" class="tier-idx" fill="#58A6FF">01</text>
+    <text x="88" y="89" class="tier-label" fill="#58A6FF">AI / ML &amp; Agentic Systems</text>
+    <line x1="340" y1="66" x2="340" y2="104" stroke="#30363D" stroke-width="1"/>
+    <text x="356" y="79" class="items">PyTorch  ·  Hugging Face  ·  LangChain  ·  LangGraph  ·  FAISS</text>
+    <text x="356" y="99" class="items">scikit-learn  ·  OpenCV  ·  Ollama  ·  Pydantic  ·  Google GenAI SDK</text>
+  </g>
+  <g>
+    <rect x="24" y="128" width="1072" height="66" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <rect x="24" y="128" width="5" height="66" rx="2.5" fill="#A5B4FC"/>
+    <rect x="44" y="146" width="32" height="28" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+    <text x="60" y="164" text-anchor="middle" class="tier-idx" fill="#A5B4FC">02</text>
+    <text x="88" y="165" class="tier-label" fill="#A5B4FC">Backend APIs, Queues &amp; Protocols</text>
+    <line x1="340" y1="142" x2="340" y2="180" stroke="#30363D" stroke-width="1"/>
+    <text x="356" y="155" class="items">Python  ·  FastAPI  ·  Celery  ·  Node.js  ·  TypeScript  ·  Flask</text>
+    <text x="356" y="175" class="items">Model Context Protocol (MCP)  ·  JWT / OAuth2</text>
+  </g>
+  <g>
+    <rect x="24" y="204" width="1072" height="66" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <rect x="24" y="204" width="5" height="66" rx="2.5" fill="#34D399"/>
+    <rect x="44" y="222" width="32" height="28" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+    <text x="60" y="240" text-anchor="middle" class="tier-idx" fill="#34D399">03</text>
+    <text x="88" y="241" class="tier-label" fill="#34D399">Databases, Search &amp; Frontend</text>
+    <line x1="340" y1="218" x2="340" y2="256" stroke="#30363D" stroke-width="1"/>
+    <text x="356" y="231" class="items">PostgreSQL  ·  Supabase  ·  Redis  ·  Elasticsearch  ·  MongoDB  ·  SQLite</text>
+    <text x="356" y="251" class="items">React  ·  Tailwind CSS  ·  Streamlit  ·  NumPy  ·  Pandas</text>
+  </g>
+  <g>
+    <rect x="24" y="280" width="1072" height="66" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <rect x="24" y="280" width="5" height="66" rx="2.5" fill="#FBBF24"/>
+    <rect x="44" y="298" width="32" height="28" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+    <text x="60" y="316" text-anchor="middle" class="tier-idx" fill="#FBBF24">04</text>
+    <text x="88" y="317" class="tier-label" fill="#FBBF24">Systems, Security &amp; DevOps</text>
+    <line x1="340" y1="294" x2="340" y2="332" stroke="#30363D" stroke-width="1"/>
+    <text x="356" y="307" class="items">Rust  ·  Docker  ·  GitHub Actions  ·  Git  ·  Google Cloud  ·  Vercel</text>
+    <text x="356" y="327" class="items">Cloudflare Pages  ·  Java  ·  C</text>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-labelledby="helix-d-t helix-d-d">
+  <title id="helix-d-t">Helix Molecular Discovery Icon</title>
+  <desc id="helix-d-d">Twin intertwined sinusoidal molecular strands linked by three base-pair nodes</desc>
+  <rect x="1" y="1" width="46" height="46" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+  <line x1="17" y1="14" x2="31" y2="14" stroke="#6EE7B7" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="18.5" y1="24" x2="29.5" y2="24" stroke="#6EE7B7" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="17" y1="34" x2="31" y2="34" stroke="#6EE7B7" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M14.5 9C14.5 18 33.5 18 33.5 24C33.5 30 14.5 30 14.5 39" fill="none" stroke="#34D399" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M33.5 9C33.5 18 14.5 18 14.5 24C14.5 30 33.5 30 33.5 39" fill="none" stroke="#10B981" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="17" cy="14" r="2.2" fill="#A7F3D0"/>
+  <circle cx="31" cy="14" r="2.2" fill="#34D399"/>
+  <circle cx="24" cy="24" r="2.3" fill="#A7F3D0"/>
+  <circle cx="17" cy="34" r="2.2" fill="#34D399"/>
+  <circle cx="31" cy="34" r="2.2" fill="#A7F3D0"/>
+</svg>

@@ -1,267 +1,137 @@
-<!-- HERO BANNER -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Siva%20Venkata%20Bhanu%20Prakash%20Irakam&fontSize=36&fontAlign=50&fontAlignY=40&color=gradient&customColorList=0,2,2,5,30" width="100%"/>
+  <a href="https://hynko431.github.io/hynko431/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/banner-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/banner-3d-light.svg" /><img alt="Siva Venkata Bhanu Prakash Irakam — Jr. SDE - Backend &amp; Applied AI Engineer Banner" src="./assets/banner-3d-light.svg" width="100%" /></picture></a>
+
+  <br/>
+
+  <a href="https://siva-venkata-bhanu-prakash-portofol.vercel.app/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/contact-portfolio-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/contact-portfolio-light.svg" /><img alt="Portfolio Website" src="./assets/icons/contact-portfolio-light.svg" height="28" /></picture></a>
+  <a href="https://www.linkedin.com/in/siva-venkata-bhanu-prakash/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/contact-linkedin-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/contact-linkedin-light.svg" /><img alt="LinkedIn Profile" src="./assets/icons/contact-linkedin-light.svg" height="28" /></picture></a>
+  <a href="mailto:irakamsivabhanuprakash@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/contact-email-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/contact-email-light.svg" /><img alt="Email Siva Venkata Bhanu Prakash Irakam" src="./assets/icons/contact-email-light.svg" height="28" /></picture></a>
+  <a href="https://x.com/Sivabhanu7198"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/contact-x-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/contact-x-light.svg" /><img alt="X Profile" src="./assets/icons/contact-x-light.svg" height="28" /></picture></a>
 </div>
 
-<!-- TAGLINE -->
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=13&center=true&vCenter=true&pause=1000&width=900&height=60&lines=AI%2FLLM+Engineer+%7C+RAG+Systems+%7C+Agentic+AI+%7C+Production+ML" />
-</div>
-
-<!-- ANIMATED STRIP -->
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=16&center=true&vCenter=true&pause=1200&width=700&height=45&color=58A6FF&lines=Training+Neural+Nets+and+Building+Systems...;Learning+by+Shipping+Real+Ideas...;Automating+the+Future%2C+One+Model+at+a+Time..." />
-</div>
-
-<div align="center">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f47e/512.gif" width="32"/>
-  &nbsp;&nbsp;
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Press+Start+2P&size=14&center=true&vCenter=true&pause=900&width=360&height=40&lines=commit.to.consistency" />
-  &nbsp;&nbsp;
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f47e/512.gif" width="32"/>
-</div>
-
-<br/>
+Backend and Applied AI engineer building distributed Python/FastAPI services, schema-validated LLM and retrieval pipelines, and supply-chain/endpoint security tools across Python, TypeScript, and Rust.
 
 ---
 
-<!-- MAIN INTRO -->
-<img align="right" alt="Coding" width="380" src="https://cdn.jsdelivr.net/gh/hynko431/hynko431@main/avento.gif" />
+## Experience
 
-### 👋🏻 Hey there, I'm Siva Venkata Bhanu Prakash Irakam
-**CSE Grad · AI/LLM Engineer · RAG Systems · Agentic AI · Production ML**
+### Saral Vidhya *(Hyderabad · On-site)*
 
-<br/>
+**Jr. SDE - Backend** · Full-time *(Nov 2026 – Present)*
 
-- 🔭 Currently Working as the **AI ML Engineer @ Saral Vidhya Pvt. Ltd, Hyderabad** - Developing the entire Backend, DB systems + the AI services for the Product.
+- Architecting backend APIs, relational data models, and asynchronous task queues using Python, FastAPI, PostgreSQL, Celery, and Redis.
+- Building low-latency search, authentication, and AI service integrations for production academic evaluation workflows.
 
-- 🔭 Had Experience as **AI Engineer Intern @ ASAR IT Technologies Pvt. Ltd, Bangalore** — production-grade RAG systems & deterministic LLM pipelines
+**AI ML Intern** · Internship *(May 2026 – Nov 2026)*
 
-- 🌱 Advancing in **Agentic AI & Generative AI** — real-world deployment, eval-driven dev & low-latency inference
+- Built an LLM-as-a-Judge rubric grading system with a Human-in-the-Loop (HITL) review workflow backed by FastAPI and PostgreSQL/Supabase.
+- Implemented large-document Optical Character Recognition (OCR) ingestion, Retrieval-Augmented Generation (RAG) with Cache-Augmented Generation (CAG), JWT/RBAC/Google OAuth2 security, and Docker deployment.
 
-- 💻 Currently building [**Pocket CEO**](https://agent-a-thon.vercel.app/) · [**Agentic Medical Report Analysis**](https://ai-agentic-medicalreport-analysis.streamlit.app/) · [**Conversational AI Avatar**](https://github.com/hynko431/Conversational-AI-Avatar)
+### ASAR IT Technologies *(Bengaluru · On-site)*
 
-- 🤝 Open to collaborating on **open-source AI/LLM projects** — retrieval systems, agentic workflows & scalable APIs
+**Artificial Intelligence Engineer** · Internship *(Jan 2026 – Apr 2026)*
 
-- 💬 Ask me about **RAG, LLM pipelines, FastAPI, semantic search & production AI engineering**
+- Built schema-validated deterministic LLM extraction pipelines achieving 99% JSON validity at 300ms average latency.
+- Reduced OCR noise by 90% and improved extraction F1 score by +18%, backed by LangChain, FAISS, FastAPI, automated tests, and evaluation dashboards.
 
-- 📫 Reach me at: **irakamsivabhanuprakash@gmail.com**
+### SmartBridge Educational Services × APSCHE *(Remote)*
 
-- 📱 Connect: **[LinkedIn/siva-venkata-bhanu-prakash](https://www.linkedin.com/in/siva-venkata-bhanu-prakash/)**
+**AI & ML Intern** · Internship *(Jun 2025 – Jul 2025)*
 
-- ⚡ Fun fact: Consistent progress during tough times is the real compound interest.
-
-<br/><br/>
-
----
-
-## 🌐 Socials
-
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/streetboy7198)
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/Sivabhanu7198)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/siva-venkata-bhanu-prakash)
-[![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/AlturisticOpening809)
-[![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/@Sivabhanu7198)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:irakamsivabhanuprakash@gmail.com)
+- Completed applied Python and scikit-learn preprocessing, feature engineering, predictive modeling, and evaluation workflows (Andhra Pradesh State Council of Higher Education; Cert ID EXT-APSCHE_AIML-50038).
 
 ---
 
-## 💼 Experience
+## Education
 
-**AI / OCR Search Engineer Intern — ASAR IT Technologies, Bengaluru** *(Jan 2026 – Present)*
-
-- Built deterministic LLM extraction pipelines achieving **99% JSON-valid outputs** at ~300ms latency
-- Reduced OCR noise by **80%+** and improved extraction F1 score by **18%**
-- Implemented RAG pipelines using **LangChain + FAISS** with FastAPI-based inference & retrieval APIs
-- Built evaluation dashboards tracking precision, recall, F1 & latency
+**B.Tech in Computer Science & Engineering** — Jawaharlal Nehru Technological University Anantapur (JNTUA) College of Engineering, Pulivendula *(2022 – 2026)*
 
 ---
 
-## 🧠 Key Projects
+## Featured Projects
 
-<div align="center">
-
-| 🏆 **MSME Agent-A-Thon** — "Pocket CEO" | 🩺 **Agentic Medical Report Analysis** |
-|:---:|:---:|
-| [![Agent-A-Thon](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=Agent-A-Thon&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Agent-A-Thon/) | [![Medical Analysis](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=Agentic-MedicalReport-Analysis&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Agentic-MedicalReport-Analysis) |
-| Multi-agent LLM financial advisor for 100+ MSMEs | Conversational medical-report RAG platform |
-| `Python` `LangChain` `Supabase` `React` · [🔗 Live](https://agent-a-thon.vercel.app/) | `RAG` `FAISS` `Pydantic` `Streamlit` · [🔗 Live](https://ai-agentic-medicalreport-analysis.streamlit.app/) |
-
-| 🤖 **Conversational AI Avatar** | 📰 **News Analyzer** |
-|:---:|:---:|
-| [![AI Avatar](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=Conversational-AI-Avatar&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/Conversational-AI-Avatar) | [![News Analyzer](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=News_Analyzer&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/News_Analyzer) |
-| Multimodal AI avatar with real-time STT/TTS & agentic memory | LLM-powered news fetching & summarization pipeline |
-| `FastAPI` `React` `STT` `TTS` | `Python` `LLM` `NLP` |
-
-| 🩸 **HematoVision** | 💬 **QA ChatBot** (Open-Source Models) |
-|:---:|:---:|
-| [![HematoVision](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning) | [![QA ChatBot](https://hynko431githubstats.vercel.app/api/pin/?username=hynko431&repo=QA-ChatBot-With-Multiple-OpenSource-Models&theme=blue-green&hide_border=true&title_color=00e5ff&icon_color=00bfa5&bg_color=0d1117&border_radius=12)](https://github.com/hynko431/QA-ChatBot-With-Multiple-OpenSource-Models) |
-| Blood cell classification via transfer learning on pretrained CNNs | Local LLM chatbot via Ollama — runs 1B–8B models on-device |
-| `Transfer Learning` `CNN` `OpenCV` | `Ollama` `Python` `Open-Source LLMs` |
-
-</div>
-
-## 💻 Tech Stack
-
-<table style="width: 100%; border-collapse: collapse;">
-<tr>
-<td align="left" style="padding: 10px; vertical-align: top;">
-
-**🗣️ Languages**
-
-<kbd><a href="https://www.python.org" target="_blank"><img src="https://skillicons.dev/icons?i=python" alt="Python" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.java.com" target="_blank"><img src="https://skillicons.dev/icons?i=java" alt="Java" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.cprogramming.com/" target="_blank"><img src="https://skillicons.dev/icons?i=c" alt="C" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.typescriptlang.org/" target="_blank"><img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript" height="48" width="48"/></a></kbd>
-
-<br/><br/>
-
-**🤖 AI / ML / LLM**
-
-<kbd><a href="https://www.tensorflow.org" target="_blank"><img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" height="48" width="48"/></a></kbd>
-<kbd><a href="https://pytorch.org/" target="_blank"><img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch" height="48" width="48"/></a></kbd>
-<kbd><a href="https://opencv.org/" target="_blank"><img src="https://skillicons.dev/icons?i=opencv" alt="OpenCV" height="48" width="48"/></a></kbd>
-<kbd><a href="https://huggingface.co/" target="_blank"><img src="https://avatars.githubusercontent.com/u/25720743?s=48&v=4" alt="HuggingFace" height="48" width="48"/></a></kbd>
-<kbd><a href="https://python.langchain.com/" target="_blank"><img src="https://avatars.githubusercontent.com/u/126733545?s=48&v=4" alt="LangChain" height="48" width="48"/></a></kbd>
-<kbd><a href="https://scikit-learn.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn" height="48" width="48"/></a></kbd>
-<kbd><a href="https://keras.io/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras" height="48" width="48"/></a></kbd>
-
-<br/><br/>
-
-**🌐 Backend & APIs**
-
-<kbd><a href="https://fastapi.tiangolo.com/" target="_blank"><img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI" height="48" width="48"/></a></kbd>
-<kbd><a href="https://flask.palletsprojects.com/" target="_blank"><img src="https://skillicons.dev/icons?i=flask" alt="Flask" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.postman.com/" target="_blank"><img src="https://skillicons.dev/icons?i=postman" alt="Postman" height="48" width="48"/></a></kbd>
-
-<br/><br/>
-
-**🗄️ Databases & Search**
-
-<kbd><a href="https://www.mongodb.com/" target="_blank"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.postgresql.org/" target="_blank"><img src="https://skillicons.dev/icons?i=postgresql" alt="PostgreSQL" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.mysql.com/" target="_blank"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" height="48" width="48"/></a></kbd>
-<kbd><a href="https://redis.io/" target="_blank"><img src="https://skillicons.dev/icons?i=redis" alt="Redis" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.elastic.co/" target="_blank"><img src="https://avatars.githubusercontent.com/u/6764390?s=48&v=4" alt="Elasticsearch" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.sqlite.org/" target="_blank"><img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" height="48" width="48"/></a></kbd>
-
-</td>
-<td align="right" style="padding: 10px; vertical-align: top;">
-
-**📊 Data Science**
-
-<kbd><a href="https://numpy.org/" target="_blank"><img src="https://numpy.org/images/logo.svg" alt="NumPy" height="48" width="48"/></a></kbd>
-<kbd><a href="https://pandas.pydata.org/" target="_blank"><img src="https://pandas.pydata.org/static/img/pandas.svg" alt="Pandas" height="48" width="48"/></a></kbd>
-<kbd><a href="https://matplotlib.org/" target="_blank"><img src="https://matplotlib.org/_static/logo2.svg" alt="Matplotlib" height="48" width="48"/></a></kbd>
-<kbd><a href="https://plotly.com/" target="_blank"><img src="https://images.plot.ly/logo/new-branding/plotly-logomark.png" alt="Plotly" height="48" width="48"/></a></kbd>
-<kbd><a href="https://scipy.org/" target="_blank"><img src="https://scipy.org/images/logo.svg" alt="SciPy" height="48" width="48"/></a></kbd>
-
-<br/><br/>
-
-**🎨 Frontend & Web**
-
-<kbd><a href="https://react.dev/" target="_blank"><img src="https://skillicons.dev/icons?i=react" alt="React" height="48" width="48"/></a></kbd>
-<kbd><a href="https://nodejs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" height="48" width="48"/></a></kbd>
-<kbd><a href="https://streamlit.io/" target="_blank"><img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" alt="Streamlit" height="48" width="48"/></a></kbd>
-<kbd><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://skillicons.dev/icons?i=html" alt="HTML5" height="48" width="48"/></a></kbd>
-<kbd><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://skillicons.dev/icons?i=css" alt="CSS3" height="48" width="48"/></a></kbd>
-
-<br/><br/>
-
-**☁️ Cloud & Deployment**
-
-<kbd><a href="https://cloud.google.com/" target="_blank"><img src="https://skillicons.dev/icons?i=gcp" alt="Google Cloud" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.docker.com/" target="_blank"><img src="https://skillicons.dev/icons?i=docker" alt="Docker" height="48" width="48"/></a></kbd>
-<kbd><a href="https://vercel.com/" target="_blank"><img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" height="48" width="48"/></a></kbd>
-<kbd><a href="https://render.com/" target="_blank"><img src="https://avatars.githubusercontent.com/u/36424661?s=48&v=4" alt="Render" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.netlify.com/" target="_blank"><img src="https://skillicons.dev/icons?i=netlify" alt="Netlify" height="48" width="48"/></a></kbd>
-
-<br/><br/>
-
-**🛠️ Tools & DevOps**
-
-<kbd><a href="https://git-scm.com/" target="_blank"><img src="https://skillicons.dev/icons?i=git" alt="Git" height="48" width="48"/></a></kbd>
-<kbd><a href="https://github.com/" target="_blank"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" height="48" width="48"/></a></kbd>
-<kbd><a href="https://www.anaconda.com/" target="_blank"><img src="https://skillicons.dev/icons?i=anaconda" alt="Anaconda" height="48" width="48"/></a></kbd>
-<kbd><a href="https://code.visualstudio.com/" target="_blank"><img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" height="48" width="48"/></a></kbd>
-
-</td>
-</tr>
+<table>
+  <tbody>
+    <tr>
+      <td align="center" width="64"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/coldpin-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/coldpin-light.svg" /><img alt="Coldpin (npx Safe Finder) icon" src="./assets/icons/coldpin-light.svg" width="48" height="48" /></picture></td>
+      <td>
+        <strong>Coldpin (npx Safe Finder)</strong> — <em>Supply-Chain Security CLI &amp; MCP</em><br/>
+        Zero-execution npm/npx supply-chain triage CLI and Model Context Protocol (MCP) server with SHA-512 verification, OSV malware checks, and Git rollback recovery.<br/>
+        <code>TypeScript</code> <code>Node.js 24</code> <code>MCP</code> <code>SARIF</code> <code>CycloneDX</code><br/>
+        <a href="https://github.com/hynko431/Coldpin-npx-Safe-Finder">Code</a> · <a href="https://coldpin-docs.pages.dev/">Docs</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="64"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/sentinel-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/sentinel-light.svg" /><img alt="OmniConnect Sentinel icon" src="./assets/icons/sentinel-light.svg" width="48" height="48" /></picture></td>
+      <td>
+        <strong>OmniConnect Sentinel</strong> — <em>Rust Endpoint &amp; USB Security</em><br/>
+        Userspace Rust endpoint and USB device security platform using AES-256-GCM encrypted caching, Content Disarm and Reconstruction (CDR) workers, TPM 2.0, and ML-KEM-768 post-quantum key exchange.<br/>
+        <code>Rust</code> <code>AES-256-GCM</code> <code>TPM 2.0</code> <code>ML-KEM-768</code><br/>
+        <a href="https://github.com/hynko431/OmniConnect-Sentinel">Code</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="64"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/cutaway-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/cutaway-light.svg" /><img alt="Cutaway: Anatomy of System Design icon" src="./assets/icons/cutaway-light.svg" width="48" height="48" /></picture></td>
+      <td>
+        <strong>Cutaway: Anatomy of System Design</strong> — <em>3D Distributed-Systems Simulator</em><br/>
+        Interactive 3D distributed-systems dissection bench with live failure injection, Token Bucket rate limiting, and step-by-step request tracing.<br/>
+        <code>JavaScript</code> <code>HTML</code> <code>CSS</code> <code>Token Bucket</code><br/>
+        <a href="https://github.com/hynko431/Cutaway-The-Anatomy-of-System-Design">Code</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="64"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/helix-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/helix-light.svg" /><img alt="Helix — AI Discovery Platform icon" src="./assets/icons/helix-light.svg" width="48" height="48" /></picture></td>
+      <td>
+        <strong>Helix — AI Discovery Platform</strong> — <em>Multi-Agent Scientific AI</em><br/>
+        Multi-agent AI workbench for generative molecular design, causal knowledge graphs, binding-energy scoring, and automated lab workflows.<br/>
+        <code>TypeScript</code> <code>React 19</code> <code>Tailwind CSS</code> <code>Vite</code> <code>Google GenAI SDK</code><br/>
+        <a href="https://github.com/hynko431/Helix--AI-Discovery-Platform">Code</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="64"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/autopilot-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/autopilot-light.svg" /><img alt="MSME Autopilot (Pocket CEO) icon" src="./assets/icons/autopilot-light.svg" width="48" height="48" /></picture></td>
+      <td>
+        <strong>MSME Autopilot (Pocket CEO)</strong> — <em>Multi-Agent Business Intelligence</em><br/>
+        Reasoning-and-acting multi-agent Business Intelligence orchestrator for Micro, Small, and Medium Enterprises (MSMEs) with finance, inventory, marketing, and OAuth connectors.<br/>
+        <code>Python</code> <code>FastAPI</code> <code>Groq LLM</code> <code>Pydantic</code> <code>React 18</code><br/>
+        <a href="https://github.com/hynko431/Agent-A-Thon">Code</a> · <a href="https://agent-a-thon.vercel.app/">Live</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="64"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/medical-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/medical-light.svg" /><img alt="Agentic Medical Report Analysis icon" src="./assets/icons/medical-light.svg" width="48" height="48" /></picture></td>
+      <td>
+        <strong>Agentic Medical Report Analysis</strong> — <em>Healthcare Multi-Agent RAG</em><br/>
+        Specialist multi-agent LLM and FAISS Retrieval-Augmented Generation (RAG) platform for structured clinical report synthesis and grounded Q&amp;A.<br/>
+        <code>Python</code> <code>LangChain</code> <code>LangGraph</code> <code>FAISS</code> <code>Pydantic</code> <code>Streamlit</code><br/>
+        <a href="https://github.com/hynko431/Agentic-MedicalReport-Analysis">Code</a>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
+*Also built:* [Conversational AI Avatar](https://github.com/hynko431/Conversational-AI-Avatar) *(Anam.ai · Zep Cloud · FastAPI · Streamlit)* · [Agentic Data Scientist](https://github.com/hynko431/Agentic-Data-Scientist) *(Automated drift detection & retraining)* · [HematoVision](https://github.com/hynko431/HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning) *(MobileNetV2 transfer learning)* — [View all repositories →](https://github.com/hynko431?tab=repositories) · [Filter Projects in 3D Explorer →](https://hynko431.github.io/hynko431/#projects)
+
 ---
-## 📊 GitHub Analytics
+
+## Tech Stack Architecture
 
 <div align="center">
-
-<!-- Dynamic GitHub Stats Badges -->
-<a href="https://github.com/hynko431">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=public_repos&label=Public%20Repos&color=blue&style=for-the-badge&logo=github" />
-</a>
-&nbsp;
-<a href="https://github.com/hynko431?tab=followers">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=followers&label=Followers&color=0366d6&style=for-the-badge&logo=github" />
-</a>
-&nbsp;
-<a href="https://github.com/hynko431?tab=repositories">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/search/repositories?q=user:hynko431&query=$.items.length&label=Total%20Repos&color=ff6b6b&style=for-the-badge&logo=git" />
-</a>
-
-<br/><br/>
----
-<div align="center">
-
-[![](https://visitcount.itsvg.in/api?id=hynko431&label=Profile%20Views&icon=0&color=6&pretty=true)](https://visitcount.itsvg.in)
-
+  <a href="https://hynko431.github.io/hynko431/#stack"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/stack-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/stack-3d-light.svg" /><img alt="Four-tier Tech Stack Architecture for hynko431" src="./assets/stack-3d-light.svg" width="100%" /></picture></a>
 </div>
 
-<!-- GitHub Stats Card -->
-<img src="https://hynko431githubstats.vercel.app/api?username=hynko431&theme=dark&hide_border=true&count_private=true&show_icons=true" width="48%" />
-&nbsp;
-<!-- Top Languages Card -->
-<img src="https://hynko431githubstats.vercel.app/api/top-langs/?username=hynko431&theme=dark&hide_border=true&layout=compact&langs_count=8" width="48%" />
-
-<br/><br/>
-
-<!-- Dynamic Contribution Stats -->
-<img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=public_gists&label=Public%20Gists&color=9c27b0&style=for-the-badge&logo=github" />
-&nbsp;
-<img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/hynko431&query=created_at&label=Member%20Since&color=success&style=for-the-badge&logo=github" />
-
-</div>
+| Tier | Category | Technologies |
+| :--- | :--- | :--- |
+| `01` | **AI / ML & Agentic Systems** | `PyTorch`, `Hugging Face`, `LangChain`, `LangGraph`, `FAISS`, `scikit-learn`, `OpenCV`, `Ollama`, `Pydantic`, `Google GenAI SDK` |
+| `02` | **Backend APIs, Queues & Protocols** | `Python`, `FastAPI`, `Celery`, `Node.js`, `TypeScript`, `Flask`, `Model Context Protocol (MCP)`, `JWT / OAuth2` |
+| `03` | **Databases, Search & Frontend** | `PostgreSQL`, `Supabase`, `Redis`, `Elasticsearch`, `MongoDB`, `SQLite`, `React`, `Tailwind CSS`, `Streamlit`, `NumPy`, `Pandas` |
+| `04` | **Systems, Security & DevOps** | `Rust`, `Docker`, `GitHub Actions`, `Git`, `Google Cloud`, `Vercel`, `Cloudflare Pages`, `Java`, `C` |
 
 ---
+
+## 3D Contribution Skyline
 
 <div align="center">
-
-<!-- Profile Views Counter -->
-[![](https://visitcount.itsvg.in/api?id=hynko431&label=Profile%20Views&icon=0&color=6&pretty=true)](https://visitcount.itsvg.in)
-
-<br/><br/>
-
-<!-- Streak Stats -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=hynko431&theme=dark&hide_border=true" />
-
+  <a href="https://hynko431.github.io/hynko431/#skyline"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contrib-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/contrib-3d-light.svg" /><img alt="3D Isometric GitHub Contribution Skyline for hynko431" src="./assets/contrib-3d-light.svg" width="100%" /></picture></a>
 </div>
 
-### 📈 Contribution Stats
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hynko431&theme=react-dark&hide_border=true&area=true" width="95%"/>
-</p>
-
----
-
-## 📊 Live GitHub Metrics (Updated Daily)
-
-<div align="center">
-
-> **Real-time insights into my coding activity, languages, and contributions**
-
-![Metrics](https://github.com/hynko431/hynko431/blob/main/metrics.svg)
-
-</div>
-
----
-
-*Thanks for visiting! Feel free to explore my repositories and reach out for collaborations.* 🤝
+<p align="center"><a href="https://hynko431.github.io/hynko431/">Open Interactive 3D Profile Explorer →</a></p>

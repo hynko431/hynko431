@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-labelledby="cutaway-d-t cutaway-d-d">
+  <title id="cutaway-d-t">Cutaway Distributed Systems Icon</title>
+  <desc id="cutaway-d-d">Three-layer architectural cutaway diagram sliced diagonally with packet flow arrows</desc>
+  <rect x="1" y="1" width="46" height="46" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+  <rect x="9" y="11" width="30" height="7" rx="2" fill="#262452" stroke="#818CF8" stroke-width="1.8"/>
+  <rect x="9" y="21" width="30" height="7" rx="2" fill="#1D2242" stroke="#818CF8" stroke-width="1.8"/>
+  <rect x="9" y="31" width="30" height="7" rx="2" fill="#262452" stroke="#818CF8" stroke-width="1.8"/>
+  <line x1="16" y1="8" x2="32" y2="40" stroke="#C7D2FE" stroke-width="1.8" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+  <circle cx="15" cy="14.5" r="1.8" fill="#A5B4FC"/>
+  <circle cx="24" cy="24.5" r="1.8" fill="#E0E7FF"/>
+  <circle cx="33" cy="34.5" r="1.8" fill="#A5B4FC"/>
+  <path d="M29 14.5H34.5M32.5 12.5L34.5 14.5L32.5 16.5" fill="none" stroke="#C7D2FE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13.5 34.5H19M17 32.5L19 34.5L17 36.5" fill="none" stroke="#C7D2FE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

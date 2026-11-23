@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 310" width="1200" height="310" role="img" aria-labelledby="b3d-title b3d-desc">
+  <title id="b3d-title">Siva Venkata Bhanu Prakash Irakam — 3D Isometric Profile Banner</title>
+  <desc id="b3d-desc">3D isometric architectural hero banner for Siva Venkata Bhanu Prakash Irakam, AI/ML, Backend, and Systems Engineer at Saral Vidhya in Hyderabad, India.</desc>
+  <defs>
+    <linearGradient id="bg-g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="55%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <radialGradient id="stage-glow" cx="79%" cy="46%" r="36%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#818CF8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar-g" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#58A6FF"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <pattern id="b-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.95" fill="#30363D" fill-opacity="0.5"/>
+    </pattern>
+    <filter id="b-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <style>
+      .eyebrow {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        fill: #58A6FF;
+      }
+      .name {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -0.75px;
+        fill: #F0F6FC;
+      }
+      .subtitle {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        fill: #B1BAC4;
+      }
+      .meta {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 12px;
+        fill: #8B949E;
+      }
+      .pill-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 11.5px;
+        font-weight: 500;
+        fill: #E6EDF3;
+      }
+      .float-1 { animation: levitate 5.8s cubic-bezier(0.37, 0, 0.63, 1) infinite; }
+      .float-2 { animation: levitate 5.8s cubic-bezier(0.37, 0, 0.63, 1) -1.2s infinite; }
+      .float-3 { animation: levitate 5.8s cubic-bezier(0.37, 0, 0.63, 1) -2.4s infinite; }
+      .float-sat { animation: levitate-sat 4.6s cubic-bezier(0.37, 0, 0.63, 1) -0.8s infinite; }
+      .pulse { animation: pulse-op 3.2s ease-in-out infinite; }
+      @keyframes levitate {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes levitate-sat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-9px); }
+      }
+      @keyframes pulse-op {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .float-1, .float-2, .float-3, .float-sat, .pulse { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <!-- Outer frame -->
+  <rect x="0.5" y="0.5" width="1199" height="309" rx="16" fill="url(#bg-g)" stroke="#30363D" stroke-width="1"/>
+  <rect x="1" y="1" width="1198" height="308" rx="15.5" fill="url(#b-dots)"/>
+  <rect x="1" y="1" width="1198" height="308" rx="15.5" fill="url(#stage-glow)"/>
+
+  <!-- Left 3D Accent Pillar -->
+  <rect x="44" y="48" width="4" height="214" rx="2" fill="url(#bar-g)"/>
+
+  <!-- Left Identity Column -->
+  <circle cx="72" cy="64" r="4.5" fill="#3FB950" class="pulse"/>
+  <text x="86" y="68" class="eyebrow">AI / ML  ·  BACKEND  ·  SYSTEMS ENGINEER</text>
+  <text x="68" y="122" class="name">Siva Venkata Bhanu Prakash Irakam</text>
+  <text x="68" y="156" class="subtitle">Architecting production AI services, deterministic LLM/RAG pipelines</text>
+  <text x="68" y="179" class="subtitle">&amp; memory-safe security tooling across Python, TypeScript, and Rust.</text>
+
+  <!-- 3D Beveled Capability Pills -->
+  <g transform="translate(68, 204)">
+    <rect x="0" y="3" width="152" height="28" rx="7" fill="#05080D" opacity="0.55"/><rect x="0" y="0" width="152" height="28" rx="7" fill="#161B22" stroke="#30363D"/><line x1="8" y1="0.8" x2="144" y2="0.8" stroke="#58A6FF" stroke-opacity="0.35" stroke-width="1"/><text x="76.0" y="18" text-anchor="middle" class="pill-text">LLM &amp; RAG Systems</text><rect x="162" y="3" width="102" height="28" rx="7" fill="#05080D" opacity="0.55"/><rect x="162" y="0" width="102" height="28" rx="7" fill="#161B22" stroke="#30363D"/><line x1="170" y1="0.8" x2="256" y2="0.8" stroke="#58A6FF" stroke-opacity="0.35" stroke-width="1"/><text x="213.0" y="18" text-anchor="middle" class="pill-text">Agentic AI</text><rect x="274" y="3" width="118" height="28" rx="7" fill="#05080D" opacity="0.55"/><rect x="274" y="0" width="118" height="28" rx="7" fill="#161B22" stroke="#30363D"/><line x1="282" y1="0.8" x2="384" y2="0.8" stroke="#58A6FF" stroke-opacity="0.35" stroke-width="1"/><text x="333.0" y="18" text-anchor="middle" class="pill-text">Backend &amp; DB</text><rect x="402" y="3" width="214" height="28" rx="7" fill="#05080D" opacity="0.55"/><rect x="402" y="0" width="214" height="28" rx="7" fill="#161B22" stroke="#30363D"/><line x1="410" y1="0.8" x2="608" y2="0.8" stroke="#58A6FF" stroke-opacity="0.35" stroke-width="1"/><text x="509.0" y="18" text-anchor="middle" class="pill-text">Python · TypeScript · Rust</text>
+  </g>
+
+  <text x="68" y="264" class="meta">@hynko431  ·  AI / ML Engineer @ Saral Vidhya  ·  Hyderabad, India</text>
+
+  <!-- Right 3D Isometric Floating Architectural Monolith -->
+  <g>
+    <g><polygon points="809.0,218.0 958.0,304.0 958.0,316.0 809.0,230.0" fill="#0C121C" stroke="#253348" stroke-width="0.9" stroke-linejoin="round"/><polygon points="958.0,304.0 1107.0,218.0 1107.0,230.0 958.0,316.0" fill="#090D14" stroke="#253348" stroke-width="0.9" stroke-linejoin="round"/><polygon points="958.0,132.0 1107.0,218.0 958.0,304.0 809.0,218.0" fill="#131B28" stroke="#253348" stroke-width="0.9" stroke-linejoin="round"/></g>
+    <line x1="995.2" y1="153.3" x2="846.3" y2="239.3" stroke="#25354C" stroke-width="0.8" opacity="0.65"/><line x1="920.8" y1="153.3" x2="1069.7" y2="239.3" stroke="#25354C" stroke-width="0.8" opacity="0.65"/><line x1="1032.5" y1="174.8" x2="883.5" y2="260.8" stroke="#25354C" stroke-width="0.8" opacity="0.65"/><line x1="883.5" y1="174.8" x2="1032.5" y2="260.8" stroke="#25354C" stroke-width="0.8" opacity="0.65"/><line x1="1069.7" y1="196.3" x2="920.8" y2="282.3" stroke="#25354C" stroke-width="0.8" opacity="0.65"/><line x1="846.3" y1="196.3" x2="995.2" y2="282.3" stroke="#25354C" stroke-width="0.8" opacity="0.65"/>
+    <g filter="url(#b-blur)"><polygon points="958.0,155.5 1065.4,217.5 958.0,279.5 850.6,217.5" fill="#000000" opacity="0.55" stroke="none" stroke-width="0.8" stroke-linejoin="round"/></g>
+    <line x1="958.0" y1="162.0" x2="958.0" y2="74.0" stroke="#38BDF8" stroke-width="1.0" stroke-dasharray="3 4" opacity="0.45"/><line x1="1023.8" y1="200.0" x2="1023.8" y2="112.0" stroke="#38BDF8" stroke-width="1.0" stroke-dasharray="3 4" opacity="0.45"/><line x1="892.2" y1="200.0" x2="892.2" y2="112.0" stroke="#38BDF8" stroke-width="1.0" stroke-dasharray="3 4" opacity="0.45"/><line x1="958.0" y1="238.0" x2="958.0" y2="150.0" stroke="#38BDF8" stroke-width="1.0" stroke-dasharray="3 4" opacity="0.45"/>
+    <g class="float-1"><g><polygon points="857.5,187.0 958.0,245.0 958.0,258.0 857.5,200.0" fill="rgba(21,30,44,0.95)" stroke="#34D399" stroke-width="0.9" stroke-linejoin="round"/><polygon points="958.0,245.0 1058.5,187.0 1058.5,200.0 958.0,258.0" fill="rgba(15,23,35,0.96)" stroke="#34D399" stroke-width="0.9" stroke-linejoin="round"/><polygon points="958.0,129.0 1058.5,187.0 958.0,245.0 857.5,187.0" fill="rgba(30,41,59,0.92)" stroke="#34D399" stroke-width="0.9" stroke-linejoin="round"/><polyline points="857.5,187.0 958.0,129.0 1058.5,187.0" fill="none" stroke="#34D399" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/></g><g><polygon points="888.7,175.0 906.0,185.0 906.0,195.0 888.7,185.0" fill="#10B981" stroke="#D1FAE5" stroke-width="0.6" stroke-linejoin="round"/><polygon points="906.0,185.0 923.4,175.0 923.4,185.0 906.0,195.0" fill="#047857" stroke="#D1FAE5" stroke-width="0.6" stroke-linejoin="round"/><polygon points="906.0,165.0 923.4,175.0 906.0,185.0 888.7,175.0" fill="#6EE7B7" stroke="#D1FAE5" stroke-width="0.6" stroke-linejoin="round"/></g><g><polygon points="996.1,179.0 1011.7,188.0 1011.7,196.0 996.1,187.0" fill="#10B981" stroke="#D1FAE5" stroke-width="0.6" stroke-linejoin="round"/><polygon points="1011.7,188.0 1027.3,179.0 1027.3,187.0 1011.7,196.0" fill="#047857" stroke="#D1FAE5" stroke-width="0.6" stroke-linejoin="round"/><polygon points="1011.7,170.0 1027.3,179.0 1011.7,188.0 996.1,179.0" fill="#6EE7B7" stroke="#D1FAE5" stroke-width="0.6" stroke-linejoin="round"/></g></g>
+    <g class="float-2"><polygon points="958.0,138.5 1041.1,186.5 958.0,234.5 874.9,186.5" fill="#000000" opacity="0.30250000000000005" stroke="none" stroke-width="0.8" stroke-linejoin="round"/><g><polygon points="867.9,150.0 958.0,202.0 958.0,214.0 867.9,162.0" fill="rgba(22,35,56,0.92)" stroke="#58A6FF" stroke-width="0.9" stroke-linejoin="round"/><polygon points="958.0,202.0 1048.1,150.0 1048.1,162.0 958.0,214.0" fill="rgba(16,25,43,0.94)" stroke="#58A6FF" stroke-width="0.9" stroke-linejoin="round"/><polygon points="958.0,98.0 1048.1,150.0 958.0,202.0 867.9,150.0" fill="rgba(30,45,70,0.88)" stroke="#58A6FF" stroke-width="0.9" stroke-linejoin="round"/><polyline points="867.9,150.0 958.0,98.0 1048.1,150.0" fill="none" stroke="#58A6FF" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/></g><g><polygon points="938.9,113.0 958.0,124.0 958.0,138.0 938.9,127.0" fill="#3B82F6" stroke="#DBEAFE" stroke-width="0.6" stroke-linejoin="round"/><polygon points="958.0,124.0 977.1,113.0 977.1,127.0 958.0,138.0" fill="#1D4ED8" stroke="#DBEAFE" stroke-width="0.6" stroke-linejoin="round"/><polygon points="958.0,102.0 977.1,113.0 958.0,124.0 938.9,113.0" fill="#79C0FF" stroke="#DBEAFE" stroke-width="0.6" stroke-linejoin="round"/></g><g><polygon points="942.4,157.0 959.7,167.0 959.7,185.0 942.4,175.0" fill="#6366F1" stroke="#E0E7FF" stroke-width="0.6" stroke-linejoin="round"/><polygon points="959.7,167.0 977.1,157.0 977.1,175.0 959.7,185.0" fill="#4338CA" stroke="#E0E7FF" stroke-width="0.6" stroke-linejoin="round"/><polygon points="959.7,147.0 977.1,157.0 959.7,167.0 942.4,157.0" fill="#A5B4FC" stroke="#E0E7FF" stroke-width="0.6" stroke-linejoin="round"/></g></g>
+    <g class="float-3"><polygon points="958.0,109.5 1027.3,149.5 958.0,189.5 888.7,149.5" fill="#000000" opacity="0.24750000000000003" stroke="none" stroke-width="0.8" stroke-linejoin="round"/><g><polygon points="881.8,111.0 958.0,155.0 958.0,166.0 881.8,122.0" fill="rgba(28,42,69,0.90)" stroke="#38BDF8" stroke-width="1.0" stroke-linejoin="round"/><polygon points="958.0,155.0 1034.2,111.0 1034.2,122.0 958.0,166.0" fill="rgba(20,31,54,0.92)" stroke="#38BDF8" stroke-width="1.0" stroke-linejoin="round"/><polygon points="958.0,67.0 1034.2,111.0 958.0,155.0 881.8,111.0" fill="rgba(40,56,88,0.85)" stroke="#38BDF8" stroke-width="1.0" stroke-linejoin="round"/><polyline points="881.8,111.0 958.0,67.0 1034.2,111.0" fill="none" stroke="#38BDF8" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/></g><g><polygon points="942.4,72.0 956.3,80.0 956.3,102.0 942.4,94.0" fill="#6366F1" stroke="#E0E7FF" stroke-width="0.7" stroke-linejoin="round"/><polygon points="956.3,80.0 970.1,72.0 970.1,94.0 956.3,102.0" fill="#4338CA" stroke="#E0E7FF" stroke-width="0.7" stroke-linejoin="round"/><polygon points="956.3,64.0 970.1,72.0 956.3,80.0 942.4,72.0" fill="#A5B4FC" stroke="#E0E7FF" stroke-width="0.7" stroke-linejoin="round"/><polyline points="942.4,72.0 956.3,64.0 970.1,72.0" fill="none" stroke="#E0E7FF" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/></g><g><polygon points="977.1,96.0 990.9,104.0 990.9,120.0 977.1,112.0" fill="#3B82F6" stroke="#DBEAFE" stroke-width="0.7" stroke-linejoin="round"/><polygon points="990.9,104.0 1004.8,96.0 1004.8,112.0 990.9,120.0" fill="#1D4ED8" stroke="#DBEAFE" stroke-width="0.7" stroke-linejoin="round"/><polygon points="990.9,88.0 1004.8,96.0 990.9,104.0 977.1,96.0" fill="#79C0FF" stroke="#DBEAFE" stroke-width="0.7" stroke-linejoin="round"/><polyline points="977.1,96.0 990.9,88.0 1004.8,96.0" fill="none" stroke="#DBEAFE" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/></g><g><polygon points="937.2,75.0 958.0,87.0 958.0,125.0 937.2,113.0" fill="#22D3EE" stroke="#CFFAFE" stroke-width="0.85" stroke-linejoin="round"/><polygon points="958.0,87.0 978.8,75.0 978.8,113.0 958.0,125.0" fill="#0891B2" stroke="#CFFAFE" stroke-width="0.85" stroke-linejoin="round"/><polygon points="958.0,63.0 978.8,75.0 958.0,87.0 937.2,75.0" fill="#67E8F9" stroke="#CFFAFE" stroke-width="0.85" stroke-linejoin="round"/><polyline points="937.2,75.0 958.0,63.0 978.8,75.0" fill="none" stroke="#CFFAFE" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/></g><g><polygon points="913.0,99.0 925.1,106.0 925.1,120.0 913.0,113.0" fill="#10B981" stroke="#D1FAE5" stroke-width="0.7" stroke-linejoin="round"/><polygon points="925.1,106.0 937.2,99.0 937.2,113.0 925.1,120.0" fill="#047857" stroke="#D1FAE5" stroke-width="0.7" stroke-linejoin="round"/><polygon points="925.1,92.0 937.2,99.0 925.1,106.0 913.0,99.0" fill="#6EE7B7" stroke="#D1FAE5" stroke-width="0.7" stroke-linejoin="round"/><polyline points="913.0,99.0 925.1,92.0 937.2,99.0" fill="none" stroke="#D1FAE5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/></g></g>
+    <g class="float-sat"><g><polygon points="892.2,50.0 902.6,56.0 902.6,68.0 892.2,62.0" fill="#22D3EE" stroke="#CFFAFE" stroke-width="0.65" stroke-linejoin="round"/><polygon points="902.6,56.0 913.0,50.0 913.0,62.0 902.6,68.0" fill="#0891B2" stroke="#CFFAFE" stroke-width="0.65" stroke-linejoin="round"/><polygon points="902.6,44.0 913.0,50.0 902.6,56.0 892.2,50.0" fill="#67E8F9" stroke="#CFFAFE" stroke-width="0.65" stroke-linejoin="round"/></g><g><polygon points="979.7,172.5 989.2,178.0 989.2,189.0 979.7,183.5" fill="#6366F1" stroke="#E0E7FF" stroke-width="0.65" stroke-linejoin="round"/><polygon points="989.2,178.0 998.7,172.5 998.7,183.5 989.2,189.0" fill="#4338CA" stroke="#E0E7FF" stroke-width="0.65" stroke-linejoin="round"/><polygon points="989.2,167.0 998.7,172.5 989.2,178.0 979.7,172.5" fill="#A5B4FC" stroke="#E0E7FF" stroke-width="0.65" stroke-linejoin="round"/></g></g>
+  </g>
+</svg>
