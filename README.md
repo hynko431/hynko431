@@ -72,7 +72,7 @@ Backend and Applied AI engineer building distributed Python/FastAPI services, sc
 
 ---
 
-## 3D Contribution Skyline
+## 3D Contribution
 
 <div align="center">
   <a href="https://hynko431.github.io/hynko431/#skyline"><picture><source media="(prefers-color-scheme: dark)" srcset="https://hynko431.github.io/hynko431/assets/contrib-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://hynko431.github.io/hynko431/assets/contrib-3d-light.svg" /><img alt="3D Isometric GitHub Contribution Skyline for hynko431" src="https://hynko431.github.io/hynko431/assets/contrib-3d-light.svg" width="100%" /></picture></a>
