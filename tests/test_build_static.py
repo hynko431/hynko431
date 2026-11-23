@@ -53,6 +53,10 @@ class TestBuildStatic(unittest.TestCase):
         self.assertIn(f"{explorer}#stack", r1)
         self.assertIn(f"{explorer}#skyline", r1)
 
+        # 2-column project card grid and non-repetitive collapsed plain-text stack index
+        self.assertEqual(r1.count('<td width="50%" valign="top">'), 6)
+        self.assertIn("<details>\n<summary>Plain-text stack index (Tiers 01–04)</summary>", r1)
+
         # Ctrl+F searchable plain text keywords
         for kw in (
             "FastAPI",
@@ -80,6 +84,9 @@ class TestBuildStatic(unittest.TestCase):
             svg = build_static.render_stack_svg(self.profile, mode)
             self.assertEqual(validate_svg_document(svg, f"stack-3d-{mode}.svg"), [])
             self.assertNotIn("\r\n", svg)
+            self.assertIn("3D ISOMETRIC STACK ARCHITECTURE", svg)
+            for tier_tag in ("L01", "L02", "L03", "L04"):
+                self.assertIn(tier_tag, svg)
 
     def test_check_mode_detects_drift(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:

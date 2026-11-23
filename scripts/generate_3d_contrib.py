@@ -342,11 +342,16 @@ def render_svg(
     bars_svg: list[str] = []
     s = 0.80
     margin = (1.0 - s) * 0.5
+    today_day = max(days, key=lambda d: d.date)
+    today_top_center: tuple[float, float] = (0.0, 0.0)
+    today_ring_pts: list[tuple[float, float]] = []
+
     for day in days:
         w0 = day.week + margin
         d0 = day.dow + margin
         h = bar_height(day.count, max_count)
         top_c, left_c, right_c, edge_c = t["levels"][str(day.level)]
+        is_today = day.date == today_day.date
 
         b0 = proj(w0, d0, 0)
         b1 = proj(w0 + s, d0, 0)
@@ -360,12 +365,42 @@ def render_svg(
         bars_svg.append(
             f'<polygon points="{fmt_pts([t3, t2, b2, b3])}" fill="{left_c}"/>'
             f'<polygon points="{fmt_pts([t2, t1, b1, b2])}" fill="{right_c}"/>'
-            f'<polygon points="{fmt_pts([t0, t1, t2, t3])}" fill="{top_c}" stroke="{edge_c}" stroke-width="0.55" stroke-linejoin="round"/>'
+            f'<polygon points="{fmt_pts([t0, t1, t2, t3])}" fill="{top_c}" stroke="{t["accent"] if is_today else edge_c}" stroke-width="{"1.35" if is_today else "0.55"}" stroke-linejoin="round"/>'
         )
         if day.level == 4 and day.count >= 15:
             bars_svg.append(
                 f'<polyline points="{fmt_pts([t3, t2, t1])}" fill="none" stroke="{t["peak_cap"]}" stroke-width="0.9" stroke-opacity="0.85"/>'
             )
+        if is_today:
+            today_top_center = ((t0[0] + t2[0]) * 0.5, (t0[1] + t2[1]) * 0.5)
+            pad_r = 0.24
+            r0 = proj(w0 - pad_r, d0 - pad_r, h)
+            r1 = proj(w0 + s + pad_r, d0 - pad_r, h)
+            r2 = proj(w0 + s + pad_r, d0 + s + pad_r, h)
+            r3 = proj(w0 - pad_r, d0 + s + pad_r, h)
+            today_ring_pts = [r0, r1, r2, r3]
+
+    # "We are here · Today" beacon callout anchored strictly inside viewBox (1200x456) and below top HUD
+    tx, ty = today_top_center
+    today_date_label = today_day.date.strftime("%b %d, %Y")
+    today_noun = "commit" if today_day.count == 1 else "commits"
+    pin_w = 204.0
+    pin_h = 40.0
+    pin_x = min(max(tx - pin_w * 0.58, 40.0), 1180.0 - pin_w)
+    pin_y = min(max(ty - 126.0, 94.0), 308.0)
+    anchor_x = min(max(tx, pin_x + 16.0), pin_x + pin_w - 16.0)
+    today_beacon_svg = (
+        f'  <g>\n'
+        f'    <polygon points="{fmt_pts(today_ring_pts)}" fill="none" stroke="{t["accent"]}" stroke-width="1.2" stroke-opacity="0.85"/>\n'
+        f'    <line x1="{anchor_x:.1f}" y1="{pin_y + pin_h:.1f}" x2="{tx:.1f}" y2="{ty:.1f}" stroke="{t["accent"]}" stroke-width="1.25" stroke-dasharray="3 3"/>\n'
+        f'    <circle cx="{tx:.1f}" cy="{ty:.1f}" r="6.0" fill="none" stroke="{t["accent"]}" stroke-width="1.1" opacity="0.65"/>\n'
+        f'    <circle cx="{tx:.1f}" cy="{ty:.1f}" r="3.1" fill="{t["accent"]}"/>\n'
+        f'    <rect x="{pin_x:.1f}" y="{pin_y:.1f}" width="{pin_w:.1f}" height="{pin_h:.1f}" rx="8" fill="{t["hud_bg"]}" stroke="{t["accent"]}" stroke-width="1.15"/>\n'
+        f'    <circle cx="{pin_x + 14:.1f}" cy="{pin_y + 14:.1f}" r="3.0" fill="{t["accent"]}"/>\n'
+        f'    <text x="{pin_x + 23:.1f}" y="{pin_y + 17.5:.1f}" class="pin-eyebrow">WE ARE HERE · TODAY</text>\n'
+        f'    <text x="{pin_x + 14:.1f}" y="{pin_y + 32.0:.1f}" class="pin-val">{xml_escape(today_date_label)} · {today_day.count} {today_noun}</text>\n'
+        f'  </g>'
+    )
 
     month_labels: list[str] = []
     seen_months: set[tuple[int, int]] = set()
@@ -456,6 +491,19 @@ def render_svg(
         font-size: 10.5px;
         fill: {t["axis_text"]};
       }}
+      .pin-eyebrow {{
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 9.5px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        fill: {t["accent"]};
+      }}
+      .pin-val {{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 11.5px;
+        font-weight: 600;
+        fill: {t["title"]};
+      }}
     </style>
   </defs>
 
@@ -494,6 +542,7 @@ def render_svg(
   <g>
     {"".join(bars_svg)}
   </g>
+{today_beacon_svg}
 
   <g>{"".join(month_labels)}</g>
   <g>{"".join(day_labels)}</g>
@@ -535,6 +584,7 @@ def build_dist(
     telemetry_json = {
         "schema_version": 1,
         "generated_at_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "today_date": today_ist.isoformat(),
         "username": profile["handle"],
         "active_theme": active_theme,
         "theme_palettes": {

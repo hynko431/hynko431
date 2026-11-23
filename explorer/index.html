@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none';" />
   <title>hynko431 — Interactive 3D GitHub Profile Explorer</title>
-  <meta name="description" content="Interactive 3D GitHub Contribution Skyline, clickable Tech Stack Architecture cross-filter, and Featured Projects explorer for Siva Venkata Bhanu Prakash Irakam (@hynko431)." />
+  <meta name="description" content="Interactive 3D GitHub Contribution Skyline with live Today beacon, interactive 3D Tech Stack Architecture layers, and Featured Projects explorer for Siva Venkata Bhanu Prakash Irakam (@hynko431)." />
   <link rel="icon" type="image/svg+xml" href="./assets/icons/coldpin-dark.svg" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -19,7 +19,7 @@
       </div>
       <nav class="nav-links" aria-label="Explorer sections and external links">
         <a href="#skyline">3D Skyline</a>
-        <a href="#stack">Tech Stack</a>
+        <a href="#stack">3D Tech Stack</a>
         <a href="#projects">Projects</a>
         <a href="https://github.com/hynko431" rel="noopener noreferrer">GitHub Profile</a>
         <a href="https://siva-venkata-bhanu-prakash-portofol.vercel.app/" rel="noopener noreferrer">Portfolio</a>
@@ -33,7 +33,7 @@
         <div>
           <p class="eyebrow" id="skyline-eyebrow">3D CONTRIBUTION SKYLINE · NIGHTLY TELEMETRY</p>
           <h1 id="skyline-heading">Interactive 12-Month Commit Terrain</h1>
-          <p class="muted" id="skyline-sub">Drag to orbit (10°–72° yaw), hover bars to inspect dates, or use arrow keys for keyboard inspection.</p>
+          <p class="muted" id="skyline-sub">Drag to orbit (10°–72° yaw), hover or click bars to inspect dates, or follow the live Today beacon.</p>
         </div>
         <dl class="kpi-strip" id="skyline-kpis" aria-label="Rolling 12-month contribution totals">
           <div class="kpi-card"><dt>Contributions</dt><dd id="kpi-total">—</dd></div>
@@ -44,7 +44,7 @@
       </div>
 
       <div class="skyline-stage">
-        <canvas id="skyline-canvas" tabindex="0" role="application" aria-label="Interactive 3D GitHub Contribution Skyline. Use arrow keys to move day selection, Shift plus arrow keys to orbit camera, plus or minus to zoom, and zero to reset."></canvas>
+        <canvas id="skyline-canvas" tabindex="0" role="application" aria-label="Interactive 3D GitHub Contribution Skyline. Use arrow keys to move day selection, Shift plus arrow keys to orbit camera, plus or minus to zoom, T for Today, and zero to reset."></canvas>
         <picture class="skyline-fallback">
           <source media="(prefers-color-scheme: dark)" srcset="./assets/contrib-3d-dark.svg" />
           <source media="(prefers-color-scheme: light)" srcset="./assets/contrib-3d-light.svg" />
@@ -56,7 +56,9 @@
         <div id="skyline-tooltip" class="tooltip-bar" role="status" aria-live="polite">
           Static skyline shown until telemetry loads.
         </div>
+        <div class="skyline-legend" id="skyline-legend" aria-hidden="true"></div>
         <div class="skyline-controls" role="toolbar" aria-label="3D skyline camera controls">
+          <button type="button" data-action="today" aria-label="Focus on Today bar">Today</button>
           <button type="button" data-action="yaw-dec" aria-label="Rotate yaw left">Yaw −</button>
           <button type="button" data-action="yaw-inc" aria-label="Rotate yaw right">Yaw +</button>
           <button type="button" data-action="pitch-dec" aria-label="Tilt camera down">Pitch −</button>
@@ -71,17 +73,28 @@
     <section id="stack" class="panel" aria-labelledby="stack-heading">
       <div class="panel-head">
         <div>
-          <p class="eyebrow">TECH STACK ARCHITECTURE · CLICK TO FILTER PROJECTS</p>
-          <h2 id="stack-heading">Four-Tier Engineering Stack</h2>
+          <p class="eyebrow">3D ISOMETRIC STACK ARCHITECTURE · CLICK SLABS TO FILTER PROJECTS</p>
+          <h2 id="stack-heading">Interactive Four-Tier Engineering Stack</h2>
+          <p class="muted">Drag to tilt the 3D architectural layers, explode tiers to inspect boundaries, or click any slab to filter projects below.</p>
         </div>
       </div>
       <div id="stack-filters" class="tier-filters" role="group" aria-label="Filter projects by tech stack tier"></div>
-      <div class="stack-visual">
-        <picture>
+      <div class="stack-stage">
+        <canvas id="stack-canvas" tabindex="0" role="application" aria-label="Interactive 3D Isometric Tech Stack Architecture. Click a layer slab or press Up and Down arrows to filter projects, drag to rotate, and press E to toggle exploded layers."></canvas>
+        <picture class="stack-fallback">
           <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-3d-dark.svg" />
           <source media="(prefers-color-scheme: light)" srcset="./assets/stack-3d-light.svg" />
-          <img src="./assets/stack-3d-light.svg" alt="Four-tier Tech Stack Architecture for hynko431" />
+          <img src="./assets/stack-3d-light.svg" alt="3D Isometric Tech Stack Architecture for hynko431" />
         </picture>
+      </div>
+      <div class="stack-footer">
+        <div id="stack-status" class="tooltip-bar" role="status" aria-live="polite">
+          Click any 3D layer slab (01–04) or tier button to filter featured projects.
+        </div>
+        <div class="stack-controls" role="toolbar" aria-label="3D tech stack camera controls">
+          <button type="button" data-stack-action="explode" aria-pressed="false">Explode Layers</button>
+          <button type="button" data-stack-action="reset">Reset View</button>
+        </div>
       </div>
     </section>
 
@@ -98,7 +111,7 @@
   </main>
 
   <footer class="container footer">
-    <p class="muted">Zero-dependency static explorer built from <code>profile.json</code> and nightly GitHub GraphQL <code>telemetry.json</code>.</p>
+    <p class="muted">Zero-dependency static 3D explorer built from <code>profile.json</code> and nightly GitHub GraphQL <code>telemetry.json</code>.</p>
   </footer>
 
   <script src="./app.js" defer></script>

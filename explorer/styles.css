@@ -203,39 +203,55 @@ h2 {
   font-variant-numeric: tabular-nums;
 }
 
-.skyline-stage {
+.skyline-stage,
+.stack-stage {
   position: relative;
   width: 100%;
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
+  background: var(--bg0);
+}
+
+.skyline-stage {
   background: var(--skyline-bg0);
 }
 
-#skyline-canvas {
+#skyline-canvas,
+#stack-canvas {
   display: none;
   width: 100%;
-  height: 410px;
   cursor: grab;
   touch-action: none;
 }
 
-#skyline-canvas:active {
+#skyline-canvas {
+  height: 430px;
+}
+
+#stack-canvas {
+  height: 430px;
+}
+
+#skyline-canvas:active,
+#stack-canvas:active {
   cursor: grabbing;
 }
 
-.skyline-fallback {
+.skyline-fallback,
+.stack-fallback {
   display: block;
 }
 
 .skyline-fallback img,
-.stack-visual img {
+.stack-fallback img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.skyline-footer {
+.skyline-footer,
+.stack-footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -257,13 +273,32 @@ h2 {
   align-items: center;
 }
 
-.skyline-controls {
+.skyline-legend {
+  display: none;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 2.5px;
+  border: 1px solid var(--border);
+}
+
+.skyline-controls,
+.stack-controls {
   display: none;
   flex-wrap: wrap;
   gap: 6px;
 }
 
 .skyline-controls button,
+.stack-controls button,
 .tier-btn {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -277,35 +312,45 @@ h2 {
 }
 
 .skyline-controls button:hover,
+.stack-controls button:hover,
 .tier-btn:hover {
   border-color: var(--accent);
 }
 
-.tier-btn[aria-pressed="true"] {
+.tier-btn[aria-pressed="true"],
+.stack-controls button[aria-pressed="true"] {
   border-color: var(--accent);
   color: var(--accent);
 }
 
-/* Progressive enhancement: show canvas/controls only after JSON loads cleanly */
-#skyline.is-interactive #skyline-canvas {
+/* Progressive enhancement: show canvases & controls only after JSON loads cleanly */
+#skyline.is-interactive #skyline-canvas,
+#stack.is-interactive #stack-canvas {
   display: block;
 }
 
-#skyline.is-interactive .skyline-controls {
+#skyline.is-interactive .skyline-controls,
+#skyline.is-interactive .skyline-legend,
+#stack.is-interactive .stack-controls {
   display: flex;
 }
 
-#skyline.is-interactive .skyline-fallback {
+#skyline.is-interactive .skyline-fallback,
+#stack.is-interactive .stack-fallback {
   display: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   #skyline.is-interactive #skyline-canvas,
-  #skyline.is-interactive .skyline-controls {
+  #skyline.is-interactive .skyline-controls,
+  #skyline.is-interactive .skyline-legend,
+  #stack.is-interactive #stack-canvas,
+  #stack.is-interactive .stack-controls {
     display: none;
   }
 
-  #skyline.is-interactive .skyline-fallback {
+  #skyline.is-interactive .skyline-fallback,
+  #stack.is-interactive .stack-fallback {
     display: block;
   }
 }
@@ -315,12 +360,6 @@ h2 {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 14px;
-}
-
-.stack-visual {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  overflow: hidden;
 }
 
 .projects-grid {
@@ -427,6 +466,10 @@ h2 {
   }
 
   #skyline-canvas {
-    height: 300px;
+    height: 320px;
+  }
+
+  #stack-canvas {
+    height: 360px;
   }
 }

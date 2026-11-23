@@ -199,10 +199,12 @@ class TestTelemetryAndSvgs(unittest.TestCase):
                 self.assertEqual(validate_svg_document(sky, f"sky-{theme}-{mode}"), [])
                 self.assertNotIn("PEAK / DAY", sky)
                 self.assertNotIn("Peak:", sky)
+                self.assertIn("WE ARE HERE · TODAY", sky)
                 self._assert_all_y_within(sky, 456.0)
 
                 sky54 = generate_3d_contrib.render_svg(self.profile["handle"], parsed_54["days"], stats_54, theme, mode)
                 self.assertEqual(validate_svg_document(sky54, f"sky54-{theme}-{mode}"), [])
+                self.assertIn("WE ARE HERE · TODAY", sky54)
                 self._assert_all_y_within(sky54, 456.0)
 
     def test_build_dist_packages_complete_bundle(self) -> None:
