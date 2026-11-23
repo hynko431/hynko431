@@ -19,7 +19,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any, Callable
 
 from scripts.profile_core import (
@@ -53,6 +53,7 @@ class DayContrib:
     dow: int
     level: int
     count: int
+    projects: list[dict[str, Any]] = field(default_factory=list)
 
 
 def compute_ist_window_utc(today_ist: dt.date) -> tuple[str, str]:
@@ -110,6 +111,33 @@ def build_graphql_request(
         f"          }}\n"
         f"        }}\n"
         f"      }}\n"
+        f"      commitContributionsByRepository(maxRepositories: 100) {{\n"
+        f"        repository {{\n"
+        f"          name\n"
+        f"          nameWithOwner\n"
+        f"          isPrivate\n"
+        f"          url\n"
+        f"        }}\n"
+        f"        contributions(first: 100) {{\n"
+        f"          nodes {{\n"
+        f"            occurredAt\n"
+        f"            commitCount\n"
+        f"          }}\n"
+        f"        }}\n"
+        f"      }}\n"
+        f"      pullRequestContributionsByRepository(maxRepositories: 50) {{\n"
+        f"        repository {{\n"
+        f"          name\n"
+        f"          nameWithOwner\n"
+        f"          isPrivate\n"
+        f"          url\n"
+        f"        }}\n"
+        f"        contributions(first: 100) {{\n"
+        f"          nodes {{\n"
+        f"            occurredAt\n"
+        f"          }}\n"
+        f"        }}\n"
+        f"      }}\n"
         f"    }}\n"
         f"  }}\n"
         + "\n".join(repo_fields)
@@ -164,6 +192,87 @@ def parse_graphql_payload(payload: dict[str, Any], repo_slugs: list[str]) -> dic
 
     if not (365 <= len(days) <= 372):
         raise RuntimeError(f"Expected 365..372 calendar days, parsed {len(days)}")
+
+    # Aggregate per-date public repository commits & PRs (strictly redacting private repos)
+    contrib_coll = data["user"].get("contributionsCollection") or {}
+    valid_dates = {d.date.isoformat() for d in days}
+    date_repo_map: dict[str, dict[str, dict[str, Any]]] = {}
+
+    def _resolve_date_key(raw_ts: Any) -> str | None:
+        if not isinstance(raw_ts, str) or len(raw_ts) < 10:
+            return None
+        utc_day = raw_ts[:10]
+        if utc_day in valid_dates:
+            return utc_day
+        try:
+            parsed_dt = dt.datetime.fromisoformat(raw_ts.replace("Z", "+00:00"))
+            ist_day = parsed_dt.astimezone(IST).date().isoformat()
+            if ist_day in valid_dates:
+                return ist_day
+        except ValueError:
+            return None
+        return None
+
+    def _accumulate_repo_activity(entries: Any, *, kind: str) -> None:
+        if not isinstance(entries, list):
+            return
+        for entry in entries:
+            if not isinstance(entry, dict):
+                continue
+            repo_obj = entry.get("repository")
+            if not isinstance(repo_obj, dict):
+                continue
+            is_private = bool(repo_obj.get("isPrivate"))
+            if is_private:
+                key = "__private__"
+                label = "Private repository"
+                repo_url = None
+            else:
+                full_name = str(repo_obj.get("nameWithOwner") or repo_obj.get("name") or "").strip()
+                short_name = str(repo_obj.get("name") or full_name).strip()
+                if not short_name:
+                    continue
+                key = full_name or short_name
+                label = short_name
+                raw_url = repo_obj.get("url")
+                repo_url = raw_url if isinstance(raw_url, str) and raw_url.startswith("https://") else None
+
+            nodes = (entry.get("contributions") or {}).get("nodes") or []
+            if not isinstance(nodes, list):
+                continue
+            for node in nodes:
+                if not isinstance(node, dict):
+                    continue
+                d_key = _resolve_date_key(node.get("occurredAt"))
+                if not d_key:
+                    continue
+                bucket = date_repo_map.setdefault(d_key, {})
+                rec = bucket.get(key)
+                if rec is None:
+                    rec = {
+                        "repo": label,
+                        "commits": 0,
+                        "prs": 0,
+                        "url": repo_url,
+                        "is_private": is_private,
+                    }
+                    bucket[key] = rec
+                if kind == "commit":
+                    rec["commits"] += max(0, int(node.get("commitCount") or 0))
+                elif kind == "pr":
+                    rec["prs"] += 1
+
+    _accumulate_repo_activity(contrib_coll.get("commitContributionsByRepository"), kind="commit")
+    _accumulate_repo_activity(contrib_coll.get("pullRequestContributionsByRepository"), kind="pr")
+
+    for day in days:
+        bucket = date_repo_map.get(day.date.isoformat())
+        if bucket:
+            ordered = sorted(
+                bucket.values(),
+                key=lambda r: (-(r["commits"] + r["prs"]), r["is_private"], r["repo"].lower()),
+            )
+            day.projects = [r for r in ordered if (r["commits"] + r["prs"]) > 0][:5]
 
     days.sort(key=lambda d: (d.week, d.dow))
 
@@ -607,6 +716,7 @@ def build_dist(
                 "dow": d.dow,
                 "level": d.level,
                 "count": d.count,
+                **({"projects": d.projects} if d.projects else {}),
             }
             for d in days
         ],

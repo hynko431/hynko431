@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 222" width="536" height="222" role="img" aria-labelledby="c-cutaway-dark-t c-cutaway-dark-d">
+  <title id="c-cutaway-dark-t">Cutaway: Anatomy of System Design — 3D Distributed-Systems Simulator</title>
+  <desc id="c-cutaway-dark-d">Cutaway: Anatomy of System Design (3D Distributed-Systems Simulator): Interactive 3D distributed-systems dissection bench with live failure injection, Token Bucket rate limiting, and step-by-step request tracing. Stack: JavaScript, HTML, CSS, Token Bucket.</desc>
+  <defs>
+    <linearGradient id="c-cutaway-dark-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1622"/>
+      <stop offset="100%" stop-color="#161D29"/>
+    </linearGradient>
+    <radialGradient id="c-cutaway-dark-glow" cx="12%" cy="18%" r="48%">
+      <stop offset="0%" stop-color="#A5B4FC" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0F1622" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="c-cutaway-dark-top" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A5B4FC" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#A5B4FC" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#A5B4FC" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: -0.25px; fill: #F0F6FC; }
+      .cat { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 0.7px; fill: #A5B4FC; }
+      .summary { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12.5px; fill: #8B949E; }
+      .tag { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; font-weight: 600; fill: #F0F6FC; }
+      .repo { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #8B949E; }
+      .cta { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.6px; fill: #A5B4FC; }
+    </style>
+  </defs>
+  <rect x="0.75" y="0.75" width="534.5" height="220.5" rx="14" fill="url(#c-cutaway-dark-bg)" stroke="#30363D" stroke-width="1.2"/>
+  <rect x="1" y="1" width="534" height="220" rx="13.5" fill="url(#c-cutaway-dark-glow)"/>
+  <rect x="14" y="1" width="508" height="2.2" rx="1.1" fill="url(#c-cutaway-dark-top)"/>
+  <g transform="translate(22, 20)">
+<rect x="1" y="1" width="46" height="46" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+  <rect x="9" y="11" width="30" height="7" rx="2" fill="#262452" stroke="#818CF8" stroke-width="1.8"/>
+  <rect x="9" y="21" width="30" height="7" rx="2" fill="#1D2242" stroke="#818CF8" stroke-width="1.8"/>
+  <rect x="9" y="31" width="30" height="7" rx="2" fill="#262452" stroke="#818CF8" stroke-width="1.8"/>
+  <line x1="16" y1="8" x2="32" y2="40" stroke="#C7D2FE" stroke-width="1.8" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+  <circle cx="15" cy="14.5" r="1.8" fill="#A5B4FC"/>
+  <circle cx="24" cy="24.5" r="1.8" fill="#E0E7FF"/>
+  <circle cx="33" cy="34.5" r="1.8" fill="#A5B4FC"/>
+  <path d="M29 14.5H34.5M32.5 12.5L34.5 14.5L32.5 16.5" fill="none" stroke="#C7D2FE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13.5 34.5H19M17 32.5L19 34.5L17 36.5" fill="none" stroke="#C7D2FE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="84" y="40" class="title">Cutaway: Anatomy of System Design</text>
+  <text x="84" y="59" class="cat">3D DISTRIBUTED-SYSTEMS SIMULATOR</text>
+  <text x="24" y="94" class="summary">Interactive 3D distributed-systems dissection bench with live</text>
+  <text x="24" y="111" class="summary">failure injection, Token Bucket rate limiting, and step-by-step</text>
+  <text x="24" y="128" class="summary">request tracing.</text>
+  <rect x="24.0" y="148.0" width="87.0" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="67.5" y="162.5" text-anchor="middle" class="tag">JavaScript</text>
+  <rect x="118.0" y="148.0" width="46.0" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="141.0" y="162.5" text-anchor="middle" class="tag">HTML</text>
+  <rect x="171.0" y="148.0" width="46.0" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="194.0" y="162.5" text-anchor="middle" class="tag">CSS</text>
+  <rect x="224.0" y="148.0" width="100.8" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="274.4" y="162.5" text-anchor="middle" class="tag">Token Bucket</text>
+  <line x1="24" y1="184" x2="512" y2="184" stroke="#242D3A" stroke-width="1"/>
+  <circle cx="30" cy="201" r="3.2" fill="#A5B4FC"/>
+  <text x="41" y="205" class="repo">hynko431/Cutaway-The-Anatomy-of-System-Design</text>
+  <rect x="414" y="191" width="98" height="20" rx="6" fill="#0D1117" stroke="#A5B4FC" stroke-width="0.9" stroke-opacity="0.7"/>
+  <text x="463.0" y="204.5" text-anchor="middle" class="cta">OPEN CODE ↗</text>
+</svg>

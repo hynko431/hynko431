@@ -45,19 +45,21 @@ class TestBuildStatic(unittest.TestCase):
             self.assertEqual(light_m.group(1), img_m.group(1))
 
         # Separate single-destination links and Explorer deep links
-        self.assertIn(">Code</a>", r1)
-        self.assertIn('href="https://coldpin-docs.pages.dev/">Docs</a>', r1)
-        self.assertIn('href="https://agent-a-thon.vercel.app/">Live</a>', r1)
+        self.assertIn('https://coldpin-docs.pages.dev/', r1)
+        self.assertIn('https://agent-a-thon.vercel.app/', r1)
         explorer = self.profile["explorer_url"]
         self.assertIn(f"{explorer}#projects", r1)
         self.assertIn(f"{explorer}#stack", r1)
         self.assertIn(f"{explorer}#skyline", r1)
 
-        # 2-column project card grid and non-repetitive collapsed plain-text stack index
-        self.assertEqual(r1.count('<td width="50%" valign="top">'), 6)
-        self.assertIn("<details>\n<summary>Plain-text stack index (Tiers 01–04)</summary>", r1)
+        # 2-column bespoke SVG bento project cards and zero repeated plain-text stack table
+        for proj in self.profile["projects"]:
+            self.assertIn(f'./assets/cards/{proj["slug"]}-dark.svg', r1)
+            self.assertIn(f'./assets/cards/{proj["slug"]}-light.svg', r1)
+        self.assertNotIn("<details>", r1)
+        self.assertNotIn("Plain-text stack index", r1)
 
-        # Ctrl+F searchable plain text keywords
+        # Searchable plain text keywords in Experience, Education, Summary, and links
         for kw in (
             "FastAPI",
             "PostgreSQL",
@@ -65,7 +67,7 @@ class TestBuildStatic(unittest.TestCase):
             "Celery",
             "Docker",
             "Rust",
-            "LangGraph",
+            "LangChain",
             "FAISS",
             "Coldpin",
             "Saral Vidhya",
@@ -75,7 +77,7 @@ class TestBuildStatic(unittest.TestCase):
         ):
             self.assertIn(kw, r1, f"Missing Ctrl+F keyword: {kw}")
 
-    def test_all_22_static_svgs_valid(self) -> None:
+    def test_all_34_static_svgs_valid(self) -> None:
         for rel in build_static.STATIC_ICON_FILES:
             p = REPO_ROOT / rel
             self.assertTrue(p.exists(), f"Missing icon: {rel}")
@@ -87,6 +89,13 @@ class TestBuildStatic(unittest.TestCase):
             self.assertIn("3D ISOMETRIC STACK ARCHITECTURE", svg)
             for tier_tag in ("L01", "L02", "L03", "L04"):
                 self.assertIn(tier_tag, svg)
+        for proj in self.profile["projects"]:
+            for mode in ("dark", "light"):
+                card_path = REPO_ROOT / "assets" / "cards" / f'{proj["slug"]}-{mode}.svg'
+                self.assertTrue(card_path.exists(), f"Missing generated card: {card_path}")
+                card_svg = card_path.read_text(encoding="utf-8")
+                self.assertEqual(validate_svg_document(card_svg, card_path.name), [])
+                self.assertNotIn("\r\n", card_svg)
 
     def test_check_mode_detects_drift(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:

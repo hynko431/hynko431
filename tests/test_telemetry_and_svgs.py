@@ -177,6 +177,62 @@ class TestTelemetryAndSvgs(unittest.TestCase):
         for m in re.finditer(r'\by="([0-9.]+)"', svg_text):
             self.assertLessEqual(float(m.group(1)), max_y, f"Attribute y={m.group(1)} exceeds {max_y}")
 
+    def test_per_date_project_mapping_and_private_redaction(self) -> None:
+        payload = _make_graphql_payload(366)
+        payload["data"]["user"]["contributionsCollection"]["commitContributionsByRepository"] = [
+            {
+                "repository": {
+                    "name": "Coldpin-npx-Safe-Finder",
+                    "nameWithOwner": "hynko431/Coldpin-npx-Safe-Finder",
+                    "isPrivate": False,
+                    "url": "https://github.com/hynko431/Coldpin-npx-Safe-Finder",
+                },
+                "contributions": {
+                    "nodes": [
+                        {"occurredAt": "2026-11-22T07:00:00Z", "commitCount": 6},
+                    ]
+                },
+            },
+            {
+                "repository": {
+                    "name": "Secret-Client-Backend",
+                    "nameWithOwner": "sarallabs/Secret-Client-Backend",
+                    "isPrivate": True,
+                    "url": "https://github.com/sarallabs/Secret-Client-Backend",
+                },
+                "contributions": {
+                    "nodes": [
+                        {"occurredAt": "2026-11-22T12:00:00Z", "commitCount": 4},
+                    ]
+                },
+            },
+        ]
+        payload["data"]["user"]["contributionsCollection"]["pullRequestContributionsByRepository"] = [
+            {
+                "repository": {
+                    "name": "Coldpin-npx-Safe-Finder",
+                    "nameWithOwner": "hynko431/Coldpin-npx-Safe-Finder",
+                    "isPrivate": False,
+                    "url": "https://github.com/hynko431/Coldpin-npx-Safe-Finder",
+                },
+                "contributions": {
+                    "nodes": [
+                        {"occurredAt": "2026-11-22T15:00:00Z"},
+                    ]
+                },
+            },
+        ]
+        parsed = generate_3d_contrib.parse_graphql_payload(payload, self.repo_slugs)
+        target_day = next(d for d in parsed["days"] if d.date == dt.date(2026, 11, 22))
+        self.assertEqual(len(target_day.projects), 2)
+        self.assertEqual(target_day.projects[0]["repo"], "Coldpin-npx-Safe-Finder")
+        self.assertEqual(target_day.projects[0]["commits"], 6)
+        self.assertEqual(target_day.projects[0]["prs"], 1)
+        self.assertEqual(target_day.projects[1]["repo"], "Private repository")
+        self.assertIsNone(target_day.projects[1]["url"])
+        self.assertTrue(target_day.projects[1]["is_private"])
+        self.assertNotIn("Secret-Client-Backend", json.dumps(target_day.projects))
+
     def test_hero_and_skyline_all_themes_and_54_week_bounds(self) -> None:
         fixture_payload = json.loads(FIXTURE_PATH.read_text(encoding="utf-8"))
         parsed = generate_3d_contrib.parse_graphql_payload(fixture_payload, self.repo_slugs)

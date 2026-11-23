@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 222" width="536" height="222" role="img" aria-labelledby="c-sentinel-dark-t c-sentinel-dark-d">
+  <title id="c-sentinel-dark-t">OmniConnect Sentinel — Rust Endpoint &amp; USB Security</title>
+  <desc id="c-sentinel-dark-d">OmniConnect Sentinel (Rust Endpoint &amp; USB Security): Userspace Rust endpoint and USB device security platform using AES-256-GCM encrypted caching, Content Disarm and Reconstruction (CDR) workers, TPM 2.0, and ML-KEM-768 post-quantum key exchange. Stack: Rust, AES-256-GCM, TPM 2.0, ML-KEM-768.</desc>
+  <defs>
+    <linearGradient id="c-sentinel-dark-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1622"/>
+      <stop offset="100%" stop-color="#161D29"/>
+    </linearGradient>
+    <radialGradient id="c-sentinel-dark-glow" cx="12%" cy="18%" r="48%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0F1622" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="c-sentinel-dark-top" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#FBBF24" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#FBBF24" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: -0.25px; fill: #F0F6FC; }
+      .cat { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 0.7px; fill: #FBBF24; }
+      .summary { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12.5px; fill: #8B949E; }
+      .tag { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; font-weight: 600; fill: #F0F6FC; }
+      .repo { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #8B949E; }
+      .cta { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.6px; fill: #FBBF24; }
+    </style>
+  </defs>
+  <rect x="0.75" y="0.75" width="534.5" height="220.5" rx="14" fill="url(#c-sentinel-dark-bg)" stroke="#30363D" stroke-width="1.2"/>
+  <rect x="1" y="1" width="534" height="220" rx="13.5" fill="url(#c-sentinel-dark-glow)"/>
+  <rect x="14" y="1" width="508" height="2.2" rx="1.1" fill="url(#c-sentinel-dark-top)"/>
+  <g transform="translate(22, 20)">
+<rect x="1" y="1" width="46" height="46" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+  <circle cx="24" cy="24" r="14.5" fill="#2C1D0E" stroke="#F59E0B" stroke-width="1.8" stroke-dasharray="6 3"/>
+  <circle cx="24" cy="24" r="10.2" fill="none" stroke="#FBBF24" stroke-width="1.5" opacity="0.65"/>
+  <rect x="19.5" y="11" width="9" height="8" rx="1.2" fill="#161B22" stroke="#F59E0B" stroke-width="2"/>
+  <line x1="22.3" y1="14" x2="22.3" y2="16.2" stroke="#FDE68A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="25.7" y1="14" x2="25.7" y2="16.2" stroke="#FDE68A" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M17.5 19H30.5V29.5C30.5 32.8 27.8 35.5 24.5 35.5H23.5C20.2 35.5 17.5 32.8 17.5 29.5V19Z" fill="#45270B" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="24" cy="25.5" r="2.2" fill="#FDE68A"/>
+  <line x1="24" y1="27.5" x2="24" y2="31" stroke="#FDE68A" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="84" y="40" class="title">OmniConnect Sentinel</text>
+  <text x="84" y="59" class="cat">RUST ENDPOINT &amp; USB SECURITY</text>
+  <text x="24" y="94" class="summary">Userspace Rust endpoint and USB device security platform using</text>
+  <text x="24" y="111" class="summary">AES-256-GCM encrypted caching, Content Disarm and Reconstruction</text>
+  <text x="24" y="128" class="summary">(CDR) workers, TPM 2.0, and ML-KEM-768 post-quantum key exchange.</text>
+  <rect x="24.0" y="148.0" width="46.0" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="47.0" y="162.5" text-anchor="middle" class="tag">Rust</text>
+  <rect x="77.0" y="148.0" width="93.9" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="124.0" y="162.5" text-anchor="middle" class="tag">AES-256-GCM</text>
+  <rect x="177.9" y="148.0" width="66.3" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="211.1" y="162.5" text-anchor="middle" class="tag">TPM 2.0</text>
+  <rect x="251.2" y="148.0" width="87.0" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="294.7" y="162.5" text-anchor="middle" class="tag">ML-KEM-768</text>
+  <line x1="24" y1="184" x2="512" y2="184" stroke="#242D3A" stroke-width="1"/>
+  <circle cx="30" cy="201" r="3.2" fill="#FBBF24"/>
+  <text x="41" y="205" class="repo">hynko431/OmniConnect-Sentinel</text>
+  <rect x="414" y="191" width="98" height="20" rx="6" fill="#0D1117" stroke="#FBBF24" stroke-width="0.9" stroke-opacity="0.7"/>
+  <text x="463.0" y="204.5" text-anchor="middle" class="cta">OPEN CODE ↗</text>
+</svg>

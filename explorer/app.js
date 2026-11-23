@@ -242,12 +242,49 @@
     if (el) el.textContent = text;
   }
 
+  function formatProjectDetail(proj) {
+    const parts = [];
+    if (proj.commits > 0) parts.push(`${proj.commits} ${proj.commits === 1 ? "commit" : "commits"}`);
+    if (proj.prs > 0) parts.push(`${proj.prs} ${proj.prs === 1 ? "PR" : "PRs"}`);
+    return parts.length ? `${proj.repo} · ${parts.join(", ")}` : proj.repo;
+  }
+
   function announceDay(idx, prefix) {
-    if (!state.telemetry || idx < 0 || idx >= state.telemetry.calendar_days.length) return;
+    const el = document.getElementById("skyline-tooltip");
+    if (!el || !state.telemetry || idx < 0 || idx >= state.telemetry.calendar_days.length) return;
     const day = state.telemetry.calendar_days[idx];
     const noun = day.count === 1 ? "contribution" : "contributions";
     const lead = prefix ? `${prefix} · ` : idx === state.todayIdx ? "We are here (Today) · " : "";
-    setTooltip(`${lead}${formatIsoDate(day.date)} (${day.date}): ${day.count} ${noun} · week ${day.week + 1}`);
+
+    el.replaceChildren();
+    const summarySpan = document.createElement("span");
+    summarySpan.textContent = `${lead}${formatIsoDate(day.date)} (${day.date}): ${day.count} ${noun} · week ${day.week + 1}`;
+    el.appendChild(summarySpan);
+
+    const projects = Array.isArray(day.projects) ? day.projects : [];
+    if (projects.length > 0) {
+      for (const proj of projects) {
+        const label = formatProjectDetail(proj);
+        if (!proj.is_private && isSafeUrl(proj.url)) {
+          const a = document.createElement("a");
+          a.className = "tooltip-repo-chip";
+          a.href = proj.url;
+          a.rel = "noopener noreferrer";
+          a.textContent = label;
+          el.appendChild(a);
+        } else {
+          const chip = document.createElement("span");
+          chip.className = "tooltip-repo-chip is-private";
+          chip.textContent = label;
+          el.appendChild(chip);
+        }
+      }
+    } else if (day.count > 0) {
+      const chip = document.createElement("span");
+      chip.className = "tooltip-repo-chip is-private";
+      chip.textContent = "Private / review activity";
+      el.appendChild(chip);
+    }
   }
 
   function renderSkyline() {
@@ -328,6 +365,8 @@
     const hitBars = [];
     let todayTopCenter = null;
     let todayRing = null;
+    const inspectIdx = state.hoveredIdx !== -1 ? state.hoveredIdx : state.selectedIdx !== -1 ? state.selectedIdx : state.focusedIdx;
+    let inspectTopCenter = null;
 
     for (let i = 0; i < days.length; i += 1) {
       const day = days[i];
@@ -361,8 +400,9 @@
         isActive ? 1.5 : isToday ? 1.35 : 0.55
       );
 
+      const topCenter = [(t0[0] + t2[0]) * 0.5, (t0[1] + t2[1]) * 0.5];
       if (isToday) {
-        todayTopCenter = [(t0[0] + t2[0]) * 0.5, (t0[1] + t2[1]) * 0.5];
+        todayTopCenter = topCenter;
         const padR = 0.28;
         todayRing = [
           proj(w0 - padR, d0 - padR, h),
@@ -371,8 +411,11 @@
           proj(w0 - padR, d0 + s + padR, h),
         ];
       }
+      if (i === inspectIdx) {
+        inspectTopCenter = topCenter;
+      }
 
-      hitBars.push({ idx: i, day, quads: [topQuad, leftQuad, rightQuad] });
+      hitBars.push({ idx: i, day, topCenter, quads: [topQuad, leftQuad, rightQuad] });
     }
 
     // 3D-projected Month & Weekday plinth labels
@@ -408,9 +451,14 @@
     }
 
     // Glowing "WE ARE HERE · TODAY" 3D beacon pin anchored to Today's bar
-    if (todayTopCenter && state.todayIdx >= 0) {
+    const showingHoverCard = inspectIdx >= 0 && inspectTopCenter !== null;
+    const hoveringToday = showingHoverCard && inspectIdx === state.todayIdx;
+
+    if (todayTopCenter && state.todayIdx >= 0 && !hoveringToday) {
       const todayDay = days[state.todayIdx];
       const [tx, ty] = todayTopCenter;
+      ctx.save();
+      if (showingHoverCard) ctx.globalAlpha = 0.34;
       if (todayRing) {
         fillPoly(ctx, todayRing, null, pal.accent, 1.3);
       }
@@ -432,7 +480,6 @@
       ctx.stroke();
       ctx.restore();
 
-      // Target beacon dot on top of today's bar
       ctx.beginPath();
       ctx.arc(tx, ty, 6, 0, Math.PI * 2);
       ctx.strokeStyle = pal.accent;
@@ -444,7 +491,6 @@
       ctx.fillStyle = pal.accent;
       ctx.fill();
 
-      // Callout pill
       fillRoundRect(ctx, pinX, pinY, pinW, pinH, 8, pal.hud_bg, pal.accent, 1.2);
       ctx.beginPath();
       ctx.arc(pinX + 13, pinY + 13, 3, 0, Math.PI * 2);
@@ -464,6 +510,110 @@
       ctx.font = '600 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif';
       ctx.fillStyle = pal.title;
       ctx.fillText(valText, pinX + 13, pinY + 27.5);
+      ctx.restore();
+    }
+
+    // Floating On-Canvas Hover/Inspect Card showing exact commits & projects worked on that date
+    if (showingHoverCard) {
+      const day = days[inspectIdx];
+      const [hx, hy] = inspectTopCenter;
+      const projects = Array.isArray(day.projects) ? day.projects.slice(0, 4) : [];
+      const noun = day.count === 1 ? "contribution" : "contributions";
+      const headerLead = hoveringToday ? "WE ARE HERE · TODAY · " : "";
+      const headerText = `${headerLead}${formatIsoDate(day.date)}`;
+      const subText = `${day.count} ${noun} · Week ${day.week + 1}`;
+
+      const projectLines = [];
+      if (projects.length > 0) {
+        for (const p of projects) {
+          projectLines.push({
+            text: formatProjectDetail(p),
+            isPrivate: Boolean(p.is_private),
+          });
+        }
+      } else if (day.count > 0) {
+        projectLines.push({ text: "Private / review activity", isPrivate: true });
+      } else {
+        projectLines.push({ text: "No recorded commits on this date", isPrivate: true });
+      }
+
+      ctx.font = '700 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
+      let maxTextW = ctx.measureText(headerText).width + 18;
+      ctx.font = '600 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif';
+      maxTextW = Math.max(maxTextW, ctx.measureText(subText).width + 10);
+      ctx.font = '11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
+      for (const row of projectLines) {
+        maxTextW = Math.max(maxTextW, ctx.measureText(row.text).width + 20);
+      }
+
+      const cardW = clamp(Math.ceil(maxTextW + 24), 216, Math.min(360, cssW - 24));
+      const cardH = 44 + projectLines.length * 17 + 8;
+      const cardX = clamp(hx - cardW * 0.5, 12, cssW - cardW - 12);
+      let cardY = hy - cardH - 26;
+      if (cardY < 12) {
+        cardY = clamp(hy + 22, 12, cssH - cardH - 12);
+      }
+      const anchorX = clamp(hx, cardX + 16, cardX + cardW - 16);
+      const anchorY = cardY < hy ? cardY + cardH : cardY;
+
+      ctx.save();
+      ctx.setLineDash([3, 3]);
+      ctx.strokeStyle = pal.accent;
+      ctx.lineWidth = 1.3;
+      ctx.beginPath();
+      ctx.moveTo(anchorX, anchorY);
+      ctx.lineTo(hx, hy);
+      ctx.stroke();
+      ctx.restore();
+
+      ctx.beginPath();
+      ctx.arc(hx, hy, 5.8, 0, Math.PI * 2);
+      ctx.strokeStyle = pal.accent;
+      ctx.lineWidth = 1.3;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(hx, hy, 2.8, 0, Math.PI * 2);
+      ctx.fillStyle = pal.peak_cap;
+      ctx.fill();
+
+      fillRoundRect(ctx, cardX, cardY, cardW, cardH, 10, pal.hud_bg, pal.accent, 1.3);
+      ctx.beginPath();
+      ctx.arc(cardX + 14, cardY + 15, 3, 0, Math.PI * 2);
+      ctx.fillStyle = pal.accent;
+      ctx.fill();
+
+      ctx.textAlign = "left";
+      ctx.textBaseline = "middle";
+      ctx.font = '700 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
+      ctx.fillStyle = pal.accent;
+      ctx.fillText(headerText, cardX + 23, cardY + 15);
+
+      ctx.font = '600 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif';
+      ctx.fillStyle = pal.title;
+      ctx.fillText(subText, cardX + 13, cardY + 32);
+
+      // Subtle divider above project breakdown
+      ctx.beginPath();
+      ctx.moveTo(cardX + 12, cardY + 42);
+      ctx.lineTo(cardX + cardW - 12, cardY + 42);
+      ctx.strokeStyle = pal.hud_border;
+      ctx.lineWidth = 0.9;
+      ctx.stroke();
+
+      ctx.font = '11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
+      projectLines.forEach((row, idx) => {
+        const ry = cardY + 54 + idx * 17;
+        ctx.beginPath();
+        ctx.arc(cardX + 16, ry, 2.4, 0, Math.PI * 2);
+        ctx.fillStyle = row.isPrivate ? pal.muted : pal.accent;
+        ctx.fill();
+        ctx.fillStyle = row.isPrivate ? pal.muted : pal.title;
+        let label = row.text;
+        while (label.length > 10 && ctx.measureText(label).width > cardW - 36) {
+          label = `${label.slice(0, -2)}…`;
+        }
+        ctx.fillText(label, cardX + 25, ry);
+      });
     }
 
     state.hitBars = hitBars;

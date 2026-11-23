@@ -2413,7 +2413,1366 @@
               ]
             }
           ]
-        }
+        },
+        "commitContributionsByRepository": [
+          {
+            "repository": {
+              "name": "Coldpin-npx-Safe-Finder",
+              "nameWithOwner": "hynko431/Coldpin-npx-Safe-Finder",
+              "isPrivate": false,
+              "url": "https://github.com/hynko431/Coldpin-npx-Safe-Finder"
+            },
+            "contributions": {
+              "nodes": [
+                {
+                  "occurredAt": "2025-11-24T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2025-11-28T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2025-12-03T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2025-12-08T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2025-12-12T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2025-12-16T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2025-12-21T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2025-12-26T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2025-12-31T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-01-04T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-01-09T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-01-13T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-01-18T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-01-23T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-01-28T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-02-01T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-02-06T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-02-10T07:00:00Z",
+                  "commitCount": 28
+                },
+                {
+                  "occurredAt": "2026-02-15T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-02-20T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-02-24T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-03-01T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-03-06T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-03-10T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-03-15T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-03-20T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-03-24T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-03-29T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-04-03T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-04-07T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-04-11T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-04-16T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-04-21T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-04-26T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-04-30T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-05-05T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-05-09T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-05-14T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-05-19T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-05-23T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-05-27T07:00:00Z",
+                  "commitCount": 30
+                },
+                {
+                  "occurredAt": "2026-05-31T07:00:00Z",
+                  "commitCount": 17
+                },
+                {
+                  "occurredAt": "2026-06-04T07:00:00Z",
+                  "commitCount": 13
+                },
+                {
+                  "occurredAt": "2026-06-08T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-06-12T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-06-16T07:00:00Z",
+                  "commitCount": 13
+                },
+                {
+                  "occurredAt": "2026-06-20T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-06-24T07:00:00Z",
+                  "commitCount": 24
+                },
+                {
+                  "occurredAt": "2026-06-28T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-07-02T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-07-06T07:00:00Z",
+                  "commitCount": 15
+                },
+                {
+                  "occurredAt": "2026-07-10T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-07-15T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-07-19T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-07-24T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-07-29T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-08-02T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-08-07T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-08-12T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-08-16T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-08-21T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-08-26T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-08-30T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-09-03T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-09-08T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-09-13T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-09-18T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-09-22T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-09-27T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-10-01T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-10-06T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-10-11T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-10-16T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-10-20T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-10-25T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-10-29T07:00:00Z",
+                  "commitCount": 28
+                },
+                {
+                  "occurredAt": "2026-11-03T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-11-08T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-11-12T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-11-17T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-11-22T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-11-23T07:00:00Z",
+                  "commitCount": 1
+                }
+              ]
+            }
+          },
+          {
+            "repository": {
+              "name": "OmniConnect-Sentinel",
+              "nameWithOwner": "hynko431/OmniConnect-Sentinel",
+              "isPrivate": false,
+              "url": "https://github.com/hynko431/OmniConnect-Sentinel"
+            },
+            "contributions": {
+              "nodes": [
+                {
+                  "occurredAt": "2025-11-25T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2025-11-29T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2025-12-04T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2025-12-09T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2025-12-13T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2025-12-18T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2025-12-23T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2025-12-27T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-01-01T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-01-06T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-01-10T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-01-14T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-01-19T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-01-24T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-01-29T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-02-02T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-02-07T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-02-11T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-02-16T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-02-21T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-02-26T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-03-02T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-03-07T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-03-11T07:00:00Z",
+                  "commitCount": 28
+                },
+                {
+                  "occurredAt": "2026-03-16T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-03-21T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-03-25T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-03-30T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-04-04T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-04-08T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-04-13T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-04-18T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-04-22T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-04-27T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-05-02T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-05-06T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-05-10T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-05-15T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-05-20T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-05-24T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-05-28T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-06-01T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-06-05T07:00:00Z",
+                  "commitCount": 27
+                },
+                {
+                  "occurredAt": "2026-06-09T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-06-13T07:00:00Z",
+                  "commitCount": 10
+                },
+                {
+                  "occurredAt": "2026-06-17T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-06-21T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-06-25T07:00:00Z",
+                  "commitCount": 30
+                },
+                {
+                  "occurredAt": "2026-06-29T07:00:00Z",
+                  "commitCount": 17
+                },
+                {
+                  "occurredAt": "2026-07-03T07:00:00Z",
+                  "commitCount": 13
+                },
+                {
+                  "occurredAt": "2026-07-07T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-07-11T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-07-16T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-07-21T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-07-25T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-07-30T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-08-03T07:00:00Z",
+                  "commitCount": 28
+                },
+                {
+                  "occurredAt": "2026-08-08T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-08-13T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-08-17T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-08-22T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-08-27T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-08-31T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-09-05T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-09-10T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-09-14T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-09-19T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-09-24T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-09-28T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-10-02T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-10-07T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-10-12T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-10-17T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-10-21T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-10-26T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-10-30T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-11-04T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-11-09T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-11-14T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-11-18T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-11-23T07:00:00Z",
+                  "commitCount": 1
+                }
+              ]
+            }
+          },
+          {
+            "repository": {
+              "name": "Cutaway-The-Anatomy-of-System-Design",
+              "nameWithOwner": "hynko431/Cutaway-The-Anatomy-of-System-Design",
+              "isPrivate": false,
+              "url": "https://github.com/hynko431/Cutaway-The-Anatomy-of-System-Design"
+            },
+            "contributions": {
+              "nodes": [
+                {
+                  "occurredAt": "2025-11-26T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2025-12-01T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2025-12-05T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2025-12-10T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2025-12-14T07:00:00Z",
+                  "commitCount": 28
+                },
+                {
+                  "occurredAt": "2025-12-19T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2025-12-24T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2025-12-28T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-01-02T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-01-07T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-01-11T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-01-16T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-01-21T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-01-25T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-01-30T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-02-04T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-02-08T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-02-12T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-02-17T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-02-22T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-02-27T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-03-03T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-03-08T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-03-12T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-03-17T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-03-22T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-03-27T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-03-31T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-04-05T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-04-09T07:00:00Z",
+                  "commitCount": 28
+                },
+                {
+                  "occurredAt": "2026-04-14T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-04-19T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-04-23T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-04-28T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-05-03T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-05-07T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-05-12T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-05-17T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-05-21T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-05-25T07:00:00Z",
+                  "commitCount": 15
+                },
+                {
+                  "occurredAt": "2026-05-29T07:00:00Z",
+                  "commitCount": 10
+                },
+                {
+                  "occurredAt": "2026-06-02T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-06-06T07:00:00Z",
+                  "commitCount": 36
+                },
+                {
+                  "occurredAt": "2026-06-10T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-06-14T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-06-18T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-06-22T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-06-26T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-06-30T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-07-04T07:00:00Z",
+                  "commitCount": 27
+                },
+                {
+                  "occurredAt": "2026-07-08T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-07-12T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-07-17T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-07-22T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-07-26T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-07-31T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-08-04T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-08-09T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-08-14T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-08-19T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-08-23T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-08-28T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-09-01T07:00:00Z",
+                  "commitCount": 28
+                },
+                {
+                  "occurredAt": "2026-09-06T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-09-11T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-09-15T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-09-20T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-09-25T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-09-29T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-10-04T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-10-09T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-10-13T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-10-18T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-10-23T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-10-27T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-10-31T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-11-05T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-11-10T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-11-15T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-11-19T07:00:00Z",
+                  "commitCount": 2
+                }
+              ]
+            }
+          },
+          {
+            "repository": {
+              "name": "hynko431",
+              "nameWithOwner": "hynko431/hynko431",
+              "isPrivate": false,
+              "url": "https://github.com/hynko431/hynko431"
+            },
+            "contributions": {
+              "nodes": [
+                {
+                  "occurredAt": "2025-11-27T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2025-12-02T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2025-12-06T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2025-12-11T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2025-12-15T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2025-12-20T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2025-12-25T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2025-12-30T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-01-03T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-01-08T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-01-12T07:00:00Z",
+                  "commitCount": 28
+                },
+                {
+                  "occurredAt": "2026-01-17T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-01-22T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-01-26T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-01-31T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-02-05T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-02-09T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-02-14T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-02-19T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-02-23T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-02-28T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-03-05T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-03-09T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-03-13T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-03-18T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-03-23T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-03-28T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-04-01T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-04-06T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-04-10T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-04-15T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-04-20T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-04-25T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-04-29T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-05-04T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-05-08T07:00:00Z",
+                  "commitCount": 28
+                },
+                {
+                  "occurredAt": "2026-05-13T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-05-18T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-05-22T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-05-26T07:00:00Z",
+                  "commitCount": 24
+                },
+                {
+                  "occurredAt": "2026-05-30T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-06-03T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-06-07T07:00:00Z",
+                  "commitCount": 15
+                },
+                {
+                  "occurredAt": "2026-06-11T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-06-15T07:00:00Z",
+                  "commitCount": 10
+                },
+                {
+                  "occurredAt": "2026-06-19T07:00:00Z",
+                  "commitCount": 20
+                },
+                {
+                  "occurredAt": "2026-06-23T07:00:00Z",
+                  "commitCount": 15
+                },
+                {
+                  "occurredAt": "2026-06-27T07:00:00Z",
+                  "commitCount": 10
+                },
+                {
+                  "occurredAt": "2026-07-01T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-07-05T07:00:00Z",
+                  "commitCount": 36
+                },
+                {
+                  "occurredAt": "2026-07-09T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-07-14T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-07-18T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-07-23T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-07-28T07:00:00Z",
+                  "commitCount": 9
+                },
+                {
+                  "occurredAt": "2026-08-01T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-08-05T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-08-10T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-08-15T07:00:00Z",
+                  "commitCount": 8
+                },
+                {
+                  "occurredAt": "2026-08-20T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-08-24T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-08-29T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-09-02T07:00:00Z",
+                  "commitCount": 7
+                },
+                {
+                  "occurredAt": "2026-09-07T07:00:00Z",
+                  "commitCount": 11
+                },
+                {
+                  "occurredAt": "2026-09-12T07:00:00Z",
+                  "commitCount": 1
+                },
+                {
+                  "occurredAt": "2026-09-17T07:00:00Z",
+                  "commitCount": 4
+                },
+                {
+                  "occurredAt": "2026-09-21T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-09-26T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-09-30T07:00:00Z",
+                  "commitCount": 28
+                },
+                {
+                  "occurredAt": "2026-10-05T07:00:00Z",
+                  "commitCount": 6
+                },
+                {
+                  "occurredAt": "2026-10-10T07:00:00Z",
+                  "commitCount": 5
+                },
+                {
+                  "occurredAt": "2026-10-14T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-10-19T07:00:00Z",
+                  "commitCount": 22
+                },
+                {
+                  "occurredAt": "2026-10-24T07:00:00Z",
+                  "commitCount": 14
+                },
+                {
+                  "occurredAt": "2026-10-28T07:00:00Z",
+                  "commitCount": 19
+                },
+                {
+                  "occurredAt": "2026-11-02T07:00:00Z",
+                  "commitCount": 3
+                },
+                {
+                  "occurredAt": "2026-11-07T07:00:00Z",
+                  "commitCount": 2
+                },
+                {
+                  "occurredAt": "2026-11-11T07:00:00Z",
+                  "commitCount": 12
+                },
+                {
+                  "occurredAt": "2026-11-16T07:00:00Z",
+                  "commitCount": 16
+                },
+                {
+                  "occurredAt": "2026-11-21T07:00:00Z",
+                  "commitCount": 9
+                }
+              ]
+            }
+          }
+        ],
+        "pullRequestContributionsByRepository": [
+          {
+            "repository": {
+              "name": "Coldpin-npx-Safe-Finder",
+              "nameWithOwner": "hynko431/Coldpin-npx-Safe-Finder",
+              "isPrivate": false,
+              "url": "https://github.com/hynko431/Coldpin-npx-Safe-Finder"
+            },
+            "contributions": {
+              "nodes": [
+                {
+                  "occurredAt": "2026-11-23T10:00:00Z"
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     "repo_0": {

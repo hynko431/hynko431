@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Offline deterministic static generator and CI drift/SVG/WCAG verifier.
 
-Generates README.md and assets/stack-3d-{dark,light}.svg from profile.json
+Generates README.md, assets/stack-3d-{dark,light}.svg, and 12 bespoke bento
+project cards under assets/cards/{slug}-{dark,light}.svg from profile.json
 using Python 3.12 standard library only.
 """
 
@@ -10,10 +11,12 @@ from __future__ import annotations
 import argparse
 import difflib
 import pathlib
+import re
 import sys
 from typing import Any
 
 from scripts.profile_core import (
+    PROJECT_CARD_ACCENTS,
     STACK_TIER_ACCENTS,
     get_theme_palette,
     load_profile,
@@ -65,6 +68,34 @@ def _wrap_items(items: list[str], max_chars: int = 62) -> list[str]:
     return lines[:2]
 
 
+def _wrap_prose(text: str, max_chars: int = 64, max_lines: int = 3) -> list[str]:
+    """Word-wrap prose cleanly into balanced lines without mid-word breaks."""
+    words = text.split()
+    lines: list[str] = []
+    cur = ""
+    for w in words:
+        cand = f"{cur} {w}" if cur else w
+        if cur and len(cand) > max_chars:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = cand
+    if cur:
+        lines.append(cur)
+    return lines[:max_lines]
+
+
+def _extract_icon_inner(icon_svg_path: pathlib.Path) -> str:
+    """Extract drawable SVG primitives from an icon SVG (excluding root, title, desc)."""
+    raw = icon_svg_path.read_text(encoding="utf-8")
+    m = re.search(r"<svg[^>]*>(.*)</svg>", raw, flags=re.DOTALL)
+    if not m:
+        raise ValueError(f"Could not extract inner SVG from {icon_svg_path}")
+    inner = re.sub(r"<title[^>]*>.*?</title>", "", m.group(1), flags=re.DOTALL)
+    inner = re.sub(r"<desc[^>]*>.*?</desc>", "", inner, flags=re.DOTALL)
+    return inner.strip()
+
+
 _STACK_SLAB_THEMES: dict[str, dict[str, dict[str, str]]] = {
     "dark": {
         "01": {"top": "#132641", "left": "#13477F", "right": "#0D325B", "grid": "#1F4D80"},
@@ -79,6 +110,101 @@ _STACK_SLAB_THEMES: dict[str, dict[str, dict[str, str]]] = {
         "04": {"top": "#FEF5E6", "left": "#FBD69A", "right": "#F7BE63", "grid": "#FDE0B0"},
     },
 }
+
+
+def render_project_card_svg(
+    proj: dict[str, Any],
+    handle: str,
+    icon_inner: str,
+    mode: str,
+) -> str:
+    """Render a bespoke 536x222 dark/light bento SVG card for a featured project."""
+    pal = get_theme_palette("baseline", mode)
+    slug = proj["slug"]
+    accent = PROJECT_CARD_ACCENTS[mode].get(slug, pal["eyebrow"])
+    card_bg0 = "#0F1622" if mode == "dark" else "#FFFFFF"
+    card_bg1 = "#161D29" if mode == "dark" else "#F7FAFE"
+    tag_bg = "#0D1117" if mode == "dark" else "#F1F5F9"
+    tag_stroke = "#30363D" if mode == "dark" else "#CBD5E1"
+    divider = "#242D3A" if mode == "dark" else "#E2E8F0"
+    glow_op = "0.18" if mode == "dark" else "0.10"
+
+    name = xml_escape(proj["name"])
+    category = xml_escape(proj["category"].upper())
+    repo_label = xml_escape(f'{handle}/{proj["repo"]}')
+    summary_lines = _wrap_prose(proj["summary"], max_chars=66, max_lines=3)
+    summary_svg = "\n".join(
+        f'  <text x="24" y="{94 + idx * 17}" class="summary">{xml_escape(line)}</text>'
+        for idx, line in enumerate(summary_lines)
+    )
+
+    # Top-right link capability pill
+    has_docs = bool(proj["links"].get("docs"))
+    has_live = bool(proj["links"].get("live"))
+    cta_label = "CODE · DOCS ↗" if has_docs else "CODE · LIVE ↗" if has_live else "OPEN CODE ↗"
+    cta_w = 104 if (has_docs or has_live) else 98
+
+    # Styled monospace stack pills
+    pill_x = 24.0
+    pill_y = 148.0
+    pills_svg: list[str] = []
+    for tech in proj["stack"]:
+        tw = max(46.0, len(tech) * 6.9 + 18.0)
+        if pill_x + tw > 512.0:
+            break
+        pills_svg.append(
+            f'  <rect x="{pill_x:.1f}" y="{pill_y:.1f}" width="{tw:.1f}" height="22" rx="6" fill="{tag_bg}" stroke="{tag_stroke}" stroke-width="0.9"/>\n'
+            f'  <text x="{pill_x + tw * 0.5:.1f}" y="{pill_y + 14.5:.1f}" text-anchor="middle" class="tag">{xml_escape(tech)}</text>'
+        )
+        pill_x += tw + 7.0
+
+    gid = f"c-{slug}-{mode}"
+    desc_text = xml_escape(f'{proj["name"]} ({proj["category"]}): {proj["summary"]} Stack: {", ".join(proj["stack"])}.')
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 222" width="536" height="222" '
+        f'role="img" aria-labelledby="{gid}-t {gid}-d">\n'
+        f'  <title id="{gid}-t">{name} — {xml_escape(proj["category"])}</title>\n'
+        f'  <desc id="{gid}-d">{desc_text}</desc>\n'
+        f'  <defs>\n'
+        f'    <linearGradient id="{gid}-bg" x1="0%" y1="0%" x2="100%" y2="100%">\n'
+        f'      <stop offset="0%" stop-color="{card_bg0}"/>\n'
+        f'      <stop offset="100%" stop-color="{card_bg1}"/>\n'
+        f'    </linearGradient>\n'
+        f'    <radialGradient id="{gid}-glow" cx="12%" cy="18%" r="48%">\n'
+        f'      <stop offset="0%" stop-color="{accent}" stop-opacity="{glow_op}"/>\n'
+        f'      <stop offset="100%" stop-color="{card_bg0}" stop-opacity="0"/>\n'
+        f'    </radialGradient>\n'
+        f'    <linearGradient id="{gid}-top" x1="0%" y1="0%" x2="100%" y2="0%">\n'
+        f'      <stop offset="0%" stop-color="{accent}" stop-opacity="0.9"/>\n'
+        f'      <stop offset="55%" stop-color="{accent}" stop-opacity="0.22"/>\n'
+        f'      <stop offset="100%" stop-color="{accent}" stop-opacity="0"/>\n'
+        f'    </linearGradient>\n'
+        f'    <style>\n'
+        f'      .title {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: -0.25px; fill: {pal["title"]}; }}\n'
+        f'      .cat {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 0.7px; fill: {accent}; }}\n'
+        f'      .summary {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12.5px; fill: {pal["muted"]}; }}\n'
+        f'      .tag {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; font-weight: 600; fill: {pal["title"]}; }}\n'
+        f'      .repo {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: {pal["muted"]}; }}\n'
+        f'      .cta {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.6px; fill: {accent}; }}\n'
+        f'    </style>\n'
+        f'  </defs>\n'
+        f'  <rect x="0.75" y="0.75" width="534.5" height="220.5" rx="14" fill="url(#{gid}-bg)" stroke="{pal["border"]}" stroke-width="1.2"/>\n'
+        f'  <rect x="1" y="1" width="534" height="220" rx="13.5" fill="url(#{gid}-glow)"/>\n'
+        f'  <rect x="14" y="1" width="508" height="2.2" rx="1.1" fill="url(#{gid}-top)"/>\n'
+        f'  <g transform="translate(22, 20)">\n'
+        f'{icon_inner}\n'
+        f'  </g>\n'
+        f'  <text x="84" y="40" class="title">{name}</text>\n'
+        f'  <text x="84" y="59" class="cat">{category}</text>\n'
+        f'{summary_svg}\n'
+        + "\n".join(pills_svg)
+        + f'\n  <line x1="24" y1="184" x2="512" y2="184" stroke="{divider}" stroke-width="1"/>\n'
+        f'  <circle cx="30" cy="201" r="3.2" fill="{accent}"/>\n'
+        f'  <text x="41" y="205" class="repo">{repo_label}</text>\n'
+        f'  <rect x="{512 - cta_w}" y="191" width="{cta_w}" height="20" rx="6" fill="{tag_bg}" stroke="{accent}" stroke-width="0.9" stroke-opacity="0.7"/>\n'
+        f'  <text x="{512 - cta_w / 2:.1f}" y="204.5" text-anchor="middle" class="cta">{cta_label}</text>\n'
+        f'</svg>\n'
+    )
 
 
 def render_stack_svg(profile: dict[str, Any], mode: str) -> str:
@@ -104,7 +230,6 @@ def render_stack_svg(profile: dict[str, Any], mode: str) -> str:
     def _pts(coords: list[tuple[float, float]]) -> str:
         return " ".join(f"{x:.1f},{y:.1f}" for x, y in coords)
 
-    # Floor shadow under foundation slab (tier 04)
     base_cy = cy_list[-1] + 22.0
     outer_shadow = [
         (cx, base_cy - ry - 4.0),
@@ -119,14 +244,12 @@ def render_stack_svg(profile: dict[str, Any], mode: str) -> str:
         (cx - rx - 3.0, base_cy),
     ]
 
-    # Vertical architectural spine connectors linking tiers 01..04
     spine_lines = [
         f'  <line x1="{cx:.1f}" y1="{cy_list[0]:.1f}" x2="{cx:.1f}" y2="{cy_list[-1] + slab_h:.1f}" stroke="{pillar_color}" stroke-width="1.2" stroke-dasharray="4 4"/>',
         f'  <line x1="{cx - rx * 0.62:.1f}" y1="{cy_list[0]:.1f}" x2="{cx - rx * 0.62:.1f}" y2="{cy_list[-1]:.1f}" stroke="{pillar_color}" stroke-width="1" stroke-dasharray="3 5" opacity="0.8"/>',
         f'  <line x1="{cx + rx * 0.62:.1f}" y1="{cy_list[0]:.1f}" x2="{cx + rx * 0.62:.1f}" y2="{cy_list[-1]:.1f}" stroke="{pillar_color}" stroke-width="1" stroke-dasharray="3 5" opacity="0.8"/>',
     ]
 
-    # Render 3D isometric slabs bottom-to-top (04 -> 01) for authentic 3D occlusion
     slab_blocks: list[str] = []
     for i in range(len(tiers) - 1, -1, -1):
         tier = tiers[i]
@@ -144,10 +267,8 @@ def render_stack_svg(profile: dict[str, Any], mode: str) -> str:
         b_bottom = (p_bottom[0], p_bottom[1] + slab_h)
         b_left = (p_left[0], p_left[1] + slab_h)
 
-        # Subtle 3x3 isometric architectural grid lines on top face
         grid_lines: list[str] = []
         for frac in (0.28, 0.56, 0.80):
-            # Parallel to top-right edge
             ax = p_top[0] + (p_left[0] - p_top[0]) * frac
             ay = p_top[1] + (p_left[1] - p_top[1]) * frac
             bx = p_right[0] + (p_bottom[0] - p_right[0]) * frac
@@ -155,7 +276,6 @@ def render_stack_svg(profile: dict[str, Any], mode: str) -> str:
             grid_lines.append(
                 f'    <line x1="{ax:.1f}" y1="{ay:.1f}" x2="{bx:.1f}" y2="{by:.1f}" stroke="{st["grid"]}" stroke-width="0.7" opacity="0.65"/>'
             )
-            # Parallel to top-left edge
             cx1 = p_top[0] + (p_right[0] - p_top[0]) * frac
             cy1 = p_top[1] + (p_right[1] - p_top[1]) * frac
             dx1 = p_left[0] + (p_bottom[0] - p_left[0]) * frac
@@ -164,7 +284,6 @@ def render_stack_svg(profile: dict[str, Any], mode: str) -> str:
                 f'    <line x1="{cx1:.1f}" y1="{cy1:.1f}" x2="{dx1:.1f}" y2="{dy1:.1f}" stroke="{st["grid"]}" stroke-width="0.7" opacity="0.65"/>'
             )
 
-        # Compact architectural node markers + centered tier badge on slab face
         slab_blocks.append(
             f'  <g>\n'
             f'    <polygon points="{_pts([p_left, p_bottom, b_bottom, b_left])}" fill="{st["left"]}" stroke="{accent}" stroke-width="0.9" stroke-linejoin="round"/>\n'
@@ -178,7 +297,6 @@ def render_stack_svg(profile: dict[str, Any], mode: str) -> str:
             f'  </g>'
         )
 
-    # Right-side callout cards + precision leader lines aligned 1:1 with slabs 01..04
     card_blocks: list[str] = []
     for i, tier in enumerate(tiers):
         idx = tier["index"]
@@ -332,48 +450,32 @@ def render_readme(profile: dict[str, Any], dynamic_assets_base: str) -> str:
             "",
             "## Featured Projects",
             "",
-            "<table>",
-            "  <tbody>",
+            '<div align="center">',
         ]
     )
 
     projects = profile["projects"]
+    extra_links: list[str] = []
     for row_start in range(0, len(projects), 2):
         pair = projects[row_start : row_start + 2]
-        lines.append("    <tr>")
+        row_cards: list[str] = []
         for proj in pair:
             slug = proj["slug"]
-            icon_pic = _picture(
-                f"./assets/icons/{slug}-dark.svg",
-                f"./assets/icons/{slug}-light.svg",
-                f'{proj["name"]} icon',
-                width="44",
-                height="44",
-            )
-            stack_html = " ".join(f"<code>{xml_escape(tech)}</code>" for tech in proj["stack"])
             code_url = proj["links"]["code"]
-            link_parts = [f'<a href={xml_attr(code_url)}>Code</a>']
-            if proj["links"].get("docs"):
-                link_parts.append(f'<a href={xml_attr(proj["links"]["docs"])}>Docs</a>')
-            if proj["links"].get("live"):
-                link_parts.append(f'<a href={xml_attr(proj["links"]["live"])}>Live</a>')
-            links_html = " · ".join(link_parts)
-
-            lines.extend(
-                [
-                    '      <td width="50%" valign="top">',
-                    f'        <a href={xml_attr(code_url)}>{icon_pic}</a><br/>',
-                    f'        <strong><a href={xml_attr(code_url)}>{xml_escape(proj["name"])}</a></strong><br/>',
-                    f'        <em>{xml_escape(proj["category"])}</em><br/><br/>',
-                    f'        {xml_escape(proj["summary"])}<br/><br/>',
-                    f"        {stack_html}<br/><br/>",
-                    f"        {links_html}",
-                    "      </td>",
-                ]
+            card_pic = _picture(
+                f"./assets/cards/{slug}-dark.svg",
+                f"./assets/cards/{slug}-light.svg",
+                f'{proj["name"]} — {proj["category"]}',
+                width="49%",
             )
-        if len(pair) == 1:
-            lines.append('      <td width="50%" valign="top"></td>')
-        lines.append("    </tr>")
+            row_cards.append(f'<a href={xml_attr(code_url)}>{card_pic}</a>')
+            if proj["links"].get("docs"):
+                extra_links.append(f'[{proj["name"].split(" (")[0]} Docs]({proj["links"]["docs"]})')
+            if proj["links"].get("live"):
+                extra_links.append(f'[{proj["name"].split(" (")[0]} Live]({proj["links"]["live"]})')
+        lines.append("  " + " &nbsp; ".join(row_cards))
+        if row_start + 2 < len(projects):
+            lines.append("  <br/>")
 
     other_parts = [
         f'[{op["name"]}]({op["url"]}) *({op["note"]})*' for op in profile["other_projects"]
@@ -391,12 +493,12 @@ def render_readme(profile: dict[str, Any], dynamic_assets_base: str) -> str:
         width="100%",
     )
 
+    extra_prefix = f'*Docs & Live:* {" · ".join(extra_links)} — ' if extra_links else ""
     lines.extend(
         [
-            "  </tbody>",
-            "</table>",
+            "</div>",
             "",
-            f'*Also built:* {" · ".join(other_parts)} — [View all repositories →](https://github.com/{handle}?tab=repositories) · [Filter Projects in 3D Explorer →]({explorer}#projects)',
+            f'{extra_prefix}*Also built:* {" · ".join(other_parts)} — [View all repositories →](https://github.com/{handle}?tab=repositories) · [Filter Projects in 3D Explorer →]({explorer}#projects)',
             "",
             "---",
             "",
@@ -407,23 +509,6 @@ def render_readme(profile: dict[str, Any], dynamic_assets_base: str) -> str:
             "</div>",
             "",
             f'<p align="center"><a href={xml_attr(explorer + "#stack")}>Explore Interactive 3D Tech Stack &amp; Filter Projects →</a></p>',
-            "",
-            "<details>",
-            "<summary>Plain-text stack index (Tiers 01–04)</summary>",
-            "",
-            "| Tier | Category | Technologies |",
-            "| :--- | :--- | :--- |",
-        ]
-    )
-
-    for tier in profile["tech_stack_tiers"]:
-        techs = ", ".join(f"`{t}`" for t in tier["items"])
-        lines.append(f'| `{tier["index"]}` | **{tier["label"]}** | {techs} |')
-
-    lines.extend(
-        [
-            "",
-            "</details>",
             "",
             "---",
             "",
@@ -441,16 +526,33 @@ def render_readme(profile: dict[str, Any], dynamic_assets_base: str) -> str:
     return "\n".join(lines)
 
 
+def _expected_generated_files(
+    repo_root: pathlib.Path,
+    profile: dict[str, Any],
+    dynamic_assets_base: str,
+) -> dict[pathlib.Path, str]:
+    files: dict[pathlib.Path, str] = {
+        repo_root / "README.md": render_readme(profile, dynamic_assets_base),
+        repo_root / "assets" / "stack-3d-dark.svg": render_stack_svg(profile, "dark"),
+        repo_root / "assets" / "stack-3d-light.svg": render_stack_svg(profile, "light"),
+    }
+    for proj in profile["projects"]:
+        slug = proj["slug"]
+        for mode in ("dark", "light"):
+            icon_path = repo_root / "assets" / "icons" / f"{slug}-{mode}.svg"
+            icon_inner = _extract_icon_inner(icon_path)
+            files[repo_root / "assets" / "cards" / f"{slug}-{mode}.svg"] = render_project_card_svg(
+                proj, profile["handle"], icon_inner, mode
+            )
+    return files
+
+
 def check_static(repo_root: pathlib.Path, profile: dict[str, Any], dynamic_assets_base: str) -> list[str]:
     """Run zero-drift, WCAG AA, and static SVG/XML checks without writing files."""
     errors: list[str] = []
     errors.extend(validate_all_palettes_wcag())
 
-    expected_files: dict[pathlib.Path, str] = {
-        repo_root / "README.md": render_readme(profile, dynamic_assets_base),
-        repo_root / "assets" / "stack-3d-dark.svg": render_stack_svg(profile, "dark"),
-        repo_root / "assets" / "stack-3d-light.svg": render_stack_svg(profile, "light"),
-    }
+    expected_files = _expected_generated_files(repo_root, profile, dynamic_assets_base)
     for path, expected in expected_files.items():
         if not path.exists():
             errors.append(f"Missing generated file: {path}")
@@ -471,6 +573,10 @@ def check_static(repo_root: pathlib.Path, profile: dict[str, Any], dynamic_asset
     svg_rel_paths = list(STATIC_ICON_FILES) + [
         "assets/stack-3d-dark.svg",
         "assets/stack-3d-light.svg",
+    ] + [
+        f"assets/cards/{proj['slug']}-{mode}.svg"
+        for proj in profile["projects"]
+        for mode in ("dark", "light")
     ]
     for rel in svg_rel_paths:
         p = repo_root / rel
@@ -483,7 +589,7 @@ def check_static(repo_root: pathlib.Path, profile: dict[str, Any], dynamic_asset
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Build or verify static Layer 1 README and stack SVGs.")
+    parser = argparse.ArgumentParser(description="Build or verify static Layer 1 README, stack, and project card SVGs.")
     parser.add_argument("--profile", default="profile.json", help="Path to profile.json")
     parser.add_argument("--repo-root", default=".", help="Repository root directory")
     parser.add_argument(
@@ -508,7 +614,7 @@ def main(argv: list[str] | None = None) -> int:
             for err in errors:
                 print(err, file=sys.stderr)
             return 1
-        print("OK: zero drift, WCAG AA pass, and all 22 static SVGs valid.")
+        print("OK: zero drift, WCAG AA pass, and all 34 static SVGs valid.")
         return 0
 
     wcag_errors = validate_all_palettes_wcag()
@@ -517,21 +623,20 @@ def main(argv: list[str] | None = None) -> int:
             print(err, file=sys.stderr)
         return 1
 
-    readme = render_readme(profile, base)
-    stack_dark = render_stack_svg(profile, "dark")
-    stack_light = render_stack_svg(profile, "light")
+    expected_files = _expected_generated_files(repo_root, profile, base)
+    for path, content in expected_files.items():
+        if path.suffix == ".svg":
+            svg_errors = validate_svg_document(content, path.name)
+            if svg_errors:
+                for err in svg_errors:
+                    print(err, file=sys.stderr)
+                return 1
 
-    for name, svg in (("stack-3d-dark.svg", stack_dark), ("stack-3d-light.svg", stack_light)):
-        svg_errors = validate_svg_document(svg, name)
-        if svg_errors:
-            for err in svg_errors:
-                print(err, file=sys.stderr)
-            return 1
+    for path, content in expected_files.items():
+        write_text_lf(path, content)
 
-    write_text_lf(repo_root / "README.md", readme)
-    write_text_lf(repo_root / "assets" / "stack-3d-dark.svg", stack_dark)
-    write_text_lf(repo_root / "assets" / "stack-3d-light.svg", stack_light)
-    print(f"Wrote README.md ({len(readme)} bytes) and assets/stack-3d-{{dark,light}}.svg")
+    readme_bytes = len(expected_files[repo_root / "README.md"])
+    print(f"Wrote README.md ({readme_bytes} bytes), stack-3d SVGs, and 12 bento project card SVGs.")
     return 0
 
 

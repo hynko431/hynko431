@@ -52,6 +52,25 @@ STACK_TIER_ACCENTS: dict[str, dict[str, str]] = {
     },
 }
 
+PROJECT_CARD_ACCENTS: dict[str, dict[str, str]] = {
+    "dark": {
+        "coldpin": "#58A6FF",
+        "sentinel": "#FBBF24",
+        "cutaway": "#A5B4FC",
+        "helix": "#34D399",
+        "autopilot": "#38BDF8",
+        "medical": "#F472B6",
+    },
+    "light": {
+        "coldpin": "#0969DA",
+        "sentinel": "#B45309",
+        "cutaway": "#4F46E5",
+        "helix": "#047857",
+        "autopilot": "#0369A1",
+        "medical": "#BE185D",
+    },
+}
+
 _BASE_TOKENS: dict[str, dict[str, Any]] = {
     "dark": {
         "bg0": "#0D1117",
@@ -466,6 +485,14 @@ def validate_all_palettes_wcag() -> list[str]:
             if ratio < 4.5:
                 errors.append(
                     f"WCAG AA fail: stack-3d/{mode} tier {idx} ({fg}) on {bg} = {ratio:.2f}:1 < 4.5:1"
+                )
+    for mode, cards in PROJECT_CARD_ACCENTS.items():
+        bg = stack_card_bg[mode]
+        for slug, fg in cards.items():
+            ratio = contrast_ratio(fg, bg)
+            if ratio < 4.5:
+                errors.append(
+                    f"WCAG AA fail: card/{mode} {slug} ({fg}) on {bg} = {ratio:.2f}:1 < 4.5:1"
                 )
     return errors
 
