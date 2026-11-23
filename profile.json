@@ -16,7 +16,7 @@
     "Python · TS · Rust"
   ],
   "explorer_url": "https://hynko431.github.io/hynko431/",
-  "dynamic_assets_base": "./assets",
+  "dynamic_assets_base": "https://hynko431.github.io/hynko431/assets",
   "contact": [
     {
       "id": "portfolio",

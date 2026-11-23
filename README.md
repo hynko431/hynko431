@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://hynko431.github.io/hynko431/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/banner-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/banner-3d-light.svg" /><img alt="Siva Venkata Bhanu Prakash Irakam — Jr. SDE - Backend &amp; Applied AI Engineer Banner" src="./assets/banner-3d-light.svg" width="100%" /></picture></a>
+  <a href="https://hynko431.github.io/hynko431/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://hynko431.github.io/hynko431/assets/banner-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://hynko431.github.io/hynko431/assets/banner-3d-light.svg" /><img alt="Siva Venkata Bhanu Prakash Irakam — Jr. SDE - Backend &amp; Applied AI Engineer Banner" src="https://hynko431.github.io/hynko431/assets/banner-3d-light.svg" width="100%" /></picture></a>
 
   <br/>
 
@@ -138,7 +138,7 @@ Backend and Applied AI engineer building distributed Python/FastAPI services, sc
 ## 3D Contribution Skyline
 
 <div align="center">
-  <a href="https://hynko431.github.io/hynko431/#skyline"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contrib-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/contrib-3d-light.svg" /><img alt="3D Isometric GitHub Contribution Skyline for hynko431" src="./assets/contrib-3d-light.svg" width="100%" /></picture></a>
+  <a href="https://hynko431.github.io/hynko431/#skyline"><picture><source media="(prefers-color-scheme: dark)" srcset="https://hynko431.github.io/hynko431/assets/contrib-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://hynko431.github.io/hynko431/assets/contrib-3d-light.svg" /><img alt="3D Isometric GitHub Contribution Skyline for hynko431" src="https://hynko431.github.io/hynko431/assets/contrib-3d-light.svg" width="100%" /></picture></a>
 </div>
 
 <p align="center"><a href="https://hynko431.github.io/hynko431/">Open Interactive 3D Profile Explorer →</a></p>
