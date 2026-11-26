@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 222" width="536" height="222" role="img" aria-labelledby="c-autopilot-light-t c-autopilot-light-d">
-  <title id="c-autopilot-light-t">MSME Autopilot (Pocket CEO) — Multi-Agent Business Intelligence</title>
-  <desc id="c-autopilot-light-d">MSME Autopilot (Pocket CEO) (Multi-Agent Business Intelligence): Reasoning-and-acting multi-agent Business Intelligence orchestrator for Micro, Small, and Medium Enterprises (MSMEs) with finance, inventory, marketing, and OAuth connectors. Stack: Python, FastAPI, Groq LLM, Pydantic, React 18.</desc>
+  <title id="c-autopilot-light-t">MSME Autopilot (Pocket CEO) — Full-Stack Multi-Agent BI Platform</title>
+  <desc id="c-autopilot-light-d">MSME Autopilot (Pocket CEO) (Full-Stack Multi-Agent BI Platform): Full-stack React 19/Vite/Tailwind BI dashboard paired with a FastAPI backend exposing 25+ JWT-protected endpoints and ReAct orchestration (GDG Hyderabad Guinness Record hackathon). Stack: React 19, Tailwind CSS, FastAPI, Python, JWT.</desc>
   <defs>
     <linearGradient id="c-autopilot-light-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF"/>
@@ -36,20 +36,20 @@
   <path d="M32 8.5L37 11.6L32.5 15.2" fill="none" stroke="#075985" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <text x="84" y="40" class="title">MSME Autopilot (Pocket CEO)</text>
-  <text x="84" y="59" class="cat">MULTI-AGENT BUSINESS INTELLIGENCE</text>
-  <text x="24" y="94" class="summary">Reasoning-and-acting multi-agent Business Intelligence</text>
-  <text x="24" y="111" class="summary">orchestrator for Micro, Small, and Medium Enterprises (MSMEs) with</text>
-  <text x="24" y="128" class="summary">finance, inventory, marketing, and OAuth connectors.</text>
-  <rect x="24.0" y="148.0" width="59.4" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.9"/>
-  <text x="53.7" y="162.5" text-anchor="middle" class="tag">Python</text>
-  <rect x="90.4" y="148.0" width="66.3" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.9"/>
-  <text x="123.6" y="162.5" text-anchor="middle" class="tag">FastAPI</text>
-  <rect x="163.7" y="148.0" width="73.2" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.9"/>
-  <text x="200.3" y="162.5" text-anchor="middle" class="tag">Groq LLM</text>
-  <rect x="243.9" y="148.0" width="73.2" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.9"/>
-  <text x="280.5" y="162.5" text-anchor="middle" class="tag">Pydantic</text>
-  <rect x="324.1" y="148.0" width="73.2" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.9"/>
-  <text x="360.7" y="162.5" text-anchor="middle" class="tag">React 18</text>
+  <text x="84" y="59" class="cat">FULL-STACK MULTI-AGENT BI PLATFORM</text>
+  <text x="24" y="94" class="summary">Full-stack React 19/Vite/Tailwind BI dashboard paired with a</text>
+  <text x="24" y="111" class="summary">FastAPI backend exposing 25+ JWT-protected endpoints and ReAct</text>
+  <text x="24" y="128" class="summary">orchestration (GDG Hyderabad Guinness Record hackathon).</text>
+  <rect x="24.0" y="148.0" width="73.2" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.9"/>
+  <text x="60.6" y="162.5" text-anchor="middle" class="tag">React 19</text>
+  <rect x="104.2" y="148.0" width="100.8" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.9"/>
+  <text x="154.6" y="162.5" text-anchor="middle" class="tag">Tailwind CSS</text>
+  <rect x="212.0" y="148.0" width="66.3" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.9"/>
+  <text x="245.2" y="162.5" text-anchor="middle" class="tag">FastAPI</text>
+  <rect x="285.3" y="148.0" width="59.4" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.9"/>
+  <text x="315.0" y="162.5" text-anchor="middle" class="tag">Python</text>
+  <rect x="351.7" y="148.0" width="46.0" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.9"/>
+  <text x="374.7" y="162.5" text-anchor="middle" class="tag">JWT</text>
   <line x1="24" y1="184" x2="512" y2="184" stroke="#E2E8F0" stroke-width="1"/>
   <circle cx="30" cy="201" r="3.2" fill="#0369A1"/>
   <text x="41" y="205" class="repo">hynko431/Agent-A-Thon</text>

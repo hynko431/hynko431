@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 222" width="536" height="222" role="img" aria-labelledby="c-helix-dark-t c-helix-dark-d">
-  <title id="c-helix-dark-t">Helix — AI Discovery Platform — Multi-Agent Scientific AI</title>
-  <desc id="c-helix-dark-d">Helix — AI Discovery Platform (Multi-Agent Scientific AI): Multi-agent AI workbench for generative molecular design, causal knowledge graphs, binding-energy scoring, and automated lab workflows. Stack: TypeScript, React 19, Tailwind CSS, Vite, Google GenAI SDK.</desc>
+  <title id="c-helix-dark-t">Helix â€” AI Discovery Platform — Multi-Agent Scientific AI</title>
+  <desc id="c-helix-dark-d">Helix â€” AI Discovery Platform (Multi-Agent Scientific AI): Multi-agent AI workbench for generative molecular design, causal knowledge graphs, binding-energy scoring, and automated lab workflows. Stack: TypeScript, React 19, Tailwind CSS, Vite, Google GenAI SDK.</desc>
   <defs>
     <linearGradient id="c-helix-dark-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0F1622"/>
@@ -40,7 +40,7 @@
   <circle cx="17" cy="34" r="2.2" fill="#34D399"/>
   <circle cx="31" cy="34" r="2.2" fill="#A7F3D0"/>
   </g>
-  <text x="84" y="40" class="title">Helix — AI Discovery Platform</text>
+  <text x="84" y="40" class="title">Helix â€” AI Discovery Platform</text>
   <text x="84" y="59" class="cat">MULTI-AGENT SCIENTIFIC AI</text>
   <text x="24" y="94" class="summary">Multi-agent AI workbench for generative molecular design, causal</text>
   <text x="24" y="111" class="summary">knowledge graphs, binding-energy scoring, and automated lab</text>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" width="1120" height="440" role="img" aria-labelledby="stack-title stack-desc">
   <title id="stack-title">3D Isometric Tech Stack Architecture — hynko431</title>
-  <desc id="stack-desc">01 AI / ML &amp; Agentic Systems: PyTorch, Hugging Face, LangChain, LangGraph, FAISS, scikit-learn, OpenCV, Ollama, Pydantic, Google GenAI SDK; 02 Backend APIs, Queues &amp; Protocols: Python, FastAPI, Celery, Node.js, TypeScript, Flask, Model Context Protocol (MCP), JWT / OAuth2; 03 Databases, Search &amp; Frontend: PostgreSQL, Supabase, Redis, Elasticsearch, MongoDB, SQLite, React, Tailwind CSS, Streamlit, NumPy, Pandas; 04 Systems, Security &amp; DevOps: Rust, Docker, GitHub Actions, Git, Google Cloud, Vercel, Cloudflare Pages, Java, C</desc>
+  <desc id="stack-desc">01 AI / ML &amp; Agentic Systems: LangChain, LangGraph, FAISS, Hybrid RAG, PyTorch, Hugging Face, scikit-learn, OpenCV, Pydantic v2, Google GenAI; 02 Backend APIs, Queues &amp; Auth: Python, FastAPI, Node.js, Express.js, TypeScript, Celery, SQLAlchemy, Alembic, JWT / OAuth 2.1; 03 Frontend, Databases &amp; Search: React, Tailwind CSS, Vite, PostgreSQL (RLS), Redis, Elasticsearch, Firestore, MinIO, Supabase; 04 Systems, Security &amp; DevOps: Rust, Docker, GitHub Actions, pytest, Ruff, Cloud Run, Cloudflare, Vercel, Git</desc>
   <defs>
     <linearGradient id="st-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0D1117"/>
@@ -95,8 +95,8 @@
     <rect x="462.0" y="91.0" width="632.0" height="66.0" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
     <rect x="462.0" y="91.0" width="5" height="66.0" rx="2.5" fill="#58A6FF"/>
     <text x="484.0" y="114.0" class="tier-label" fill="#58A6FF">01 · AI / ML &amp; Agentic Systems</text>
-    <text x="484.0" y="133.0" class="items">PyTorch · Hugging Face · LangChain · LangGraph · FAISS</text>
-    <text x="484.0" y="149.0" class="items">scikit-learn · OpenCV · Ollama · Pydantic · Google GenAI SDK</text>
+    <text x="484.0" y="133.0" class="items">LangChain · LangGraph · FAISS · Hybrid RAG · PyTorch</text>
+    <text x="484.0" y="149.0" class="items">Hugging Face · scikit-learn · OpenCV · Pydantic v2 · Google GenAI</text>
   </g>
   <g>
     <line x1="402.0" y1="200.0" x2="462.0" y2="200.0" stroke="#A5B4FC" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.85"/>
@@ -104,9 +104,9 @@
     <circle cx="462.0" cy="200.0" r="3.2" fill="#A5B4FC"/>
     <rect x="462.0" y="167.0" width="632.0" height="66.0" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
     <rect x="462.0" y="167.0" width="5" height="66.0" rx="2.5" fill="#A5B4FC"/>
-    <text x="484.0" y="190.0" class="tier-label" fill="#A5B4FC">02 · Backend APIs, Queues &amp; Protocols</text>
-    <text x="484.0" y="209.0" class="items">Python · FastAPI · Celery · Node.js · TypeScript · Flask</text>
-    <text x="484.0" y="225.0" class="items">Model Context Protocol (MCP) · JWT / OAuth2</text>
+    <text x="484.0" y="190.0" class="tier-label" fill="#A5B4FC">02 · Backend APIs, Queues &amp; Auth</text>
+    <text x="484.0" y="209.0" class="items">Python · FastAPI · Node.js · Express.js · TypeScript · Celery</text>
+    <text x="484.0" y="225.0" class="items">SQLAlchemy · Alembic · JWT / OAuth 2.1</text>
   </g>
   <g>
     <line x1="402.0" y1="276.0" x2="462.0" y2="276.0" stroke="#34D399" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.85"/>
@@ -114,9 +114,9 @@
     <circle cx="462.0" cy="276.0" r="3.2" fill="#34D399"/>
     <rect x="462.0" y="243.0" width="632.0" height="66.0" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
     <rect x="462.0" y="243.0" width="5" height="66.0" rx="2.5" fill="#34D399"/>
-    <text x="484.0" y="266.0" class="tier-label" fill="#34D399">03 · Databases, Search &amp; Frontend</text>
-    <text x="484.0" y="285.0" class="items">PostgreSQL · Supabase · Redis · Elasticsearch · MongoDB · SQLite</text>
-    <text x="484.0" y="301.0" class="items">React · Tailwind CSS · Streamlit · NumPy · Pandas</text>
+    <text x="484.0" y="266.0" class="tier-label" fill="#34D399">03 · Frontend, Databases &amp; Search</text>
+    <text x="484.0" y="285.0" class="items">React · Tailwind CSS · Vite · PostgreSQL (RLS) · Redis</text>
+    <text x="484.0" y="301.0" class="items">Elasticsearch · Firestore · MinIO · Supabase</text>
   </g>
   <g>
     <line x1="402.0" y1="352.0" x2="462.0" y2="352.0" stroke="#FBBF24" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.85"/>
@@ -125,7 +125,7 @@
     <rect x="462.0" y="319.0" width="632.0" height="66.0" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
     <rect x="462.0" y="319.0" width="5" height="66.0" rx="2.5" fill="#FBBF24"/>
     <text x="484.0" y="342.0" class="tier-label" fill="#FBBF24">04 · Systems, Security &amp; DevOps</text>
-    <text x="484.0" y="361.0" class="items">Rust · Docker · GitHub Actions · Git · Google Cloud · Vercel</text>
-    <text x="484.0" y="377.0" class="items">Cloudflare Pages · Java · C</text>
+    <text x="484.0" y="361.0" class="items">Rust · Docker · GitHub Actions · pytest · Ruff · Cloud Run</text>
+    <text x="484.0" y="377.0" class="items">Cloudflare · Vercel · Git</text>
   </g>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 222" width="536" height="222" role="img" aria-labelledby="c-coldpin-dark-t c-coldpin-dark-d">
-  <title id="c-coldpin-dark-t">Coldpin (npx Safe Finder) — Supply-Chain Security CLI &amp; MCP</title>
-  <desc id="c-coldpin-dark-d">Coldpin (npx Safe Finder) (Supply-Chain Security CLI &amp; MCP): Zero-execution npm/npx supply-chain triage CLI and Model Context Protocol (MCP) server with SHA-512 verification, OSV malware checks, and Git rollback recovery. Stack: TypeScript, Node.js 24, MCP, SARIF, CycloneDX.</desc>
+  <title id="c-coldpin-dark-t">Coldpin (npx Safe Finder) — Supply-Chain Security CLI, HTTP API &amp; Portal</title>
+  <desc id="c-coldpin-dark-d">Coldpin (npx Safe Finder) (Supply-Chain Security CLI, HTTP API &amp; Portal): Zero-dependency TypeScript/Node 24 package analyzer (coldpin@1.6.1 on npm) with OAuth 2.1 JWKS HTTP API, Cloudflare Policy Lab, SHA-512 in-memory triage, and 15-gate CI. Stack: TypeScript, Node.js 24, OAuth 2.1, Cloudflare, Docker.</desc>
   <defs>
     <linearGradient id="c-coldpin-dark-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0F1622"/>
@@ -35,20 +35,20 @@
   <path d="M18.5 30.5L22.2 33.8L30.2 26.2" fill="none" stroke="#58A6FF" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <text x="84" y="40" class="title">Coldpin (npx Safe Finder)</text>
-  <text x="84" y="59" class="cat">SUPPLY-CHAIN SECURITY CLI &amp; MCP</text>
-  <text x="24" y="94" class="summary">Zero-execution npm/npx supply-chain triage CLI and Model Context</text>
-  <text x="24" y="111" class="summary">Protocol (MCP) server with SHA-512 verification, OSV malware</text>
-  <text x="24" y="128" class="summary">checks, and Git rollback recovery.</text>
+  <text x="84" y="59" class="cat">SUPPLY-CHAIN SECURITY CLI, HTTP API &amp; PORTAL</text>
+  <text x="24" y="94" class="summary">Zero-dependency TypeScript/Node 24 package analyzer (coldpin@1.6.1</text>
+  <text x="24" y="111" class="summary">on npm) with OAuth 2.1 JWKS HTTP API, Cloudflare Policy Lab,</text>
+  <text x="24" y="128" class="summary">SHA-512 in-memory triage, and 15-gate CI.</text>
   <rect x="24.0" y="148.0" width="87.0" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
   <text x="67.5" y="162.5" text-anchor="middle" class="tag">TypeScript</text>
   <rect x="118.0" y="148.0" width="87.0" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
   <text x="161.5" y="162.5" text-anchor="middle" class="tag">Node.js 24</text>
-  <rect x="212.0" y="148.0" width="46.0" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
-  <text x="235.0" y="162.5" text-anchor="middle" class="tag">MCP</text>
-  <rect x="265.0" y="148.0" width="52.5" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
-  <text x="291.2" y="162.5" text-anchor="middle" class="tag">SARIF</text>
-  <rect x="324.5" y="148.0" width="80.1" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
-  <text x="364.6" y="162.5" text-anchor="middle" class="tag">CycloneDX</text>
+  <rect x="212.0" y="148.0" width="80.1" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="252.1" y="162.5" text-anchor="middle" class="tag">OAuth 2.1</text>
+  <rect x="299.1" y="148.0" width="87.0" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="342.6" y="162.5" text-anchor="middle" class="tag">Cloudflare</text>
+  <rect x="393.1" y="148.0" width="59.4" height="22" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.9"/>
+  <text x="422.8" y="162.5" text-anchor="middle" class="tag">Docker</text>
   <line x1="24" y1="184" x2="512" y2="184" stroke="#242D3A" stroke-width="1"/>
   <circle cx="30" cy="201" r="3.2" fill="#58A6FF"/>
   <text x="41" y="205" class="repo">hynko431/Coldpin-npx-Safe-Finder</text>

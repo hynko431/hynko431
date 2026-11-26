@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://hynko431.github.io/hynko431/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://hynko431.github.io/hynko431/assets/banner-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://hynko431.github.io/hynko431/assets/banner-3d-light.svg" /><img alt="Siva Venkata Bhanu Prakash Irakam — Jr. SDE - Backend &amp; Applied AI Engineer Banner" src="https://hynko431.github.io/hynko431/assets/banner-3d-light.svg" width="100%" /></picture></a>
+  <a href="https://hynko431.github.io/hynko431/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://hynko431.github.io/hynko431/assets/banner-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://hynko431.github.io/hynko431/assets/banner-3d-light.svg" /><img alt="Siva Venkata Bhanu Prakash Irakam — Jr. SDE â€” Full-Stack &amp; Applied AI Engineer Banner" src="https://hynko431.github.io/hynko431/assets/banner-3d-light.svg" width="100%" /></picture></a>
 
   <br/>
 
@@ -9,34 +9,36 @@
   <a href="https://x.com/Sivabhanu7198"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/contact-x-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/icons/contact-x-light.svg" /><img alt="X Profile" src="./assets/icons/contact-x-light.svg" height="28" /></picture></a>
 </div>
 
-Backend and Applied AI engineer building distributed Python/FastAPI services, schema-validated LLM and retrieval pipelines, and supply-chain/endpoint security tools across Python, TypeScript, and Rust.
+Full-Stack Software Engineer (Jr. SDE) shipping end-to-end web platforms across React, TypeScript, Node.js/Express, Python/FastAPI, and PostgreSQL, alongside distributed task queues, search/OCR microservices, and TypeScript/Rust security tooling.
 
 ---
 
 ## Experience
 
-### Saral Vidhya *(Hyderabad · On-site)*
+### Saral Vidhya *(Hyderabad Â· On-site)*
 
-**Jr. SDE - Backend** · Full-time *(Nov 2026 – Present)*
+**Junior Software Development Engineer (Jr. SDE)** · Full-time *(Nov 2026 â€“ Present)*
 
-- Architecting backend APIs, relational data models, and asynchronous task queues using Python, FastAPI, PostgreSQL, Celery, and Redis.
-- Building low-latency search, authentication, and AI service integrations for production academic evaluation workflows.
+- Built end-to-end sectional reading REST APIs (Node.js/Express, TypeScript, Firestore, GCS on Cloud Run) and modular React 18/TypeScript workspaces, moving external APIs behind hardened backend proxies with Gitleaks and TruffleHog CI scans.
+- Architected multi-tenant PostgreSQL 18 schemas across 15 Alembic migrations with learner Row-Level Security (RLS), SQLAlchemy versioning, and pgvector indexing; verified releases via 152 passing pytest tests, 5 SQL workflow suites, Ruff, and frontend builds.
+- Engineered Celery + Redis asynchronous task queues with retries, dead-letter queues (DLQ), Prometheus alerts, and single-copy MinIO object storage to decouple heavy document processing from user-facing FastAPI endpoints.
 
-**AI ML Intern** · Internship *(May 2026 – Nov 2026)*
+**AI ML Intern** · Internship *(May 2026 â€“ Nov 2026)*
 
-- Built an LLM-as-a-Judge rubric grading system with a Human-in-the-Loop (HITL) review workflow backed by FastAPI and PostgreSQL/Supabase.
-- Implemented large-document Optical Character Recognition (OCR) ingestion, Retrieval-Augmented Generation (RAG) with Cache-Augmented Generation (CAG), JWT/RBAC/Google OAuth2 security, and Docker deployment.
+- Delivered a sliding-window OCR pipeline processing 1,000-page PDFs within 512 MB RAM (90%+ extraction accuracy) and an LLM-as-a-Judge + Human-in-the-Loop (HITL) grading workflow backed by FastAPI and PostgreSQL/Supabase.
+- Implemented hybrid BM25/vector Retrieval-Augmented Generation (RAG) with Cache-Augmented Generation (CAG), JWT/RBAC, Google OAuth2 security, and Docker Compose deployment.
 
-### ASAR IT Technologies *(Bengaluru · On-site)*
+### ASAR IT Technologies Private Limited *(Bengaluru Â· On-site)*
 
-**Artificial Intelligence Engineer** · Internship *(Jan 2026 – Apr 2026)*
+**AI Engineer Intern** · Internship *(Jan 2026 â€“ May 2026)*
 
-- Built schema-validated deterministic LLM extraction pipelines achieving 99% JSON validity at 300ms average latency.
-- Reduced OCR noise by 90% and improved extraction F1 score by +18%, backed by LangChain, FAISS, FastAPI, automated tests, and evaluation dashboards.
+- Built the Python/FastAPI prescription OCR and document-intelligence microservice (MedVault) integrated via Docker Compose with the Node.js/Express + PostgreSQL API gateway and React Native app, adding circuit breakers, rate limiting, and 3-tier OCR/LLM fallbacks.
+- Engineered Elasticsearch hybrid search, autocomplete, relevance reranking, and zero-downtime index migrations (v1â€“v8), paired with 50-connection Redis pooling, ORJSON, and Level-6 GZip compression cutting large JSON payloads by up to 80%.
+- Implemented Pydantic v2 schema validation and medical-aware OCR normalization (~300ms medicine parsing latency) alongside a LangChain + FAISS RAG medication assistant with automated API and search tests.
 
-### SmartBridge Educational Services × APSCHE *(Remote)*
+### SmartBridge Educational Services Ã— APSCHE *(Remote)*
 
-**AI & ML Intern** · Internship *(Jun 2025 – Jul 2025)*
+**AI & ML Intern** · Internship *(Jun 2025 â€“ Jul 2025)*
 
 - Completed applied Python and scikit-learn preprocessing, feature engineering, predictive modeling, and evaluation workflows (Andhra Pradesh State Council of Higher Education; Cert ID EXT-APSCHE_AIML-50038).
 
@@ -44,21 +46,21 @@ Backend and Applied AI engineer building distributed Python/FastAPI services, sc
 
 ## Education
 
-**B.Tech in Computer Science & Engineering** — Jawaharlal Nehru Technological University Anantapur (JNTUA) College of Engineering, Pulivendula *(2022 – 2026)*
+**B.Tech in Computer Science & Engineering** — Jawaharlal Nehru Technological University Anantapur (JNTUA) College of Engineering, Pulivendula â€” CGPA: 7.8 / 10 *(2022 â€“ 2026)*
 
 ---
 
 ## Featured Projects
 
 <div align="center">
-  <a href="https://github.com/hynko431/Coldpin-npx-Safe-Finder"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/coldpin-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/coldpin-light.svg" /><img alt="Coldpin (npx Safe Finder) — Supply-Chain Security CLI &amp; MCP" src="./assets/cards/coldpin-light.svg" width="49%" /></picture></a> &nbsp; <a href="https://github.com/hynko431/OmniConnect-Sentinel"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/sentinel-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/sentinel-light.svg" /><img alt="OmniConnect Sentinel — Rust Endpoint &amp; USB Security" src="./assets/cards/sentinel-light.svg" width="49%" /></picture></a>
+  <a href="https://github.com/hynko431/Coldpin-npx-Safe-Finder"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/coldpin-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/coldpin-light.svg" /><img alt="Coldpin (npx Safe Finder) — Supply-Chain Security CLI, HTTP API &amp; Portal" src="./assets/cards/coldpin-light.svg" width="49%" /></picture></a> &nbsp; <a href="https://github.com/hynko431/OmniConnect-Sentinel"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/sentinel-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/sentinel-light.svg" /><img alt="OmniConnect Sentinel — Rust Endpoint &amp; USB Security" src="./assets/cards/sentinel-light.svg" width="49%" /></picture></a>
   <br/>
-  <a href="https://github.com/hynko431/Cutaway-The-Anatomy-of-System-Design"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/cutaway-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/cutaway-light.svg" /><img alt="Cutaway: Anatomy of System Design — 3D Distributed-Systems Simulator" src="./assets/cards/cutaway-light.svg" width="49%" /></picture></a> &nbsp; <a href="https://github.com/hynko431/Helix--AI-Discovery-Platform"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/helix-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/helix-light.svg" /><img alt="Helix — AI Discovery Platform — Multi-Agent Scientific AI" src="./assets/cards/helix-light.svg" width="49%" /></picture></a>
+  <a href="https://github.com/hynko431/Cutaway-The-Anatomy-of-System-Design"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/cutaway-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/cutaway-light.svg" /><img alt="Cutaway: Anatomy of System Design — 3D Distributed-Systems Simulator" src="./assets/cards/cutaway-light.svg" width="49%" /></picture></a> &nbsp; <a href="https://github.com/hynko431/Helix--AI-Discovery-Platform"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/helix-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/helix-light.svg" /><img alt="Helix â€” AI Discovery Platform — Multi-Agent Scientific AI" src="./assets/cards/helix-light.svg" width="49%" /></picture></a>
   <br/>
-  <a href="https://github.com/hynko431/Agent-A-Thon"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/autopilot-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/autopilot-light.svg" /><img alt="MSME Autopilot (Pocket CEO) — Multi-Agent Business Intelligence" src="./assets/cards/autopilot-light.svg" width="49%" /></picture></a> &nbsp; <a href="https://github.com/hynko431/Agentic-MedicalReport-Analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/medical-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/medical-light.svg" /><img alt="Agentic Medical Report Analysis — Healthcare Multi-Agent RAG" src="./assets/cards/medical-light.svg" width="49%" /></picture></a>
+  <a href="https://github.com/hynko431/Agent-A-Thon"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/autopilot-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/autopilot-light.svg" /><img alt="MSME Autopilot (Pocket CEO) — Full-Stack Multi-Agent BI Platform" src="./assets/cards/autopilot-light.svg" width="49%" /></picture></a> &nbsp; <a href="https://github.com/hynko431/Agentic-MedicalReport-Analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/medical-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/cards/medical-light.svg" /><img alt="Agentic Medical Report Analysis — Healthcare Multi-Agent RAG" src="./assets/cards/medical-light.svg" width="49%" /></picture></a>
 </div>
 
-*Docs & Live:* [Coldpin Docs](https://coldpin-docs.pages.dev/) · [MSME Autopilot Live](https://agent-a-thon.vercel.app/) — *Also built:* [Conversational AI Avatar](https://github.com/hynko431/Conversational-AI-Avatar) *(Anam.ai · Zep Cloud · FastAPI · Streamlit)* · [Agentic Data Scientist](https://github.com/hynko431/Agentic-Data-Scientist) *(Automated drift detection & retraining)* · [HematoVision](https://github.com/hynko431/HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning) *(MobileNetV2 transfer learning)* — [View all repositories →](https://github.com/hynko431?tab=repositories) · [Filter Projects in 3D Explorer →](https://hynko431.github.io/hynko431/#projects)
+*Docs & Live:* [Coldpin Docs](https://coldpin-docs.pages.dev/) · [MSME Autopilot Live](https://agent-a-thon.vercel.app/) — *Also built:* [Conversational AI Avatar](https://github.com/hynko431/Conversational-AI-Avatar) *(Anam.ai Â· Zep Cloud Â· FastAPI Â· Streamlit)* · [Agentic Data Scientist](https://github.com/hynko431/Agentic-Data-Scientist) *(Automated drift detection & retraining)* · [HematoVision](https://github.com/hynko431/HematoVision-Advanced-Blood-Cell-Classification-Using-Transfer-Learning) *(MobileNetV2 transfer learning)* — [View all repositories →](https://github.com/hynko431?tab=repositories) · [Filter Projects in 3D Explorer →](https://hynko431.github.io/hynko431/#projects)
 
 ---
 
