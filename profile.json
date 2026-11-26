@@ -2,7 +2,7 @@
   "schema_version": 1,
   "handle": "hynko431",
   "name": "Siva Venkata Bhanu Prakash Irakam",
-  "role_headline": "Jr. SDE â€” Full-Stack & Applied AI Engineer",
+  "role_headline": "Jr. SDE — Full-Stack & Applied AI Engineer",
   "location": "Hyderabad, India",
   "current_company": "Saral Vidhya",
   "summary": "Full-Stack Software Engineer (Jr. SDE) shipping end-to-end web platforms across React, TypeScript, Node.js/Express, Python/FastAPI, and PostgreSQL, alongside distributed task queues, search/OCR microservices, and TypeScript/Rust security tooling.",
@@ -13,7 +13,7 @@
   "hero_pills": [
     "Full-Stack & APIs",
     "Queues & Search",
-    "Python Â· TS Â· Rust"
+    "Python · TS · Rust"
   ],
   "explorer_url": "https://hynko431.github.io/hynko431/",
   "dynamic_assets_base": "https://hynko431.github.io/hynko431/assets",
@@ -46,12 +46,12 @@
   "experience": [
     {
       "company": "Saral Vidhya",
-      "location": "Hyderabad Â· On-site",
+      "location": "Hyderabad · On-site",
       "roles": [
         {
           "title": "Junior Software Development Engineer (Jr. SDE)",
           "employment_type": "Full-time",
-          "period": "Nov 2026 â€“ Present",
+          "period": "Nov 2026 – Present",
           "highlights": [
             "Built end-to-end sectional reading REST APIs (Node.js/Express, TypeScript, Firestore, GCS on Cloud Run) and modular React 18/TypeScript workspaces, moving external APIs behind hardened backend proxies with Gitleaks and TruffleHog CI scans.",
             "Architected multi-tenant PostgreSQL 18 schemas across 15 Alembic migrations with learner Row-Level Security (RLS), SQLAlchemy versioning, and pgvector indexing; verified releases via 152 passing pytest tests, 5 SQL workflow suites, Ruff, and frontend builds.",
@@ -61,7 +61,7 @@
         {
           "title": "AI ML Intern",
           "employment_type": "Internship",
-          "period": "May 2026 â€“ Nov 2026",
+          "period": "May 2026 – Nov 2026",
           "highlights": [
             "Delivered a sliding-window OCR pipeline processing 1,000-page PDFs within 512 MB RAM (90%+ extraction accuracy) and an LLM-as-a-Judge + Human-in-the-Loop (HITL) grading workflow backed by FastAPI and PostgreSQL/Supabase.",
             "Implemented hybrid BM25/vector Retrieval-Augmented Generation (RAG) with Cache-Augmented Generation (CAG), JWT/RBAC, Google OAuth2 security, and Docker Compose deployment."
@@ -71,28 +71,28 @@
     },
     {
       "company": "ASAR IT Technologies Private Limited",
-      "location": "Bengaluru Â· On-site",
+      "location": "Bengaluru · On-site",
       "roles": [
         {
           "title": "AI Engineer Intern",
           "employment_type": "Internship",
-          "period": "Jan 2026 â€“ May 2026",
+          "period": "Jan 2026 – May 2026",
           "highlights": [
             "Built the Python/FastAPI prescription OCR and document-intelligence microservice (MedVault) integrated via Docker Compose with the Node.js/Express + PostgreSQL API gateway and React Native app, adding circuit breakers, rate limiting, and 3-tier OCR/LLM fallbacks.",
-            "Engineered Elasticsearch hybrid search, autocomplete, relevance reranking, and zero-downtime index migrations (v1â€“v8), paired with 50-connection Redis pooling, ORJSON, and Level-6 GZip compression cutting large JSON payloads by up to 80%.",
+            "Engineered Elasticsearch hybrid search, autocomplete, relevance reranking, and zero-downtime index migrations (v1–v8), paired with 50-connection Redis pooling, ORJSON, and Level-6 GZip compression cutting large JSON payloads by up to 80%.",
             "Implemented Pydantic v2 schema validation and medical-aware OCR normalization (~300ms medicine parsing latency) alongside a LangChain + FAISS RAG medication assistant with automated API and search tests."
           ]
         }
       ]
     },
     {
-      "company": "SmartBridge Educational Services Ã— APSCHE",
+      "company": "SmartBridge Educational Services × APSCHE",
       "location": "Remote",
       "roles": [
         {
           "title": "AI & ML Intern",
           "employment_type": "Internship",
-          "period": "Jun 2025 â€“ Jul 2025",
+          "period": "Jun 2025 – Jul 2025",
           "highlights": [
             "Completed applied Python and scikit-learn preprocessing, feature engineering, predictive modeling, and evaluation workflows (Andhra Pradesh State Council of Higher Education; Cert ID EXT-APSCHE_AIML-50038)."
           ]
@@ -101,9 +101,9 @@
     }
   ],
   "education": {
-    "institution": "Jawaharlal Nehru Technological University Anantapur (JNTUA) College of Engineering, Pulivendula â€” CGPA: 7.8 / 10",
+    "institution": "Jawaharlal Nehru Technological University Anantapur (JNTUA) College of Engineering, Pulivendula — CGPA: 7.8 / 10",
     "degree": "B.Tech in Computer Science & Engineering",
-    "period": "2022 â€“ 2026"
+    "period": "2022 – 2026"
   },
   "projects": [
     {
@@ -175,7 +175,7 @@
     {
       "slug": "helix",
       "repo": "Helix--AI-Discovery-Platform",
-      "name": "Helix â€” AI Discovery Platform",
+      "name": "Helix — AI Discovery Platform",
       "category": "Multi-Agent Scientific AI",
       "summary": "Multi-agent AI workbench for generative molecular design, causal knowledge graphs, binding-energy scoring, and automated lab workflows.",
       "stack": [
@@ -248,7 +248,7 @@
     {
       "name": "Conversational AI Avatar",
       "url": "https://github.com/hynko431/Conversational-AI-Avatar",
-      "note": "Anam.ai Â· Zep Cloud Â· FastAPI Â· Streamlit"
+      "note": "Anam.ai · Zep Cloud · FastAPI · Streamlit"
     },
     {
       "name": "Agentic Data Scientist",
